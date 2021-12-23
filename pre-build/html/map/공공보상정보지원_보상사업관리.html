@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);width:701px;">
+            <div class="head">
+                <strong class="tit">보상사업관리</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+
+                    <section class="popSec">
+                        <strong class="titSec">목록</strong>
+                        <!--popSearch-->
+                        <div class="popSearch sm">
+                            <div class="inner">
+                                <div class="flex ac">
+                                    <div class="labelBox" style="margin-right:50px;">
+                                        <label>사업구분</label>
+                                        <input type="text" style="width:163px;"/>
+                                    </div>
+                                    <div class="labelBox">
+                                        <label>사업구분</label>
+                                        <input type="text" style="width:163px;"/>
+                                    </div>
+                                    <button type="button" class="btn grey" style="flex:1;"><span>검색</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//popSearch-->
+                        <div class="totalArea">
+                            <strong class="total">전체 <span class="colorType blue">N</span>건</strong>
+                            <button type="button" class="btn blue"><span>등록</span></button>
+                        </div>
+                        <!--table-->
+                        <div class="table type02 hover">
+                            <table>
+                                <caption>보상사업관리</caption>
+                                <colgroup>
+                                    <col style="width:78px;"/>
+                                    <col style="width:126px;"/>
+                                    <col style="width:auto;"/>
+                                    <col style="width:126px;"/>
+                                    <col style="width:124px;"/>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">사업구분</th>
+                                    <th scope="col">사업명</th>
+                                    <th scope="col">사업위치</th>
+                                    <th scope="col">사업시행자</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>도로</td>
+                                    <td>도로개발</td>
+                                    <td>삼성동</td>
+                                    <td>XXX</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>도로</td>
+                                    <td>도로개발</td>
+                                    <td>삼성동</td>
+                                    <td>XXX</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>도로</td>
+                                    <td>도로개발</td>
+                                    <td>삼성동</td>
+                                    <td>XXX</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>도로</td>
+                                    <td>도로개발</td>
+                                    <td>삼성동</td>
+                                    <td>XXX</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>도로</td>
+                                    <td>도로개발</td>
+                                    <td>삼성동</td>
+                                    <td>XXX</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>도로</td>
+                                    <td>도로개발</td>
+                                    <td>삼성동</td>
+                                    <td>XXX</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                        <!--pagination-->
+                        <div class="pagination">
+                            <a href="#" class="first" title="처음으로"><span class="hidden">처음으로</span></a>
+                            <a href="#" class="prev" title="이전페이지"><span class="hidden">이전페이지</span></a>
+                            <a href="#" class="pagiNum" title="1">1</a>
+                            <a href="#" class="pagiNum" title="2">2</a>
+                            <a href="#" class="pagiNum" title="3">3</a>
+                            <a href="#" class="pagiNum" title="4">4</a>
+                            <a href="#" class="pagiNum" title="5">5</a>
+                            <a href="#" class="pagiNum" title="6">6</a>
+                            <a href="#" class="pagiNum" title="7">7</a>
+                            <a href="#" class="pagiNum" title="8">8</a>
+                            <a href="#" class="pagiNum" title="9">9</a>
+                            <a href="#" class="next" title="다음페이지"><span class="hidden">다음페이지</span></a>
+                            <a href="#" class="last" title="끝으로"><span class="hidden">끝으로</span></a>
+                        </div>
+                        <!--//pagination-->
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

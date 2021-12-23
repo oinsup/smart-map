@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);width:701px;">
+            <div class="head">
+                <strong class="tit">보상사업관리 상세</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <section class="popSec">
+                        <!--table-->
+                        <div class="table type03">
+                            <table>
+                                <caption>보상사업관리 상세</caption>
+                                <colgroup>
+                                    <col style="width:129px;"/>
+                                    <col style="width:auto;"/>
+                                    <col style="width:129px;"/>
+                                    <col style="width:auto;"/>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">사업구분</th>
+                                    <td class="txt-left">도로</td>
+                                    <th scope="row">사업명<span class="colorType red">*</span></th>
+                                    <td class="txt-left">도로확장</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업시행자</th>
+                                    <td class="txt-left">홍길동</td>
+                                    <th scope="row">사업개요<span class="colorType red">*</span></th>
+                                    <td class="txt-left">도로확장</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업위치</th>
+                                    <td class="txt-left">대치동일대</td>
+                                    <th scope="row">사업규모</th>
+                                    <td class="txt-left"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업면적(㎡)</th>
+                                    <td class="txt-left"><input type="text" style="width:100%;"/></td>
+                                    <th scope="row">고시번호</th>
+                                    <td class="txt-left"><input type="text" style="width:100%;"/></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label>관리구분</label></th>
+                                    <td colspan="3" class="txt-left">
+                                        <select style="width:181px;">
+                                            <option value="사업" selected>사업</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">사업기간</th>
+                                    <td colspan="3" class="txt-left">
+                                        <div class="flex ac">
+                                            <input type="text" class="cal" style="width:181px;" />
+                                            <span style="margin:0 5px">~</span>
+                                            <input type="text" class="cal" style="width:181px;" />
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">비고</th>
+                                    <td colspan="3" class="txt-left">
+                                        <input type="text" style="width:100%;"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">관보파일정보</th>
+                                    <td colspan="3" class="txt-left">
+                                        <div class="row">
+                                            <div class="fileSelect">
+                                                <input class="fileLocal" value="" disabled="disabled" placeholder="선택된 파일이 없습니다.">
+                                                <label for="file03" class="btnFileSelect">파일선택</label>
+                                                <input type="file" id="file03" class="fileHidden">
+                                            </div>
+                                        </div>
+                                        <div class="row flex column cScroll" style="margin-top:5px;max-height:50px;">
+                                            <div class="flex ac in">
+                                                <span class="fileName">관보파일명.jpg</span>
+                                                <a href="#" class="ico fileDown" title="파일다운로드"></a>
+                                                <a href="#" class="ico fileRemove" title="파일삭제"></a>
+                                            </div>
+                                            <div class="flex ac in">
+                                                <span class="fileName">관보파일명.jpg</span>
+                                                <a href="#" class="ico fileDown" title="파일다운로드"></a>
+                                                <a href="#" class="ico fileRemove" title="파일삭제"></a>
+                                            </div>
+                                            <div class="flex ac in">
+                                                <span class="fileName">관보파일명.jpg</span>
+                                                <a href="#" class="ico fileDown" title="파일다운로드"></a>
+                                                <a href="#" class="ico fileRemove" title="파일삭제"></a>
+                                            </div>
+                                            <div class="flex ac in">
+                                                <span class="fileName">관보파일명.jpg</span>
+                                                <a href="#" class="ico fileDown" title="파일다운로드"></a>
+                                                <a href="#" class="ico fileRemove" title="파일삭제"></a>
+                                            </div>
+                                            <div class="flex ac in">
+                                                <span class="fileName">관보파일명.jpg</span>
+                                                <a href="#" class="ico fileDown" title="파일다운로드"></a>
+                                                <a href="#" class="ico fileRemove" title="파일삭제"></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </section>
+                    <section class="popSec">
+                        <div class="titArea" style="margin-top:40px;">
+                            <strong class="titSec">영역</strong>
+                            <button type="button" class="btn peacock baloon"><i class="ico sel-area"></i><span>영역추가</span></button>
+                        </div>
+                        <!--table-->
+                        <div class="table type02">
+                            <table>
+                                <caption>영역</caption>
+                                <colgroup>
+                                    <col style="width:67px"/>
+                                    <col style="width:42px"/>
+                                    <col style="width:auto"/>
+                                    <col style="width:190px"/>
+                                    <col style="width:180px"/>
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th scope="col">ON/OFF</th>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">영역명</th>
+                                    <th scope="col">관리</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><button type="button" class="btnTabView"><span class="hidden">보이기/숨기기</span></button></td>
+                                    <td>1</td>
+                                    <td>SHP파일</td>
+                                    <td>도로사업영역</td>
+                                    <td>
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnTable setting"><span class="hidden">설정</span></button>
+                                            <button type="button" class="btnTable detail"><span class="hidden">상세보기</span></button>
+                                            <button type="button" class="btnTable down"><span class="hidden">다운로드</span></button>
+                                            <button type="button" class="btnTable edit"><span class="hidden">수정</span></button>
+                                            <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </section>
+                    <div class="btnArea flex left" style="margin-top:40px;">
+                        <button type="button" class="btn grey"><span>사업목록</span></button>
+                        <button type="button" class="btn grey2" style="margin-left: auto"><span>삭제</span></button>
+                        <button type="button" class="btn blueLine"><span>수정</span></button>
+                        <button type="button" class="btn blue"><span>권한관리</span></button>
+                        <button type="button" class="btn blue"><span>보상정보조회</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+
+        <!--popup-->
+        <div class="popup" style="left:1184px;width:375px;">
+            <div class="head">
+                <strong class="tit">보상사업관리 영역</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <section class="popSec type02">
+                        <p class="titSec">
+                            <strong class="step">STEP<span class="num">1</span></strong>
+                            형식
+                            <span class="colorType red">*</span>
+                        </p>
+                        <div class="inputBox">
+                            <select title="">
+                                <option value="선택" selected>선택</option>
+                                <option value="SHP 업로드">SHP 업로드</option>
+                                <option value="직접생성(그리기)">직접생성(그리기)</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section class="popSec type02">
+                        <p class="titSec">
+                            <strong class="step">STEP<span class="num">2</span></strong>
+                            파일선택
+                            <span class="colorType red">*</span>
+                        </p>
+                        <div class="inputBox">
+                            <button type="button" class="btn peacockLine h34" style="width:100%;margin-bottom:10px;"><span>양식 다운로드</span></button>
+                            <div class="fileSelect">
+                                <input class="fileLocal" value="" disabled="disabled" placeholder="선택된 파일이 없습니다." style="flex:1;"/>
+                                <label for="file02" class="btnFileSelect">파일선택</label>
+                                <input type="file" id="file02" class="fileHidden">
+                            </div>
+                        </div>
+                        <p class="tip">※ 도형정보 파일의 업로드 형식을 선택하여 주십시오.</p>
+                    </section>
+                    <section class="popSec type02">
+                        <p class="titSec">
+                            <strong class="step">STEP<span class="num">3</span></strong>
+                            좌표계선택
+                            <span class="colorType red">*</span>
+                        </p>
+                        <div class="inputBox">
+                            <select title="좌표계 선택">
+                                <option value="선택" selected>선택</option>
+                            </select>
+                        </div>
+                        <p class="tip">※ EPSG 2097의 경우 EPSG 5174로 선택하시기 바랍니다.</p>
+                    </section>
+                    <section class="popSec type02">
+                        <p class="titSec">
+                            <strong class="step">STEP<span class="num">4</span></strong>
+                            영역명
+                            <span class="colorType red">*</span>
+                        </p>
+                        <div class="inputBox">
+                            <input type="text" placeholder="레이어 명을 입력해주세요"/>
+                        </div>
+                        <p class="tip">※ 대용량 파일 업로드 시 시간이 많이 소요될 수 있습니다.</p>
+                    </section>
+                    <div class="btnArea flex left" style="margin-top:40px;">
+                        <button type="button" class="btn blue" style="flex:1;"><span>생성</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

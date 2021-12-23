@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_r.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+        @@include('include/jungbo_layout.html')
+        <!--toc-->
+        @@include('include/toc2.html')
+        <!--//toc-->
+
+        <!-- floatForm -->
+        <div class="popup poiStyle" style="left:720px;top:210px;width:300px;">
+            <div class="head">
+                <button type="button" class="btnPopPrev"><span class="hidden">이전</span></button>
+                <strong class="tit">토지정보</strong>
+                <div class="moreInfo">
+                    <button type="button" class="btnMoreInfo">
+                        <span>상세정보보기</span>
+                    </button>
+                </div>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="addrDetail">
+                    <ul>
+                        <li><strong>지번</strong><p>세종특별자치시 어진동 503번지</p></li>
+                        <li><strong>지목</strong><p>대</p></li>
+                        <li><strong>면적</strong><p>766,6696.4㎡</p></li>
+                        <li><strong>공시지가</strong><p>3,500,123원</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <!--//floatForm-->
+    </div>
+</body>
+</html>

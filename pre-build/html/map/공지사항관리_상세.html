@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>공지사항관리</title>
+    @@include('include/head_map_admin.html')
+</head>
+
+<body>
+    <div id="wrap_admin">
+        @@include('include/header_map_smart.html')
+        <div class="wrapTop">
+            <h2><strong>공공보상정보지원</strong> 시스템 관리</h2>
+            <div class="frMenu">
+                <span class="toNmap">공공보상정보지원</span>
+                <button type="button" class="btnLogout"><i class="ico logout"></i><span>로그아웃</span></button>
+                <button class="noneHeight btnMenu"><img src="../../images/ico_board_menu.png" alt="메뉴열기"></button>
+            </div>
+        </div>
+
+        <div class="fullWid">
+            <div class="w_1200">
+                <ul class="flex ac sb">
+                    <li class="topInner ac">
+                        <a href="#">
+                            공지사항 관리
+                         </a>
+                    </li>
+                    <li class="topInner"><a href="#">사용자 관리</a></li>
+                    <li class="topInner"><a href="#">기관레이어 관리</a></li>
+                    <li class="topInner"><a href="#">주민정보 관리</a></li>
+                    <li class="topInner"><a href="#">공공보상표준API</a></li>
+                </ul>
+            </div>
+        </div>    
+
+        <div class="w_1200">
+            <h4 class="titPage">공지사항 상세</h4>
+            <div class="tableRow_Admin">
+                <table>
+                    <caption></caption>
+                    <colgroup>
+                        <col style="width:200px">
+                        <col style="width:400px">
+                        <col style="width:200px">
+                        <col style="width:auto">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="4">전체테스트공지</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">등록일</th>
+                            <td>2020-07-12</td>
+                            <th scope="row">전화번호</th>
+                            <td>123</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">팝업여부</th>
+                            <td colspan="3">Y</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">첨부화일</th>
+                            <td colspan="3">공지사항.pdf
+                                <img src="../../images/ico_down.png" alt="" class="ml_10">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">내용</th>
+                            <td colspan="3">
+                                공지사항입니다.
+                                국토교통부(장관 노형욱)는 한국토지주택공사(이하 LH) 혁신을 위한 조직 개편안에 대한 다양한 의견 수렴을 위해 7월 28일 오후 2시 온라인 공청회
+                                를 개최한다고 밝혔다.<br>
+
+                                관심 있는 국민들은 온라인(유튜브)를 통해 실시간 생중계되는공청회 내용을 시청하고, 댓글로 자유롭게 의견을 개진할 수 있다.<br>
+                                * 참여 방법 : <br>
+                                ➊국토교통부 누리집(https://www.molit.go.kr) 또는 국토연구원 누리집(https://www.krihs.re.kr) 접속 후 안내 배너 클릭<br>
+                                ➋유튜브에서 ‘국토연구원’ 검색 후 실시간 중계 시청
+                                이번 공청회에서 논의될 LH 조직 개편은 지난달 7일 발표한 LH혁신방안의 일환으로 추진되는 것으로, 정부는 LH가 서민 주거안정 등 본연의 책무를 
+                                충실히 이행하면서 부동산 투기 등 일련의 사태로 크게 훼손된 국민 신뢰를 다시 회복할 수 있도록 강력한 혁신방안*을 마련하였으며, LH 조직 개편
+                                에 대해서 다양한 의견이 제기된 점을 고려하여 충분한 의견 수렴과 심층 검토를 위해 혁신 방안 발표 당시에는 개편안의 기본 방향을 우선 제시**하
+                                였다.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fr mb_68">
+                <button class="greyBack w_140 mr_5">삭제</button>
+                <button class="blueBack w_140 mr_5">목록</button>
+                <button class="blueB w_140">수정</button>
+            </div>
+        </div>
+                
+    </div>
+    @@include('include/footer.html') 
+</body>
+</html>

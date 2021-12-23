@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>기관레이어관리</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cmm/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="../../css/cmm/ncmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nmap/nmap.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nmap/nmap_admin.css" type="text/css">
+
+    <script src="../../js/cmm/jquery-1.12.4.js"></script>
+    <script src="../../js/cmm/jquery-ui.js"></script>
+    <script src="../../js/map/ui_map.js"></script>
+</head>
+</head>
+
+<body>
+    <div id="wrap_admin">
+        <header id="menu">
+    <h1><a href="../../index.html"><img src="../../images/logo.png" alt="국토교통부"></a></h1>
+    <nav id="gnb" class="mmHide">
+        <ul>
+            <li><a href="#">정보조회</a></li>
+            <li><a href="#">토지찾기</a>
+                <ul class="sub">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li><a href="#">공간정보목록</a>
+                <ul class="sub">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객지원</a>
+                <ul class="sub">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+
+            <!-- 로그인시
+            <li class="orgMenu" style="margin-left:auto">
+                <a href="#">공공보상정보지원</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">공간정보목록조사</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">정책정보제공</a>
+            </li>-->
+        </ul>
+    </nav>
+    <!-- 로그인시
+    <div class="userBtn">
+        <button type="button" class="btnLogout"><span>로그아웃</span></button>
+        <button type="button" class="btnMypage"><span>마이페이지</span></button>
+    </div>-->
+    <div class="org" id="loginWrap">기관업무</div>
+    <button type="button" class="btnMenuClose"><span class="hidden">닫기</span></button>
+    <div class="loginBox" id="loginBox">
+        <div class="ab_c"></div>
+        <p class="ex_01">기관업무자만 접근이 가능한 메뉴입니다</p>
+        <p class="ex_02">로그인후 이용하시길 바랍니다</p>
+        <div class="loginInput_Box">
+            <label for="id" class="offscreen">아이디</label>
+            <input type="text" class="inputNormal w_100 mb_10" id="id" placeholder="아이디입력">
+            <label for="pw" class="offscreen">비밀번호</label>
+            <input type="text" class="inputNormal w_100" id="pw" placeholder="비밀번호 입력">
+
+            <button class="blueBack w_140 mr_10 fl mt_24">로그인</button>
+            <button class="greenBack w_140 fl mt_24">
+                <img src="../../images/ico_gpki.png" alt="">
+                GPKI인증</button>
+            <div class="findBox fl">
+                <img src="../../images/ico_find_id.png" alt="">
+                <span class="find"><a href="">아이디찾기</a></span>
+                <span class="find ml_5 mr_5"> | </span>
+                <span  class="find"><a href="">비밀번호 찾기</a></span>
+            </div>
+            <div class="findBox fr">
+                <img src="../../images/ico_re.png" alt="">
+                <span class="find"><a href="">회원가입</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="mMenuBtn">
+        <img src="../../images/btn_m_menu.png" alt="메뉴버튼">
+    </div>
+    <!-- <div class="login_m">
+        <a href="login.html"><img src="../images/ico_login_b.png" alt="기관업무" width="21"></a>
+    </div> -->
+
+    <div id="mMenuBox" class="m_menu_box mmShow">
+        <ul>
+            <li class="set">
+                <a href="#"><span>정보조회</span></a>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>토지찾기</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>공간정보목록</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>고객지원</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="setUp mmShow">설정</div>
+    </div>
+</header>
+        <div class="wrapTop">
+            <h2><strong>공공보상정보지원</strong> 시스템 관리</h2>
+            <div class="frMenu">
+                <span class="toNmap">공공보상정보지원</span>
+                <button type="button" class="btnLogout"><i class="ico logout"></i><span>로그아웃</span></button>
+                <button class="noneHeight btnMenu"><img src="../../images/ico_board_menu.png" alt="메뉴열기"></button>
+            </div>
+        </div>
+
+        <div class="fullWid">
+            <div class="w_1200">
+                <ul class="flex ac sb">
+                    <li class="topInner"><a href="#">공지사항 관리</a></li>
+                    <li class="topInner"><a href="#">사용자 관리</a></li>
+                    <li class="topInner ac">
+                        <a href="#">
+                            기관레이어 관리
+                        </a>
+                    </li>
+                    <li class="topInner"><a href="#">주민정보 관리</a></li>
+                    <li class="topInner"><a href="#">공공보상표준API</a></li>
+                    <li class="topInner"><a href="#">권한신청관리</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w_1200">
+            <div class="searchArea_map type02">
+                <div class="inner">
+                    <div class="col">
+                        <div class="row">
+                            <div class="labelInput">
+                                <label>사업구분</label>
+                                <select style="width:180px;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                            </div>
+                            <div class="labelInput">
+                                <label>신청일자</label>
+                                <div class="flex ac">
+                                    <input type="text"  class="cal" style="width:150px;"/>
+                                    <span>~</span>
+                                    <input type="text"  class="cal" style="width:150px;"/>
+                                </div>
+                            </div>
+                            <div class="labelInput">
+                                <label>승인구분</label>
+                                <div class="flex ac">
+                                    <div class="radio">
+                                        <input type="radio" name="radG" id="rad01"/>
+                                        <label for="rad01">전체</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="radG" id="rad02"/>
+                                        <label for="rad02">승인</label>
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" name="radG" id="rad03"/>
+                                        <label for="rad03">미승인</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="labelInput f1">
+                                <label>검색구분</label>
+                                <select style="width:180px;margin-right:10px;flex:none;">
+                                    <option value="선택" selected>선택</option>
+                                </select>
+                                <input type="text" style="flex:1;"/>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <button type="button" class="btn blue"><span>검색</span></button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn grey"><span>초기화</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="allN ml_10 mt_20">전체 <span class="blue">500</span>건</div>
+                <div class="fr mb_10">
+                    <button class="greyB w_136 mr_5">레이어삭제</button>
+                    <button class="blueB w_136" id="layerUp">레이어등록</button>
+                </div>
+            </div>
+            <div class="tableBox_02">
+                <table class="mb_68">
+                    <caption>기관레이어 목록</caption>
+                    <colgroup>
+                        <col style="width:5%"/>
+                        <col style="width:15%"/>
+                        <col style="width:7%"/>
+                        <col style="width:7%"/>
+                        <col style="width:28%"/>
+                        <col style="width:33%"/>
+                        <col style="width:auto"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <input type="checkbox" name="xxx" value="yyy" id="check_01">
+                                <label for="check_01">
+                                    <span></span>
+                                </label>
+                            </th>
+                            <th scope="col">구분</th>
+                            <th scope="col">요형</th>
+                            <th scope="col">형식</th>
+                            <th scope="col">레이어명</th>
+                            <th scope="col">레이어설명</th>
+                            <th scope="col">삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_02">
+                                <label for="check_02">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td><i class="ico type S"></i></td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_03">
+                                <label for="check_03">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td><i class="ico type M"></i></td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_04">
+                                <label for="check_04">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td><i class="ico type F"></i></td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_05">
+                                <label for="check_05">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td><i class="ico type T"></i></td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_06">
+                                <label for="check_06">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td><i class="ico type point"></i></td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_07">
+                                <label for="check_07">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td><i class="ico type line"></i></td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_08">
+                                <label for="check_08">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td><i class="ico type polygon"></i></td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_09">
+                                <label for="check_09">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td>면</td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_10">
+                                <label for="check_10">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td>면</td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="xxx" value="yyy" id="check_11">
+                                <label for="check_11">
+                                    <span></span>
+                                </label>
+                            </td>
+                            <td>기관레이어</td>
+                            <td>면</td>
+                            <td>타일</td>
+                            <td>
+                                <input type="text" class="editName"/>
+                                <p>개포동영상</p>
+                            </td>
+                            <td>
+                                <textarea class="cScroll editDesc"></textarea>
+                                <p>개포동영상사진정보</p>
+                            </td>
+                            <td>
+                                <div class="flex">
+                                    <button type="button" class="btnTable edit nameDesc"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="numBox">
+                    <button type="button" class="btnFirst">처음</button>
+                    <button type="button" class="btnPrev">이전</button>
+                    <a href="" class="active">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                    <button type="button" class="btnNext">다음</button>
+                    <button type="button" class="btnLast">마지막</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--popup-->
+    <div class="layerPopup w_375" id="dataPop">
+        <!--popHead-->
+        <div class="popHead">
+            <span class="hdTitle">레이어등록</span>
+            <button type="button" class="btnClose" id="btnPop_01"><span class="hidden">닫기</span></button>
+        </div>
+        <!--//popHead-->
+        <!--popCont-->
+        <div class="popCont">
+            <!--popPd-->
+            <div class="popPd">
+                <h3><span class="step">STEP</span><span class="numC">1</span>형식<span class="star">*</span></h3>
+                <div class="searchArea_02">
+                    <label for="selL_01" class="offscreen">형식</label>
+                    <select name="" id="selL_01" class="w_100">
+                        <option value="">선택</option>
+                        <option value="">선택</option>
+                        <option value="">선택</option>
+                    </select>
+                </div>
+
+                <h3 class="mt_40"><span class="step">STEP</span><span class="numC">2</span>파일선택<span
+                        class="star">*</span></h3>
+                <div class="searchArea_02">
+                    <label for="file_route" class="offscreen">파일선택 결과</label>
+                    <input type="text" readonly="readonly" title="File Route" id="file_route" class="w_204">
+                    <label for="upload" class="fileUp w_87 btnLike">파일선택</label>
+                    <input type="file" id="upload"
+                        onchange="javascript:document.getElementById('file_route').value=this.value">
+                </div>
+                <span class="add">※ 도형정보 파일의 업로드 형식을 선택하여 주십시오.</span>
+
+                <h3 class="mt_40"><span class="step">STEP</span><span class="numC">3</span>좌표계선택<span
+                        class="star">*</span></h3>
+                <div class="searchArea_02">
+                    <label for="inputL_01" class="offscreen">좌표계선택</label>
+                    <input type="text" class="inputNormal w_100" id="inputL_01">
+                </div>
+                <span class="add">※ EPSG 2097의 경우 EPSG 5174로 선택하시기 바랍니다.</span>
+
+                <h3 class="mt_40"><span class="step">STEP</span><span class="numC">4</span>레이어명<span
+                        class="star">*</span></h3>
+                <div class="searchArea_02">
+                    <label for="selL_02" class="offscreen">레이어명</label>
+                    <select name="" id="selL_02" class="w_100">
+                        <option value="">선택</option>
+                        <option value="">선택</option>
+                        <option value="">선택</option>
+                    </select>
+                </div>
+                <span class="add">※ 대용량 파일 업로드 시 시간이 많이 소요될 수 있습니다.</span>
+                <button class="blueBack w_100 mt_40">생성</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer">
+        <h5><img src="../../images/logo_footer.png" alt="국토교통부"></h5>
+        <div class="footerCenter">
+            <div class="lnb">
+                <ul>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                30103 세종특별자치시 도움6로 11 국토교통부<br>                
+                (주간)1599-0001 (야간)044-201-4672 / Fax (주간)044-860-9500 (야간)044-201-5700<br>
+                Copyright (c) Ministry of Land, Infrastructure and Transport. All Rights reserved.
+            </div>
+        </div>
+        <div class="footerSite">
+            <select  title="관련사이트" name="" class="siteCombo" onchange="window.open(value, '_blank');" id="site">
+                <option value="">관련싸이트</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+            </select>
+        </div> 
+    </div>
+</footer>
+</body>
+
+</html>

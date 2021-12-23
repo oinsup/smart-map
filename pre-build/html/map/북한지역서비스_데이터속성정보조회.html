@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <div class="popup" style="left: calc(50% - 209px); width: 418px; top: 49px;">
+            <div class="head">
+                <strong class="tit">데이터신청</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <section class="popSec">
+                        <strong class="titSec">선택유형</strong>
+                        <div class="inputBox p20">
+                            <div class="flex sb ac">
+                                <button type="button" class="btnSquare w160">
+                                    <i class="ico type area2"></i>
+                                    <span>행정구역선택</span>
+                                </button>
+                                <button type="button" class="btnSquare w160">
+                                    <i class="ico type area"></i>
+                                    <span>영역선택</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="popSec">
+                        <strong class="titSec">데이터 범위</strong>
+                        <div class="inputBox">
+                            <div class="flex ac sb">
+                                <select style="margin-right:10px;">
+                                    <option value="전국" selected>전국</option>
+                                </select>
+                                <select>
+                                    <option value="전체" selected>전체</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputBox mt20">
+                            <div class="labelInput type02">
+                                <label>제목</label>
+                                <input type="text" placeholder="제목을 입력하세요"/>
+                            </div>
+                            <div class="labelInput type02">
+                                <label>신청목적</label>
+                                <input type="text" placeholder="신청목적을 입력하세요"/>
+                            </div>
+                            <div class="labelInput type02 file">
+                                <label>첨부파일</label>
+                                <div class="fileSelect">
+                                    <input class="fileLocal" value="" disabled="disabled" placeholder="파일을 여기로 드래그합니다."/>
+                                    <label for="file02" class="btnFileSelect">파일선택</label>
+                                    <input type="file" id="file02" class="fileHidden">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="btnArea flex center" style="margin-top:25px;">
+                        <button type="button" class="btn blue"><span>신청하기</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

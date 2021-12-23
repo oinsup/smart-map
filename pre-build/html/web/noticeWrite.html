@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_01"><h2>공지사항</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">고객지원
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>                    
+                    <span class="locLine"></span>
+                    <div class="loc_depth">공지사항</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <div class="leftMenu">
+                <h3><span class="tri_menu"></span>고객지원</h3>                    
+                    <ul class="depthTwo">
+                        <li><a href="">시스템안내<span></span></a></li>
+                        <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                        <li><a href="">문의사항<span></span></a></li>
+                    </ul>    
+            </div>
+            <div class="contentInner">
+                <h4 class="titPage mb_10">공지사항 관리</h4>
+                <div class="tab_area">
+                    <ul id="tab">
+                        <li><a title="tab_01">공지사항</a></li>
+                        <li><a title="tab_02">팝업설정</a></li>
+                    </ul>
+                    <div class="panel rightCont" id="tab_01">
+                        <!--table-->
+                        <div class="table row">
+                            <table>
+                                <caption>공지사항관리</caption>
+                                <colgroup>
+                                    <col style="width: 195px;">
+                                    <col style="width: auto">
+
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">공개여부</th>
+                                    <td>
+                                        <input type="checkbox" name="" value="yyy" id="check_01">
+                                        <label for="check_01" class="fl mt_10">
+                                        <span></span>
+                                        </label>
+                                        <p class="fl">
+                                            공개
+                                            <span class="spanBoard"> *공지사항을 공개합니다</span>
+                                        </p>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상단고정</th>
+                                    <td>
+                                        <input type="checkbox" name="" value="yyy" id="check_02" checked>
+                                        <label for="check_02" class="fl mt_10">
+                                        <span></span>
+                                        </label>
+                                        <p class="fl">상단고정
+                                            <span class="spanBoard"> *게시물을 등록한 순서로 표시합니다</span>
+                                        </p>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">구분</th>
+                                    <td>
+                                        <input type="radio" name="b" value="a" id="radio_01" checked>
+                                        <label for="radio_01" class="mr_10">
+                                        <span></span>
+                                        시스템점검
+                                        </label>
+                                        <input type="radio" name="b" value="b" id="radio_02">
+                                        <label for="radio_02" class="mr_10">
+                                        <span></span>
+                                        이벤트
+                                        </label>
+                                        <input type="radio" name="b" value="c" id="radio_03">
+                                        <label for="radio_03" class="mr_10">
+                                        <span></span>             
+                                        기타
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="title_notice">제목</label></th>
+                                    <td><input type="text" class="w_100" id="title_notice"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="content">내용</label></th>
+                                    <td><textarea name="" id="content" cols="30" rows="15" class="w_100"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">첨부파일</th>
+                                    <td class="box_upload"> 
+                                        <label for="fileUp" class="offscreen">내용</label>   
+                                        <input type="text" readonly="readonly" class="inputNormal w_45 fl" id="fileUp">
+                                        <label for="file" class="btnLike">찾아보기</label>
+                                        <input type="file" id="file" onchange="javascript:document.getElementById('fileUp').value=this.value">
+        
+                                        <div class="fileBox">
+                                            <ul>
+                                                <li><p>파일예시.pdf</p><span></span></li>
+                                                <li><p>파일예시.pdf</p><span></span></li>
+                                                <li><p>파일예시.pdf</p><span></span></li>
+                                            </ul>
+                                        </div>      
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="fl mt_30">
+                                <button class="blueB w_140">목록</button>
+                            </div>
+                            <div class="fr mt_30">
+                                <button class="greyBack w_140 mr_5">취소</button>
+                                <button class="blueBack w_140">등록</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel rightCont" id="tab_02">
+                        <!--table-->
+                        <div class="table row">
+                            <table>
+                                <caption>팝업 관리</caption>
+                                <colgroup>
+                                    <col style="width: 195px;">
+                                    <col style="width: auto">
+
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">팝업여부</th>
+                                    <td>
+                                        <input type="checkbox" name="" value="yyy" id="check_03">
+                                        <label for="check_03" class="fl mt_10">
+                                        <span></span>
+                                        </label>
+                                        <span class="spanBoard"> *메인에 팝업을 생성합니다</span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">팝업게시시간</th>
+                                    <td>
+                                        <input type="text" title="팝업게시시작날짜" class="input_month w_150" id="datetimepicker_mask">
+                                        <span class="month_">-</span> 
+                                        <input type="text"  title="팝업종료날짜" class="input_month w_150 mr_10" id="datetimepicker_mask_02">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">팝업찾기</th>
+                                    <td class="box_upload">
+                                        <label for="fileUp_02" class="offscreen">파일찾기결과</label>  
+                                        <input type="text" readonly="readonly" class="inputNormal w_45 pos_rel fl" id="fileUp_02">
+                                        <label for="file_02" class="btnLike">찾아보기</label>
+                                        <input type="file" id="file_02" onchange="javascript:document.getElementById('fileUp_02').value=this.value">
+                                        
+                                        <div class="fileBox">
+                                            <ul>
+                                                <li><p>파일예시.png</p><span></span></li>
+                                                <li><p>파일예시.png</p><span></span></li>
+                                                <li><p>파일예시.png</p><span></span></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">내용</th>
+                                    <td>
+                                        <div class="imgup w_45">
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="fl mt_30">
+                            <button class="blueB w_140">목록</button>
+                        </div>
+                        <div class="fr mt_30">
+                            <button class="greyBack w_140 mr_5">취소</button>
+                            <button class="blueBack w_140">등록</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('include/footer.html')
+
+<!--달력-->
+<script src="../../js/cmm/jquery.datetimepicker.full.js"></script>
+<script>
+  $('#datetimepicker_mask').datetimepicker({
+  });
+  $('#datetimepicker_mask_02').datetimepicker({
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap" class="local">
+
+        @@include('include/local_layout.html')
+
+        <!--
+        <div id="dimmed"></div>
+        -->
+
+
+        <!--popup-->
+        <div class="popup infoSearch" style="left:calc(50% - 350px);top:70px;width:700px;">
+            <div class="head">
+                <strong class="tit">레이어 검색</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <div class="searchArea">
+                        <input type="text" placeholder="검색어를 입력하세요." style="flex:1;">
+                        <button type="button" class="btn grey3 w90"><span>검색</span></button>
+                        <button type="button" class="btn peacock reset"><span class="hidden">새로고침</span></button>
+                    </div>
+                    <div class="totalArea">
+                        <strong class="total">내 레이어 검색결과 총  <span class="colorType blue">5</span>건</strong>
+                        <!--<button type="button" class="btn peacock baloon"><i class="ico sel-area"></i><span>영역지정</span></button>-->
+                        <!--<p class="legendTxt">형식(서비스) : <span>M</span>(웹맵), <span>F</span>(웹피처), <span>T</span>(웹타일), <span>S</span>(통계)</p>-->
+                    </div>
+                    <!--table-->
+                    <div class="table scroll acc inf" style="max-height:300px;">
+                        <table>
+                            <caption>레이어 검색결과</caption>
+                            <colgroup>
+                                <col style="width:80px;"/>
+                                <col style="width:80px;"/>
+                                <col style="width:160px;"/>
+                                <col style="width:160px;"/>
+                                <col style="width:70px;"/>
+                                <col style="width:auto;"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>유형</th>
+                                <th>유형</th>
+                                <th>레이어명</th>
+                                <th>레이어설명</th>
+                                <th>서비스</th>
+                                <th>추가/삭제</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><i class="ico type line"></i></td>
+                                <td><i class="ico type line"></i></td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">교통시설_선형1</p>
+                                    </div>
+                                </td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">임시 레이어</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btnTable service"><span class="hidden">서비스</span></button>
+                                </td>
+                                <td>
+                                    <div class="flex center">
+                                        <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="ico type polygon"></i></td>
+                                <td><i class="ico type polygon"></i></td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">교통시설_선형1</p>
+                                    </div>
+                                </td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">임시 레이어</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btnTable service"><span class="hidden">서비스</span></button>
+                                </td>
+                                <td>
+                                    <div class="flex center">
+                                        <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="ico type point"></i></td>
+                                <td><i class="ico type point"></i></td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">교통시설_선형1</p>
+                                    </div>
+                                </td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">임시 레이어</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btnTable service"><span class="hidden">서비스</span></button>
+                                </td>
+                                <td>
+                                    <div class="flex center">
+                                        <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="ico type S"></i></td>
+                                <td><i class="ico type S"></i></td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">교통시설_선형1</p>
+                                    </div>
+                                </td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">임시 레이어</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btnTable service"><span class="hidden">서비스</span></button>
+                                </td>
+                                <td>
+                                    <div class="flex center">
+                                        <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="ico type F"></i></td>
+                                <td><i class="ico type F"></i></td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">교통시설_선형1</p>
+                                    </div>
+                                </td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">임시 레이어</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btnTable service"><span class="hidden">서비스</span></button>
+                                </td>
+                                <td>
+                                    <div class="flex center">
+                                        <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="ico type T"></i></td>
+                                <td><i class="ico type T"></i></td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">교통시설_선형1</p>
+                                    </div>
+                                </td>
+                                <td class="txt-left">
+                                    <div class="flexGroup">
+                                        <p class="ellipsis">임시 레이어</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button type="button" class="btnTable service"><span class="hidden">서비스</span></button>
+                                </td>
+                                <td>
+                                    <div class="flex center">
+                                        <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                        <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- infScroll -->
+                        <div class="infScroll">
+                            <p>스크롤을 내리면 목록을 더 볼 수 있습니다.</p>
+                            <div class="imgBox">
+                                <span class="img1"></span>
+                                <span class="img2"></span>
+                                <span class="img3"></span>
+                            </div>
+                        </div>
+                        <!--// infScroll -->
+                        <!--lastDataList-->
+                        <div class="lastDataList">
+                            <p>검색된 데이터 목록의 마지막입니다.</p>
+                        </div>
+                        <!--//lastDataList-->
+                    </div>
+
+                    <!--//table-->
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 187px);width:375px;">
+            <div class="head">
+                <strong class="tit">서비스 등록</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!--table-->
+                    <div class="table type05">
+                        <table>
+                            <caption>서비스 등록</caption>
+                            <colgroup>
+                                <col style="width:112px;"/>
+                                <col style="width:auto;"/>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">서비스명</th>
+                                <td class="txt-left">교통시설_면형2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">서비스유형<span class="redDot"></span></th>
+                                <td class="txt-left">
+                                    <div class="radioGroup">
+                                        <div class="radio">
+                                            <input type="radio" name="radio1" id="rad1-1"/>
+                                            <label for="rad1-1"><span>WMS</span></label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="radio1" id="rad1-2"/>
+                                            <label for="rad1-2"><span>WFS</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                    <div class="btnArea flex center" style="margin-top:30px;">
+                        <button type="button" class="btn blue lg"><span>저장</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 187px);width:375px;">
+            <div class="head">
+                <strong class="tit">서비스 목록</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!--table-->
+                    <div class="table type05">
+                        <table>
+                            <caption>서비스 목록</caption>
+                            <colgroup>
+                                <col style="width:112px;"/>
+                                <col style="width:auto;"/>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">서비스유형</th>
+                                <td class="txt-left">
+                                    <div class="radioGroup">
+                                        <div class="radio">
+                                            <input type="radio" name="radio2" id="rad2-1"/>
+                                            <label for="rad1-1"><span>WMS</span></label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="radio2" id="rad2-2"/>
+                                            <label for="rad1-2"><span>WFS</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">등록일시</th>
+                                <td class="txt-left">[디졸브] 신규_레이어</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                    <div class="btnArea flex center" style="margin-top:30px;">
+                        <button type="button" class="btn grey2 lg"><span>삭제</span></button>
+                        <button type="button" class="btn blue lg"><span>저장</span></button>
+                    </div>
+                </div>
+                <div class="inner grey">
+                    <div class="popSec">
+                        <div class="titArea">
+                            <strong class="titSec">서비스사용 시스템</strong>
+                        </div>
+                        <div class="systemList">
+                            <ul>
+                                <li><span>공간정보Dream</span></li>
+                                <li><span>K-Geo플랫폼</span></li>
+                                <li><span>개발시스템</span></li>
+                                <li><span>테스트시스템</span></li>
+                                <li><span>공간정보Dream</span></li>
+                                <li><span>K-Geo플랫폼</span></li>
+                                <li><span>개발시스템</span></li>
+                                <li><span>테스트시스템</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* reset */
+        html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        button {
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        input, button, a, select, option {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        input[type="checkbox"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        input[type="radio"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        caption {
+            text-align: left;
+            margin-bottom: 7px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* common */
+        body, html, pre {
+            font-family: "맑은 고딕", "Malgun Gothic", Dotum, sans-serif;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: -0.045em !important;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .clearFix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .hidden {
+            margin: 0;
+            padding: 0;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #wrap {
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px 0 10px;
+        }
+
+        table {
+            width: 98%;
+            margin: 20px auto 0;
+            border-top: 2px solid #787d81;
+        }
+
+        th {
+            background: #777f88;
+            color: #fff;
+        }
+
+        th, td {
+            height: 30px;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th:first-child, td:first-child {
+            border-left: 0;
+        }
+    </style>
+    <title>스마트국토정보 코딩리스트</title>
+</head>
+<body>
+<div id="wrap">
+    <h1>스마트국토정보 코딩리스트</h1>
+    <table>
+        <caption>메인/로그인/공통</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">alert</td>
+            <td title="2depth"></td>
+            <td title="파일명"><a href="map/alert.html" target="_blank">alert.html</a></td>
+            <td title="업데이트일자">2021-09-14</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">앱로딩</td>
+            <td title="2depth"></td>
+            <td title="파일명"><a href="web/앱로딩.html" target="_blank">앱로딩.html</a></td>
+            <td title="업데이트일자">2021-10-18</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">메인</td>
+            <td title="2depth"></td>
+            <td title="파일명"><a href="index.html" target="_blank">index.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">게시판 기본 표준</td>
+            <td title="2depth"></td>
+            <td title="파일명"><a href="web/normal.html" target="_blank">normal.html</a></td>
+            <td title="업데이트일자">2021-07-28</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">공지사항/팝업 관리</td>
+            <td title="파일명"><a href="web/noticeWrite.html" target="_blank">noticeWrite.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">사용자정보</td>
+            <td title="파일명"><a href="web/사용자정보.html" target="_blank">사용자정보.html</a></td>
+            <td title="업데이트일자">2021-08-06</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"><b>11.02 팝업추가(권한관리,사용자추가)_오인섭</b></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">로그인</td>
+            <td title="파일명"><a href="web/login.html" target="_blank">login.html</a></td>
+            <td title="업데이트일자">2021-08-05</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">아이디찾기</td>
+            <td title="파일명"><a href="web/아이디찾기.html" target="_blank">아이디찾기.html</a></td>
+            <td title="업데이트일자">2021-08-05</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">비밀번호찾기</td>
+            <td title="파일명"><a href="web/비밀번호찾기.html" target="_blank">비밀번호찾기.html</a></td>
+            <td title="업데이트일자">2021-08-05</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">아이디찾기_결과</td>
+            <td title="파일명"><a href="web/아이디찾기_결과.html" target="_blank">아이디찾기_결과.html</a></td>
+            <td title="업데이트일자">2021-08-05</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">비밀번호찾기_결과</td>
+            <td title="파일명"><a href="web/비밀번호찾기_결과.html" target="_blank">비밀번호찾기_결과.html</a></td>
+            <td title="업데이트일자">2021-08-05</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">비밀번호변경</td>
+            <td title="파일명"><a href="web/비밀번호변경.html" target="_blank">비밀번호변경.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">회원가입_약관조회</td>
+            <td title="파일명"><a href="web/회원가입_01.html" target="_blank">회원가입_01.html</a></td>
+            <td title="업데이트일자">2021-08-06</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">회원가입_정보입력</td>
+            <td title="파일명"><a href="web/회원가입_02.html" target="_blank">회원가입_02.html</a></td>
+            <td title="업데이트일자">2021-08-06</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">회원가입_신청완료</td>
+            <td title="파일명"><a href="web/회원가입_03.html" target="_blank">회원가입_03.html</a></td>
+            <td title="업데이트일자">2021-08-06</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">관리자</td>
+            <td title="2depth">not_found</td>
+            <td title="파일명"><a href="web/not_found.html" target="_blank">not_found.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로딩</td>
+            <td title="2depth"></td>
+            <td title="파일명"><a href="web/로딩.html" target="_blank">로딩(웹).html</a><br/><a href="map/로딩.html" target="_blank">로딩(맵).html</a><br/><a href="map/로딩2.html" target="_blank">로딩(검은배경).html</a></td>
+            <td title="업데이트일자">2021-09-01</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">마이페이지</td>
+            <td title="2depth">로그인</td>
+            <td title="파일명"><a href="web/마이페이지-로그인.html" target="_blank">마이페이지-로그인</a></td>
+            <td title="업데이트일자">2021-11-25</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"><b>11-25 추가</b></td>
+        </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>토지찾기</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">토지찾기</td>
+            <td title="2depth">내토지찾기</td>
+            <td title="파일명"><a href="web/내토지찾기.html" target="_blank">내토지찾기.html</a></td>
+            <td title="업데이트일자">2021-08-09</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">토지찾기</td>
+            <td title="2depth">내토지찾기_결과</td>
+            <td title="파일명"><a href="web/내토지찾기_결과.html" target="_blank">내토지찾기_결과.html</a></td>
+            <td title="업데이트일자">2021-08-09</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">토지찾기</td>
+            <td title="2depth">토지찾기_조상땅찾기</td>
+            <td title="파일명"><a href="web/토지찾기_조상땅찾기.html" target="_blank">토지찾기_조상땅찾기.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">토지찾기</td>
+            <td title="2depth">토지찾기_신청내역</td>
+            <td title="파일명"><a href="web/토지찾기_신청내역.html" target="_blank">토지찾기_신청내역.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">추민해</td>
+            <td title="비고">내 토지찾기 결과팝업 추가(11-10 오인섭)</td>
+        </tr>
+        <tr>
+            <td title="1depth">토지찾기</td>
+            <td title="2depth">토지찾기_이용안내</td>
+            <td title="파일명"><a href="web/토지찾기_이용안내.html" target="_blank">토지찾기_이용안내.html</a></td>
+            <td title="업데이트일자">2021-11-29</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+
+        </tbody>
+    </table>
+    <table>
+        <caption>고객지원</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- <tr>
+            <td title="1depth">고객지원</td>
+            <td title="2depth">시스템안내</td>
+            <td title="파일명"><a href="마이페이지_메인.html" target="_blank">마이페이지_메인.html</a></td>
+            <td title="업데이트일자"></td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr> -->
+        <tr>
+            <td title="1depth">고객지원</td>
+            <td title="2depth">공지사항</td>
+            <td title="파일명"><a href="web/notice.html" target="_blank">notice.html</a></td>
+            <td title="업데이트일자">2021-07-28</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        </tbody>
+    </table>
+    <table>
+        <caption>공간정보목록</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록조회</td>
+            <td title="파일명"><a href="web/공간정보목록조회.html" target="_blank">공간정보목록조회.html</a></td>
+            <td title="업데이트일자">2021-08-09</td>
+            <td title="작업자">추민해</td>
+            <td title="비고">공간정보목록양식 다운로드 추가</td>
+        </tr>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록조회-상세</td>
+            <td title="파일명"><a href="web/공간정보목록조회-상세.html" target="_blank">공간정보목록조회-상세.html</a></td>
+            <td title="업데이트일자">2021-08-02</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록조사</td>
+            <td title="파일명"><a href="web/공간정보목록조사.html" target="_blank">공간정보목록조사.html</a></td>
+            <td title="업데이트일자">2021-08-09</td>
+            <td title="작업자">추민해</td>
+            <td title="비고">상세정보 추가</td>
+        </tr>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록조사</td>
+            <td title="파일명"><a href="web/공간정보목록조사-기관검색팝업.html" target="_blank">공간정보목록조사-기관검색팝업.html</a></td>
+            <td title="업데이트일자">2021-07-28</td>
+            <td title="작업자">양선희</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록조사</td>
+            <td title="파일명"><a href="web/공간정보목록조사-소속부서.html" target="_blank">공간정보목록조사-소속부서.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">양선희</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록_등록방법</td>
+            <td title="파일명"><a href="web/공간정보목록_등록방법.html" target="_blank">공간정보목록_등록방법.html</a></td>
+            <td title="업데이트일자">2021-08-11</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록_일괄등록</td>
+            <td title="파일명"><a href="web/공간정보목록_일괄등록.html" target="_blank">공간정보목록_일괄등록.html</a></td>
+            <td title="업데이트일자">2021-08-11</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공간정보목록</td>
+            <td title="2depth">공간정보목록통계</td>
+            <td title="파일명"><a href="web/공간정보목록통계.html" target="_blank">공간정보목록통계.html</a></td>
+            <td title="업데이트일자">2021-08-11</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>정보이용신청</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">정보이용신청</td>
+            <td title="2depth">목록</td>
+            <td title="파일명"><a href="web/정보이용신청.html" target="_blank">정보이용신청.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"><b>11.02(얼럿,팝업추가)_오인섭</b></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보이용신청_입력</td>
+            <td title="2depth">목록</td>
+            <td title="파일명"><a href="web/정보이용신청_입력.html" target="_blank">정보이용신청_입력.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>공공보상정보지원(비반응형)</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:auto"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">3depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">45,49,50</td>
+            <td title="3depth">레이어목록<br/>공지사항레이어팝업<br/>전체메뉴(gnb)</td>
+            <td title="파일명"><a href="map/공공보상정보지원_기본레이아웃.html" target="_blank">공공보상정보지원_기본레이아웃.html</a></td>
+            <td title="업데이트일자">2021-07-31</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">46</td>
+            <td title="3depth">레이어검색팝업</td>
+            <td title="파일명"><a href="map/공공보상정보지원_레이어검색팝업.html" target="_blank">공공보상정보지원_레이어검색팝업.html</a></td>
+            <td title="업데이트일자">2021-08-02</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">47</td>
+            <td title="3depth">공지사항팝업</td>
+            <td title="파일명"><a href="map/공공보상정보지원_공지사항.html" target="_blank">공공보상정보지원_공지사항.html</a></td>
+            <td title="업데이트일자">2021-08-02</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">48</td>
+            <td title="3depth">공지사항조회팝업</td>
+            <td title="파일명"><a href="map/공공보상정보지원_공지사항조회.html" target="_blank">공공보상정보지원_공지사항조회.html</a></td>
+            <td title="업데이트일자">2021-08-02</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">51</td>
+            <td title="3depth">일필지조회</td>
+            <td title="파일명"><a href="map/공공보상정보지원_일필지조회.html" target="_blank">공공보상정보지원_일필지조회.html</a></td>
+            <td title="업데이트일자">2021-08-02</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">52</td>
+            <td title="3depth">보상사업관리</td>
+            <td title="파일명"><a href="map/공공보상정보지원_보상사업관리.html" target="_blank">공공보상정보지원_보상사업관리.html</a></td>
+            <td title="업데이트일자">2021-08-02</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">53</td>
+            <td title="3depth">보상사업관리상세팝업</td>
+            <td title="파일명"><a href="map/공공보상정보지원_보상사업관리상세.html" target="_blank">공공보상정보지원_보상사업관리상세.html</a></td>
+            <td title="업데이트일자">2021-08-03</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">54</td>
+            <td title="3depth">레이어</td>
+            <td title="파일명"><a href="map/공공보상정보지원_레이어.html" target="_blank">공공보상정보지원_레이어.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">55</td>
+            <td title="3depth">보상정보조회팝업</td>
+            <td title="파일명"><a href="map/공공보상정보지원_보상정보조회팝업.html" target="_blank">공공보상정보지원_보상정보조회팝업.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth">56</td>
+            <td title="3depth">사용자탭,그룹탭</td>
+            <td title="파일명"><a href="map/공공보상정보지원_사용자탭.html" target="_blank">공공보상정보지원_사용자탭.html</a></td>
+            <td title="업데이트일자">2021-08-05</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth"></td>
+            <td title="3depth">레이어 설정 분석</td>
+            <td title="파일명"><a href="map/로컬서비스_레이어기본스타일설정관리.html" target="_blank">레이어 설정 분석.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원</td>
+            <td title="2depth"></td>
+            <td title="3depth">초기화면</td>
+            <td title="파일명"><a href="map/로컬서비스_저장소관리_01.html" target="_blank">툴바참고.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth">58</td>
+            <td title="3depth">공지사항관리</td>
+            <td title="파일명"><a href="map/공지사항관리.html" target="_blank">공지사항관리.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth">59</td>
+            <td title="3depth">공지사항관리 상세</td>
+            <td title="파일명"><a href="map/공지사항관리_상세.html" target="_blank">공지사항관리_상세.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth">60</td>
+            <td title="3depth">공지사항관리 상세수정</td>
+            <td title="파일명"><a href="map/공지사항관리_상세수정.html" target="_blank">공지사항관리_상세수정.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth">61</td>
+            <td title="3depth">사용자관리</td>
+            <td title="파일명"><a href="map/사용자관리.html" target="_blank">사용자관리.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth">61</td>
+            <td title="3depth">사용자관리-상세</td>
+            <td title="파일명"><a href="map/사용자관리-상세.html" target="_blank">사용자관리-상세.html</a></td>
+            <td title="업데이트일자">2021-11-09</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth">62,62_팝업</td>
+            <td title="3depth">기관레이어관리</td>
+            <td title="파일명"><a href="map/기관레이어관리.html" target="_blank">기관레이어관리.html</a></td>
+            <td title="업데이트일자">2021-08-04</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth">62-1추가</td>
+            <td title="3depth">시스템관리</td>
+            <td title="파일명"><a href="map/기관레이어관리.html" target="_blank">추가.html</a></td>
+            <td title="업데이트일자">2021-10-21</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고">검색영역 추가</td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상정보지원 관리자</td>
+            <td title="2depth"></td>
+            <td title="3depth">권한신청관리</td>
+            <td title="파일명"><a href="map/권한신청관리.html" target="_blank">권한신청관리.html</a></td>
+            <td title="업데이트일자">2021-11-11</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption>정보조회(반응형)</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:auto"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">3depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">페이지없음</td>
+            <td title="2depth">not_found</td>
+            <td title="3depth">not_found</td>
+            <td title="파일명"><a href="map/not_found.html" target="_blank">not_found.html</a></td>
+            <td title="업데이트일자">2021-09-27</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"><b>지도 공통</b></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">9, 11</td>
+            <td title="3depth">맵기본</td>
+            <td title="파일명"><a href="map/정보조회_기본레이아웃.html" target="_blank">정보조회_기본레이아웃.html</a></td>
+            <td title="업데이트일자">2021-07-31</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth"></td>
+            <td title="3depth">초기화면</td>
+            <td title="파일명"><a href="map/로컬서비스_저장소관리_01.html" target="_blank">툴바참고.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">11</td>
+            <td title="3depth">레이어검색</td>
+            <td title="파일명"><a href="map/정보조회_레이어검색.html" target="_blank">정보조회_레이어검색.html</a></td>
+            <td title="업데이트일자">2021-07-31</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">13</td>
+            <td title="3depth">토지선택시표출정보</td>
+            <td title="파일명"><a href="map/정보조회_토지선택시표출되는정보.html" target="_blank">정보조회_토지선택시표출정보.html</a></td>
+            <td title="업데이트일자">2021-08-23</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">14</td>
+            <td title="3depth">건축물선택시표출정보</td>
+            <td title="파일명"><a href="map/정보조회_건축물선택시표출정보.html" target="_blank">정보조회_건축물선택시표출정보.html</a></td>
+            <td title="업데이트일자">2021-08-23</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회 주소지검색</td>
+            <td title="2depth">10</td>
+            <td title="3depth">검색결과</td>
+            <td title="파일명"><a href="map/정보조회_주소지검색_검색결과.html" target="_blank">정보조회_주소지검색_검색결과.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회 주소지검색</td>
+            <td title="2depth">10</td>
+            <td title="3depth">토지정보</td>
+            <td title="파일명"><a href="map/정보조회_주소지검색_토지정보.html" target="_blank">정보조회_주소지검색_토지정보.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">15</td>
+            <td title="3depth">국토이용분석정보표출</td>
+            <td title="파일명"><a href="map/정보조회_국토이용분석정보표출.html" target="_blank">정보조회_국토이용분석정보표출.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">지역선택</td>
+            <td title="3depth"></td>
+            <td title="파일명"><a href="map/정보조회_실거래가정보표출.html" target="_blank">정보조회_실거래가정보표출.html</a></td>
+            <td title="업데이트일자">2021-08-25</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">추가</td>
+            <td title="3depth">즐겨찾기등록</td>
+            <td title="파일명"><a href="map/정보조회_즐겨찾기등록.html" target="_blank">정보조회_즐겨찾기등록.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">추가</td>
+            <td title="3depth">즐겨찾기관리</td>
+            <td title="파일명"><a href="map/정보조회_즐겨찾기관리.html" target="_blank">정보조회_즐겨찾기관리.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth">추가</td>
+            <td title="3depth">중계업자 상세정보</td>
+            <td title="파일명"><a href="map/정보조회_중계업자_상세정보.html" target="_blank">정보조회_중계업자_상세정보.html</a></td>
+            <td title="업데이트일자">2021-08-24</td>
+            <td title="작업자">서규영</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth"></td>
+            <td title="3depth">범례변경팝업</td>
+            <td title="파일명"><a href="map/정보조회_범례변경.html" target="_blank">정보조회_범례변경.html</a></td>
+            <td title="업데이트일자">2021-08-26</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth"></td>
+            <td title="3depth">내 토지찾기 결과</td>
+            <td title="파일명"><a href="map/정보조회_내_토지찾기_결과.html" target="_blank">정보조회_내_토지찾기_결과.html</a></td>
+            <td title="업데이트일자">2021-08-26</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth"></td>
+            <td title="3depth">건축물정보</td>
+            <td title="파일명"><a href="map/정보조회_건축물정보.html" target="_blank">정보조회_건축물정보.html</a></td>
+            <td title="업데이트일자">2021-10-08</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">정보조회</td>
+            <td title="2depth"></td>
+            <td title="3depth">도움말</td>
+            <td title="파일명"><a href="map/정보조회_도움말.html" target="_blank">정보조회_도움말.html</a></td>
+            <td title="업데이트일자">2021-10-20</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- <table>
+        <caption>공공보상지원</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">공공보상지원</td>
+            <td title="2depth">정보조회</td>
+            <td title="파일명"><a href="공간정보목록조회.html" target="_blank">고객지원_공지사항_목록.html</a></td>
+            <td title="업데이트일자">2021-07-28</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">공공보상지원</td>
+            <td title="2depth">관리자메뉴</td>
+            <td title="파일명"><a href="공간정보목록조회.html" target="_blank">고객지원_공지사항_목록.html</a></td>
+            <td title="업데이트일자">2021-07-28</td>
+            <td title="작업자">추민해</td>
+            <td title="비고"></td>
+        </tr>
+        </tbody>
+    </table> -->
+
+
+
+</div>
+<script>
+</script>
+</body>
+</html

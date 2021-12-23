@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* reset */
+        html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, a, button, abbr, address, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, footer, header, section, summary {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font: inherit;
+        }
+
+        article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        body, html {
+            width: 100%;
+            height: 100%;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        img {
+            border: none;
+            vertical-align: top;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        button {
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        input, button, a, select, option {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        input[type="checkbox"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        input[type="radio"] {
+            border: none !important;
+        }
+
+        /* for lte IE10 */
+        caption {
+            text-align: left;
+            margin-bottom: 7px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* common */
+        body, html, pre {
+            font-family: "맑은 고딕", "Malgun Gothic", Dotum, sans-serif;
+            font-size: 14px;
+            color: #333;
+            letter-spacing: -0.045em !important;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .clearFix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .hidden {
+            margin: 0;
+            padding: 0;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #wrap {
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px 0 10px;
+        }
+
+        table {
+            width: 98%;
+            margin: 20px auto 0;
+            border-top: 2px solid #787d81;
+        }
+
+        th {
+            background: #777f88;
+            color: #fff;
+        }
+
+        th, td {
+            height: 30px;
+            border-bottom: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            text-align: center;
+        }
+
+        th:first-child, td:first-child {
+            border-left: 0;
+        }
+    </style>
+    <title>스마트국토정보 코딩리스트</title>
+</head>
+<body>
+<div id="wrap">
+    <h1>북한지역 + 로컬서비스 코딩리스트</h1>
+    <table>
+        <caption>북한지역 서비스</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">alert</td>
+            <td title="2depth"></td>
+            <td title="파일명"><a href="map/alert.html" target="_blank">alert.html</a></td>
+            <td title="업데이트일자">2021-09-14</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">초기화면</td>
+            <td title="파일명"><a href="map/북한지역서비스_기본레이아웃.html" target="_blank">북한지역서비스_기본레이아웃.html</a></td>
+            <td title="업데이트일자">2021-09-01</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">초기화면</td>
+            <td title="파일명"><a href="map/로컬서비스_저장소관리_01.html" target="_blank">툴바참고.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">하단 목록</td>
+            <td title="파일명"><a href="map/공공보상정보지원_레이어.html" target="_blank">하단 목록.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공지사항 목록</td>
+            <td title="파일명"><a href="map/공공보상정보지원_공지사항.html" target="_blank">공지사항목록.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공지사항 상세</td>
+            <td title="파일명"><a href="map/공공보상정보지원_공지사항조회.html" target="_blank">공지사항상세.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">즐겨찾기 목록</td>
+            <td title="파일명"><a href="map/정보조회_즐겨찾기관리.html" target="_blank">정보조회_즐겨찾기목록.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">즐겨찾기 등록</td>
+            <td title="파일명"><a href="map/정보조회_즐겨찾기등록.html" target="_blank">즐겨찾기등록.html</a></td>
+            <td title="업데이트일자">참고용</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">토지정보조회</td>
+            <td title="파일명"><a href="map/북한지역서비스_토지정보조회.html" target="_blank">북한지역서비스_토지정보조회.html</a></td>
+            <td title="업데이트일자">2021-09-23</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">데이터속성정보조회</td>
+            <td title="파일명"><a href="map/북한지역서비스_데이터속성정보조회.html" target="_blank">북한지역서비스_데이터속성정보조회.html</a></td>
+            <td title="업데이트일자">2021-09-23</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공간분석통계</td>
+            <td title="파일명"><a href="map/북한지역서비스_공간분석통계.html" target="_blank">북한지역서비스_공간분석통계.html</a></td>
+            <td title="업데이트일자">2021-09-23</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">행정구역비교검색</td>
+            <td title="파일명"><a href="map/북한지역서비스_행정구역비교검색.html" target="_blank">북한지역서비스_행정구역비교검색.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">다중공간분석</td>
+            <td title="파일명"><a href="map/북한지역서비스_다중공간분석.html" target="_blank">북한지역서비스_다중공간분석.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">필지정보조회</td>
+            <td title="파일명"><a href="map/북한지역서비스_필지정보조회.html" target="_blank">북한지역서비스_필지정보조회.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">변경이력조회</td>
+            <td title="파일명"><a href="map/북한지역서비스_변경이력조회.html" target="_blank">북한지역서비스_변경이력조회.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">도근점정보</td>
+            <td title="파일명"><a href="map/북한지역서비스_도근점정보.html" target="_blank">북한지역서비스_도근점정보.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">지명검색</td>
+            <td title="파일명"><a href="map/북한지역서비스_지명검색.html" target="_blank">북한지역서비스_지명검색.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <!--
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">즐겨찾기조회</td>
+            <td title="파일명"><a href="map/북한지역서비스_즐겨찾기조회.html" target="_blank">북한지역서비스_즐겨찾기조회.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        -->
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">통계조회</td>
+            <td title="파일명"><a href="map/북한지역서비스_통계조회.html" target="_blank">북한지역서비스_통계조회.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공간정보신청</td>
+            <td title="파일명"><a href="map/북한지역서비스_공간정보신청.html" target="_blank">북한지역서비스_공간정보신청.html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공간정보신청이력목록(관리자)</td>
+            <td title="파일명"><a href="map/북한지역서비스_공간정보신청이력목록(관리자).html" target="_blank">북한지역서비스_공간정보신청이력목록(관리자).html</a></td>
+            <td title="업데이트일자">2021-09-28</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공간정보신청이력상세정보(관리자)</td>
+            <td title="파일명"><a href="map/북한지역서비스_공간정보신청이력상세정보(관리자).html" target="_blank">북한지역서비스_공간정보신청이력상세정보(관리자).html</a></td>
+            <td title="업데이트일자">2021-09-29</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공간정보신청상세정보(관리자)</td>
+            <td title="파일명"><a href="map/북한지역서비스_공간정보신청상세정보(관리자).html" target="_blank">북한지역서비스_공간정보신청상세정보(관리자).html</a></td>
+            <td title="업데이트일자">2021-09-29</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공간정보신청(사용자)</td>
+            <td title="파일명"><a href="map/북한지역서비스_공간정보신청(사용자).html" target="_blank">북한지역서비스_공간정보신청(사용자).html</a></td>
+            <td title="업데이트일자">2021-09-29</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">접근불능지역</td>
+            <td title="파일명"><a href="map/북한지역서비스_접근불능지역.html" target="_blank">북한지역서비스_접근불능지역.html</a></td>
+            <td title="업데이트일자">2021-09-29</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">시스템소개</td>
+            <td title="파일명"><a href="map/북한지역서비스_시스템소개.html" target="_blank">북한지역서비스_시스템소개.html</a></td>
+            <td title="업데이트일자">2021-10-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">공지사항상세정보</td>
+            <td title="파일명"><a href="map/북한지역서비스_공지사항상세정보.html" target="_blank">북한지역서비스_공지사항상세정보.html</a></td>
+            <td title="업데이트일자">2021-10-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">Q&A</td>
+            <td title="파일명"><a href="map/북한지역서비스_QnA.html" target="_blank">북한지역서비스_QnA.html</a></td>
+            <td title="업데이트일자">2021-10-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">Q&A 상세정보</td>
+            <td title="파일명"><a href="map/북한지역서비스_QnA상세정보.html" target="_blank">북한지역서비스_QnA상세정보.html</a></td>
+            <td title="업데이트일자">2021-10-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">북한지역서비스</td>
+            <td title="2depth">FAQ</td>
+            <td title="파일명"><a href="map/북한지역서비스_FAQ.html" target="_blank">북한지역서비스_FAQ.html</a></td>
+            <td title="업데이트일자">2021-10-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+
+        </tbody>
+    </table>
+    <table>
+        <caption>로컬 서비스</caption>
+        <colgroup>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:15%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="*"/>
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">1depth</th>
+            <th scope="col">2depth</th>
+            <th scope="col">파일명</th>
+            <th scope="col">업데이트일자</th>
+            <th scope="col">작업자</th>
+            <th scope="col">비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">로그인</td>
+            <td title="파일명"><a href="map/로컬서비스_로그인.html" target="_blank">로컬서비스_로그인.html</a></td>
+            <td title="업데이트일자">2021-09-01</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">저장소관리_01</td>
+            <td title="파일명"><a href="map/로컬서비스_저장소관리_01.html" target="_blank">로컬서비스_저장소관리_01.html</a></td>
+            <td title="업데이트일자">2021-09-04</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">저장소관리_02</td>
+            <td title="파일명"><a href="map/로컬서비스_저장소관리_02.html" target="_blank">로컬서비스_저장소관리_02.html</a></td>
+            <td title="업데이트일자">2021-09-05</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">저장소관리_03</td>
+            <td title="파일명"><a href="map/로컬서비스_저장소관리_03.html" target="_blank">로컬서비스_저장소관리_03.html</a></td>
+            <td title="업데이트일자">2021-09-05</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">레이어그룹관리</td>
+            <td title="파일명"><a href="map/로컬서비스_레이어그룹관리.html" target="_blank">로컬서비스_레이어그룹관리.html</a></td>
+            <td title="업데이트일자">2021-09-05</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">레이어등록_01</td>
+            <td title="파일명"><a href="map/로컬서비스_레이어등록_01.html" target="_blank">로컬서비스_레이어등록_01.html</a></td>
+            <td title="업데이트일자">2021-09-05</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">레이어등록_02</td>
+            <td title="파일명"><a href="map/로컬서비스_레이어등록_02.html" target="_blank">로컬서비스_레이어등록_02.html</a></td>
+            <td title="업데이트일자">2021-09-05</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">레이어관리</td>
+            <td title="파일명"><a href="map/로컬서비스_레이어관리.html" target="_blank">로컬서비스_레이어관리.html</a></td>
+            <td title="업데이트일자">2021-09-06</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">지오코딩레이어생성_01</td>
+            <td title="파일명"><a href="map/로컬서비스_지오코딩레이어생성_01.html" target="_blank">로컬서비스_지오코딩레이어생성_01.html</a></td>
+            <td title="업데이트일자">2021-09-06</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">지오코딩레이어생성_02</td>
+            <td title="파일명"><a href="map/로컬서비스_지오코딩레이어생성_02.html" target="_blank">로컬서비스_지오코딩레이어생성_02.html</a></td>
+            <td title="업데이트일자">2021-09-06</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">레이어기본스타일설정관리</td>
+            <td title="파일명"><a href="map/로컬서비스_레이어기본스타일설정관리.html" target="_blank">로컬서비스_레이어기본스타일설정관리.html</a></td>
+            <td title="업데이트일자">2021-09-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">API서비스관리_01</td>
+            <td title="파일명"><a href="map/로컬서비스_API서비스관리_01.html" target="_blank">로컬서비스_API서비스관리_01.html</a></td>
+            <td title="업데이트일자">2021-09-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">API서비스관리_02</td>
+            <td title="파일명"><a href="map/로컬서비스_API서비스관리_02.html" target="_blank">로컬서비스_API서비스관리_02.html</a></td>
+            <td title="업데이트일자">2021-09-07</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">사용자관리</td>
+            <td title="파일명"><a href="map/로컬서비스_사용자관리.html" target="_blank">로컬서비스_사용자관리.html</a></td>
+            <td title="업데이트일자">2021-09-16</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+        <tr>
+            <td title="1depth">로컬서비스</td>
+            <td title="2depth">시스템관리</td>
+            <td title="파일명"><a href="map/로컬서비스_시스템관리.html" target="_blank">로컬서비스_시스템관리.html</a></td>
+            <td title="업데이트일자">2021-09-16</td>
+            <td title="작업자">오인섭</td>
+            <td title="비고"></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+<script>
+</script>
+</body>
+</html

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);width:968px;">
+            <div class="head">
+                <strong class="tit">레이어 검색</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!--layerSearch-->
+                    <div class="layerSearch">
+                        <div class="lnb">
+                            <div class="list type01">
+                                <strong class="tit">구분</strong>
+                                <dl>
+                                    <dt><div>전체</div></dt>
+                                    <dd class="dep1">
+                                        <div><i class="ico folder"></i><span>국가공간정보</span></div>
+                                        <ul class="dep2">
+                                            <li><span>2뎁스 메뉴</span></li>
+                                            <li><span>2뎁스 메뉴</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dd class="dep1">
+                                        <div><i class="ico folder"></i><span>사용자데이터</span></div>
+                                        <ul class="dep2">
+                                            <li><span>2뎁스 메뉴</span></li>
+                                            <li><span>2뎁스 메뉴</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dd class="dep1">
+                                        <div><i class="ico folder"></i><span>공유데이터</span></div>
+                                        <ul class="dep2">
+                                            <li><span>2뎁스 메뉴</span></li>
+                                            <li><span>2뎁스 메뉴</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dd class="dep1">
+                                        <div><i class="ico folder"></i><span>통계데이터</span></div>
+                                        <ul class="dep2">
+                                            <li><span>2뎁스 메뉴</span></li>
+                                            <li><span>2뎁스 메뉴</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dd class="dep1">
+                                        <div class="noData"><i class="ico folder"></i><span>DASS</span></div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="list type02">
+                                <strong class="tit">필터</strong>
+                                <dl>
+                                    <dt><div><span>전체</span></div></dt>
+                                    <dd class="dep1"><div><i class="ico point"></i><span>점(POINT)</span></div></dd>
+                                    <dd class="dep1"><div><i class="ico line"></i><span>선(LINE)</span></div></dd>
+                                    <dd class="dep1"><div><i class="ico polygon"></i><span>면(POLYGON)</span></div></dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <!--popSearch-->
+                            <div class="popSearch">
+                                <div class="inner">
+                                    <div class="flex ac">
+                                        <div class="radio">
+                                            <input type="radio" id="rad01" name="radchk"/>
+                                            <label for="rad01">명칭검색</label>
+                                        </div>
+                                        <input type="text" style="flex:1;" />
+                                        <button type="button" class="btn grey"><span>검색</span></button>
+                                    </div>
+                                    <div class="flex ac">
+                                        <div class="radio">
+                                            <input type="radio" id="rad02" name="radchk"/>
+                                            <label for="rad02">명칭검색</label>
+                                        </div>
+                                        <select title="행정구역 선택" style="width:125px;">
+                                            <option value="행정구역" selected>행정구역</option>
+                                        </select>
+                                        <select title="시 선택" style="width:126px;">
+                                            <option value="선택" selected>선택</option>
+                                        </select>
+                                        <select title="군 선택" style="width:126px;">
+                                            <option value="선택" selected>선택</option>
+                                        </select>
+                                        <select title="구 선택" style="width:126px;">
+                                            <option value="선택" selected>선택</option>
+                                        </select>
+                                        <button type="button" class="btn blue"><span>초기화</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//popSearch-->
+                            <div class="totalArea">
+                                <strong class="total">전체 <span class="colorType blue">500</span>건</strong>
+                                <!--<button type="button" class="btn peacock baloon"><i class="ico sel-area"></i><span>영역지정</span></button>-->
+                                <p class="legendTxt">형식(서비스) : <span>M</span>(웹맵), <span>F</span>(웹피처), <span>T</span>(웹타일), <span>S</span>(통계)</p>
+                            </div>
+
+                            <!--table-->
+                            <div class="table type02 scroll cScroll" style="max-height:525px;">
+                                <table>
+                                    <caption>레이어 검색</caption>
+                                    <colgroup>
+                                        <col style="width:78px;"/>
+                                        <col style="width:180px;"/>
+                                        <col style="width:auto;"/>
+                                        <col style="width:100px;"/>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">종류</th>
+                                        <th scope="col">레이어명</th>
+                                        <th scope="col">레이어설명</th>
+                                        <th scope="col">추가/삭제</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><i class="ico type polygon"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type point"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type polygon"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type line"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type F"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type T"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type S"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type M"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="ico type polygon"></i></td>
+                                        <td class="txt-left">
+                                            <p>(금강) 건축 등 허가제한지역(UMU400)</p>
+                                        </td>
+                                        <td class="txt-left">
+                                            <p>토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정, 관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)</p>
+                                        </td>
+                                        <td>
+                                            <div class="flex center">
+                                                <button type="button" class="btnTable add" style="margin-right:7px;"><span class="hidden">추가</span></button>
+                                                <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                    </div>
+                    <!--//layerSearch-->
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

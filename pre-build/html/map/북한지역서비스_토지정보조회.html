@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <div class="sheetView">
+            <button type="button" class="btnLayerToggle"><span class="hidden">열기/닫기</span></button>
+            <div class="head">
+                <strong class="tit">토지정보조회 검색결과<span>(총: 1건)</span></strong>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <div class="tableArea" style="height:210px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" style="left: 753px; width: 476px; top: 49px;">
+            <div class="head">
+                <strong class="tit">보상정보조회</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList static">
+                            <li class="active">지번검색</li>
+                            <li>속성별검색</li>
+                            <li>기타검색</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont white active">
+                        <div class="inner">
+                            <div class="labelInputArea">
+                                <!--labelInput-->
+                                <div class="labelInput">
+                                    <label for="sel01">시/도</label>
+                                    <select id="sel01">
+                                        <option value="시도를 선택하세요" selected>시도를 선택하세요</option>
+                                    </select>
+                                </div>
+                                <!--//labelInput-->
+                                <!--labelInput-->
+                                <div class="labelInput">
+                                    <label for="sel02">시/군/구</label>
+                                    <select id="sel02">
+                                        <option value="시군구를 선택하세요" selected>시군구를 선택하세요</option>
+                                    </select>
+                                </div>
+                                <!--//labelInput-->
+                                <!--labelInput-->
+                                <div class="labelInput">
+                                    <label for="sel03">읍/면/동</label>
+                                    <select id="sel03">
+                                        <option value="읍/면/동/리" selected>읍/면/동/리</option>
+                                    </select>
+                                </div>
+                                <!--//labelInput-->
+                                <!--labelInput-->
+                                <div class="labelInput">
+                                    <label for="sel04">리</label>
+                                    <select id="sel04">
+                                        <option value="읍/면/동/리" selected>읍/면/동/리</option>
+                                    </select>
+                                </div>
+                                <!--//labelInput-->
+                                <!--labelInput-->
+                                <div class="labelInput">
+                                    <label for="sel05">지번</label>
+                                    <div class="flex ac sb">
+                                        <div class="checkbox right">
+                                            <input type="checkbox" id="sel05"/>
+                                            <label for="sel05">산</label>
+                                        </div>
+                                        <input type="text"/>
+                                        <span>-</span>
+                                        <input type="text"/>
+                                    </div>
+                                </div>
+                                <!--//labelInput-->
+                            </div>
+                            <div class="btnArea flex center" style="margin-top:25px;">
+                                <button type="button" class="btn blue lg"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white"></div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

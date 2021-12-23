@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);width:1052px;">
+            <div class="head">
+                <strong class="tit">보상정보조회</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopResize"><span class="hidden">창 늘리기/줄이기</span></button>
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList static">
+                            <li class="active">토지정보</li>
+                            <li>건물정보</li>
+                            <li>지장물정보</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont white active">
+                        <div class="inner">
+                            <!--popSec-->
+                            <section class="popSec">
+                                <div class="popSearch sm">
+                                    <div class="inner">
+                                        <div class="inner flex ac white">
+                                            <div class="labelBox" style="margin-right:30px;">
+                                                <label>이력일자</label>
+                                                <input type="text" class="cal" style="width:130px;"/>
+                                            </div>
+                                            <div class="labelBox">
+                                                <label>지번</label>
+                                                <div class="checkbox right">
+                                                    <input type="checkbox" id="chk01"/>
+                                                    <label for="chk01">산</label>
+                                                </div>
+                                                <input type="text" style="width:60px;"/>
+                                                <span>-</span>
+                                                <input type="text" style="width:60px;"/>
+                                            </div>
+                                            <button type="button" class="btn grey3" style="width:70px;"><span>검색</span></button>
+
+                                            <div class="btnGroup flex sb" style="margin-left: auto;">
+                                                <button type="button" class="btn md blackLine"><span>주민정보일괄신청</span></button>
+                                                <button type="button" class="btn md blackLine"><span>이력생성</span></button>
+                                                <button type="button" class="btn md blackLine"><span>마감관리</span></button>
+                                                <button type="button" class="btn md peacockLine"><span>엑셀저장</span></button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </section>
+                            <!--//popSec-->
+                            <!--popSec-->
+                            <section class="popSec">
+                                <div class="totalArea">
+                                    <strong class="total">전체 <span class="colorType blue">500</span>건</strong>
+                                    <div class="btnGroup">
+                                        <button type="button" class="btn md blackLine"><span>공시지가연혁</span></button>
+                                        <button type="button" class="btn md blackLine"><span>토지이용계획확인원</span></button>
+                                    </div>
+                                </div>
+                                <!--table-->
+                                <div class="table type04 ovX cScroll cScrollXY" style="max-height:240px;">
+                                    <table>
+                                        <caption>토지정보</caption>
+                                        <colgroup>
+                                            <col style="width:48px;"/>
+                                            <col style="width:48px;"/>
+                                            <col style="width:auto;"/>
+                                            <col style="width:48px;"/>
+                                            <col style="width:48px;"/>
+                                            <col style="width:80px;"/>
+                                            <col style="width:107px;"/>
+                                            <col style="width:100px;"/>
+                                            <col style="width:100px;"/>
+                                            <col style="width:70px;"/>
+                                            <col style="width:80px;"/>
+                                            <col style="width:140px;"/>
+                                            <col style="width:185px;"/>
+                                            <col style="width:185px;"/>
+                                            <col style="width:160px;"/>
+                                            <col style="width:160px;"/>
+                                            <col style="width:114px;"/>
+                                            <col style="width:130px;"/>
+                                            <col style="width:100px;"/>
+                                            <col style="width:100px;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">선택</th>
+                                            <th scope="col" rowspan="2">순번</th>
+                                            <th scope="col" rowspan="2">소재지</th>
+                                            <th scope="col" rowspan="2">지번</th>
+                                            <th scope="col" rowspan="2">지목</th>
+                                            <th scope="col" rowspan="2">공부면적<br/>(㎡)</th>
+                                            <th scope="col" rowspan="2">용도지역</th>
+                                            <th scope="col" colspan="2">소유권</th>
+                                            <th scope="col" colspan="5">소유자</th>
+                                            <th scope="col" rowspan="2">토지소유지분</th>
+                                            <th scope="col" rowspan="2">개별공시지가(원)</th>
+                                            <th scope="col" rowspan="2">공유인수</th>
+                                            <th scope="col" rowspan="2">거주상태</th>
+                                            <th scope="col" rowspan="2">주민정보<br/>신청현황</th>
+                                            <th scope="col" rowspan="2" style="border-right:0;">주민정보<br/>신청일</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">변동일</th>
+                                            <th scope="col">변동인원</th>
+                                            <th scope="col">소유구분</th>
+                                            <th scope="col">성명</th>
+                                            <th scope="col">주민번호</th>
+                                            <th scope="col">주소</th>
+                                            <th scope="col">주민등록상주소지</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="radio">
+                                                    <input type="radio" name="radGroup" id="rad01"/>
+                                                    <label for="rad01"></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="flex ac center">
+                                                    <div class="editBox">
+                                                        <p>서울특별시 강남구 대치동</p>
+                                                        <input type="text" />
+                                                    </div>
+                                                    <div class="tool">
+                                                        <button type="button" class="btnDescEdit addr"><span class="hidden">수정</span></button>
+                                                        <button type="button" class="btnChk"><span class="hidden">확인</span></button>
+                                                        <button type="button" class="btnLoc"><span class="hidden">위치</span></button>
+                                                        <button type="button" class="btnList"><span class="hidden">목록</span></button>
+                                                        <button type="button" class="btnMoney"><span class="hidden">공시지가연혁</span></button>
+                                                        <button type="button" class="btnPlan"><span class="hidden">토지이용계획확인원</span></button>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>대</td>
+                                            <td>36,959.8</td>
+                                            <td>제3종일반주거지역</td>
+                                            <td>2002-11-01</td>
+                                            <td>대지권설정</td>
+                                            <td>개인</td>
+                                            <td>이몽룡</td>
+                                            <td>1111XX</td>
+                                            <td>경기도 안산시 XXX</td>
+                                            <td></td>
+                                            <td>1/1</td>
+                                            <td>20,790,000</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>미신청</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="radio">
+                                                    <input type="radio" name="radGroup" id="rad02"/>
+                                                    <label for="rad02"></label>
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="flex ac center">
+                                                    <div class="editBox">
+                                                        <p>서울특별시 강남구 대치동</p>
+                                                        <input type="text" />
+                                                    </div>
+                                                    <div class="tool">
+                                                        <button type="button" class="btnDescEdit addr"><span class="hidden">수정</span></button>
+                                                        <button type="button" class="btnChk"><span class="hidden">확인</span></button>
+                                                        <button type="button" class="btnLoc"><span class="hidden">위치</span></button>
+                                                        <button type="button" class="btnList"><span class="hidden">목록</span></button>
+                                                        <button type="button" class="btnMoney"><span class="hidden">공시지가연혁</span></button>
+                                                        <button type="button" class="btnPlan"><span class="hidden">토지이용계획확인원</span></button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>대</td>
+                                            <td>36,959.8</td>
+                                            <td>제3종일반주거지역</td>
+                                            <td>2002-11-01</td>
+                                            <td>대지권설정</td>
+                                            <td>개인</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>1/1</td>
+                                            <td>20,790,000</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>미신청</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="radio">
+                                                    <input type="radio" name="radGroup" id="rad03"/>
+                                                    <label for="rad03"></label>
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td>
+                                                <div class="flex ac center">
+                                                    <div class="editBox">
+                                                        <p>서울특별시 강남구 대치동</p>
+                                                        <input type="text" />
+                                                    </div>
+                                                    <div class="tool">
+                                                        <button type="button" class="btnDescEdit addr"><span class="hidden">수정</span></button>
+                                                        <button type="button" class="btnChk"><span class="hidden">확인</span></button>
+                                                        <button type="button" class="btnLoc"><span class="hidden">위치</span></button>
+                                                        <button type="button" class="btnList"><span class="hidden">목록</span></button>
+                                                        <button type="button" class="btnMoney"><span class="hidden">공시지가연혁</span></button>
+                                                        <button type="button" class="btnPlan"><span class="hidden">토지이용계획확인원</span></button>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>500</td>
+                                            <td>대</td>
+                                            <td>36,959.8</td>
+                                            <td>제3종일반주거지역</td>
+                                            <td>2002-11-01</td>
+                                            <td>대지권설정</td>
+                                            <td>개인</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>1/1</td>
+                                            <td>20,790,000</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td>미신청</td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                                <div class="pagination">
+                                    <a href="#" class="first" title="처음으로"><span class="hidden">처음으로</span></a>
+                                    <a href="#" class="prev" title="이전페이지"><span class="hidden">이전페이지</span></a>
+                                    <a href="#" class="pagiNum active" title="1">1</a>
+                                    <a href="#" class="pagiNum" title="2">2</a>
+                                    <a href="#" class="pagiNum" title="3">3</a>
+                                    <a href="#" class="pagiNum" title="4">4</a>
+                                    <a href="#" class="pagiNum" title="5">5</a>
+                                    <a href="#" class="pagiNum" title="6">6</a>
+                                    <a href="#" class="pagiNum" title="7">7</a>
+                                    <a href="#" class="pagiNum" title="8">8</a>
+                                    <a href="#" class="pagiNum" title="9">9</a>
+                                    <a href="#" class="next" title="다음페이지"><span class="hidden">다음페이지</span></a>
+                                    <a href="#" class="last" title="끝으로"><span class="hidden">끝으로</span></a>
+                                </div>
+                            </section>
+                            <!--//popSec-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont"></div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

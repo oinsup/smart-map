@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);width:500px;">
+            <div class="head">
+                <strong class="tit">권한관리</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList static">
+                            <li class="active">사용자</li>
+                            <li>그룹</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont white active">
+                        <div class="inner">
+                            <!--popSec-->
+                            <section class="popSec">
+                                <div class="btnArea flex right" style="margin-bottom:10px;">
+                                    <button type="button" class="btn baloon h34 grey2"><i class="ico user remove"></i><span>사용자삭제</span></button>
+                                    <button type="button" class="btn baloon h34 peacock"><i class="ico user add"></i><span>사용자추가</span></button>
+                                </div>
+                                <!--table-->
+                                <div class="table type02 scroll cScroll" style="max-height:280px;">
+                                    <table>
+                                        <caption>권한관리</caption>
+                                        <colgroup>
+                                            <col style="width:48px;"/>
+                                            <col style="width:48px;"/>
+                                            <col style="width:auto;"/>
+                                            <col style="width:92px;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">선택</th>
+                                            <th scope="col">순번</th>
+                                            <th scope="col">기관</th>
+                                            <th scope="col">사용자명</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox type02">
+                                                    <input type="checkbox" id="chk1-1"/>
+                                                    <label for="chk1-1"></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>국토교통부</td>
+                                            <td>홍대한</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox type02">
+                                                    <input type="checkbox" id="chk1-2"/>
+                                                    <label for="chk1-2"></label>
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td>한국농어촌공사</td>
+                                            <td>이국토</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox type02">
+                                                    <input type="checkbox" id="chk1-3"/>
+                                                    <label for="chk1-3"></label>
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td>세종특별시</td>
+                                            <td>김정보</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                            </section>
+                            <!--//popSec-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white">
+                        <div class="inner">
+                            <!--popSec-->
+                            <section class="popSec">
+                                <div class="btnArea flex right" style="margin-bottom:10px;">
+                                    <button type="button" class="btn baloon h34 grey2"><i class="ico group remove"></i><span>그룹삭제</span></button>
+                                    <button type="button" class="btn baloon h34 peacock"><i class="ico group add"></i><span>그룹추가</span></button>
+                                    <button type="button" class="btn baloon h34 peacock"><i class="ico group management"></i><span>그룹관리</span></button>
+                                </div>
+                                <!--table-->
+                                <div class="table type02 scroll cScroll" style="max-height:280px;">
+                                    <table>
+                                        <caption>권한관리</caption>
+                                        <colgroup>
+                                            <col style="width:48px;"/>
+                                            <col style="width:48px;"/>
+                                            <col style="width:auto;"/>
+                                            <col style="width:92px;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">선택</th>
+                                            <th scope="col">순번</th>
+                                            <th scope="col">기관</th>
+                                            <th scope="col">사용자명</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox type02">
+                                                    <input type="checkbox" id="chk2-1"/>
+                                                    <label for="chk2-1"></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>국토교통부</td>
+                                            <td>홍대한</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox type02">
+                                                    <input type="checkbox" id="chk2-2"/>
+                                                    <label for="chk2-2"></label>
+                                                </div>
+                                            </td>
+                                            <td>2</td>
+                                            <td>한국농어촌공사</td>
+                                            <td>이국토</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="checkbox type02">
+                                                    <input type="checkbox" id="chk2-3"/>
+                                                    <label for="chk2-3"></label>
+                                                </div>
+                                            </td>
+                                            <td>3</td>
+                                            <td>세종특별시</td>
+                                            <td>김정보</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                            </section>
+                            <!--//popSec-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+        <!--//popup-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50%);width:640px;">
+            <div class="head">
+                <strong class="tit">사용자추가</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!-- popSearch -->
+                    <div class="popSearch sm">
+                        <div class="inner">
+                            <div class="flex ac">
+                                <div class="labelBox flex ac">
+                                    <label>사용자명</label>
+                                    <input type="text" style="width:163px;margin-right:23px;">
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="chk01"/>
+                                        <label for="chk01">타기관조회</label>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn grey"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// popSearch -->
+                    <!--table-->
+                    <div class="table type02 hover scroll cScroll" style="max-height:320px;">
+                        <table>
+                            <caption>토지정보</caption>
+                            <colgroup>
+                                <col style="width:77px;"/>
+                                <col style="width:126px;"/>
+                                <col style="width:auto;"/>
+                                <col style="width:126px;"/>
+                                <col style="width:124px;"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">선택</th>
+                                <th scope="col">사용자명</th>
+                                <th scope="col">기관</th>
+                                <th scope="col">전화번호</th>
+                                <th scope="col">아이디</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="checkbox type02">
+                                        <input type="checkbox" id="chk3-1"/>
+                                        <label for="chk3-1"></label>
+                                    </div>
+                                </td>
+                                <td>홍길동</td>
+                                <td>국토교통부</td>
+                                <td>031-1111-1111</td>
+                                <td>khi***</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox type02">
+                                        <input type="checkbox" id="chk3-2"/>
+                                        <label for="chk3-2"></label>
+                                    </div>
+                                </td>
+                                <td>홍길동</td>
+                                <td>국토교통부</td>
+                                <td>031-1111-1111</td>
+                                <td>khi***</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox type02">
+                                        <input type="checkbox" id="chk3-3"/>
+                                        <label for="chk3-3"></label>
+                                    </div>
+                                </td>
+                                <td>홍길동</td>
+                                <td>국토교통부</td>
+                                <td>031-1111-1111</td>
+                                <td>khi***</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox type02">
+                                        <input type="checkbox" id="chk3-4"/>
+                                        <label for="chk3-4"></label>
+                                    </div>
+                                </td>
+                                <td>홍길동</td>
+                                <td>국토교통부</td>
+                                <td>031-1111-1111</td>
+                                <td>khi***</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox type02">
+                                        <input type="checkbox" id="chk3-5"/>
+                                        <label for="chk3-5"></label>
+                                    </div>
+                                </td>
+                                <td>홍길동</td>
+                                <td>국토교통부</td>
+                                <td>031-1111-1111</td>
+                                <td>khi***</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox type02">
+                                        <input type="checkbox" id="chk3-6"/>
+                                        <label for="chk3-6"></label>
+                                    </div>
+                                </td>
+                                <td>홍길동</td>
+                                <td>국토교통부</td>
+                                <td>031-1111-1111</td>
+                                <td>khi***</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="checkbox type02">
+                                        <input type="checkbox" id="chk3-7"/>
+                                        <label for="chk3-7"></label>
+                                    </div>
+                                </td>
+                                <td>홍길동</td>
+                                <td>국토교통부</td>
+                                <td>031-1111-1111</td>
+                                <td>khi***</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                    <div class="btnArea flex right" style="margin-top:15px;">
+                        <button type="button" class="btn blue"><span>사용자추가</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);top:500px;width:820px;">
+            <div class="head">
+                <strong class="tit">사용자추가</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!-- popSearch -->
+                    <div class="popSearch sm">
+                        <div class="inner">
+                            <div class="flex ac">
+                                <div class="labelBox flex ac">
+                                    <label>그룹명</label>
+                                    <input type="text" style="width:289px;">
+                                </div>
+                                <button type="button" class="btn grey"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// popSearch -->
+                    <div class="flex at sb">
+                        <div class="popSec" style="flex:1;margin-right:20px">
+                            <div class="titArea">
+                                <strong class="titSec">그룹</strong>
+                                <div class="btnArea flex right">
+                                    <button type="button" class="btn baloon h34 w114 grey2"><i class="ico group remove"></i><span>그룹삭제</span></button>
+                                    <button type="button" class="btn baloon h34 w114 peacock"><i class="ico group add"></i><span>그룹추가</span></button>
+                                </div>
+                            </div>
+                            <!--table-->
+                            <div class="table type02 hover acc scroll cScroll" style="max-height:320px;">
+                                <table>
+                                    <caption>그룹</caption>
+                                    <colgroup>
+                                        <col style="width:77px;"/>
+                                        <col style="width:auto;"/>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">선택</th>
+                                        <th scope="col">그룹명</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="innerTb">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:77px;">
+                                                        <col style="width:auto;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox type02">
+                                                                <input type="checkbox" id="chk4-1"/>
+                                                                <label for="chk4-1"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="txt-left">
+                                                            <div class="flex ac sb">
+                                                                <p class="ellipsis">국토교통부</p>
+                                                                <div class="btnGroup">
+                                                                    <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                                    <button type="button" class="btnTable edit"><span class="hidden">수정</span></button>
+                                                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="desc">
+                                                            토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="innerTb">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:77px;">
+                                                        <col style="width:auto;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox type02">
+                                                                <input type="checkbox" id="chk4-2"/>
+                                                                <label for="chk4-2"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="txt-left">
+                                                            <div class="flex ac sb">
+                                                                <p class="ellipsis">국토교통부</p>
+                                                                <div class="btnGroup">
+                                                                    <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                                    <button type="button" class="btnTable edit"><span class="hidden">수정</span></button>
+                                                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="desc">
+                                                            토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="innerTb">
+                                                <table>
+                                                    <colgroup>
+                                                        <col style="width:77px;">
+                                                        <col style="width:auto;">
+                                                    </colgroup>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="checkbox type02">
+                                                                <input type="checkbox" id="chk4-3"/>
+                                                                <label for="chk4-3"></label>
+                                                            </div>
+                                                        </td>
+                                                        <td class="txt-left">
+                                                            <div class="flex ac sb">
+                                                                <p class="ellipsis">국토교통부</p>
+                                                                <div class="btnGroup">
+                                                                    <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                                    <button type="button" class="btnTable edit"><span class="hidden">수정</span></button>
+                                                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="2" class="desc">
+                                                            토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                        <div class="popSec" style="flex:1;margin-right:20px">
+                            <div class="titArea">
+                                <strong class="titSec">그룹구성원</strong>
+                                <div class="btnArea flex right">
+                                    <button type="button" class="btn baloon h34 w114 grey2"><i class="ico user remove"></i><span>구성원삭제</span></button>
+                                    <button type="button" class="btn baloon h34 w114 peacock"><i class="ico user add"></i><span>구성원추가</span></button>
+                                </div>
+                            </div>
+                            <!--table-->
+                            <div class="table type02 hover scroll cScroll" style="max-height:320px;">
+                                <table>
+                                    <caption>그룹구성원</caption>
+                                    <colgroup>
+                                        <col style="width:77px;"/>
+                                        <col style="width:auto;"/>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">사용자명</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="txt-left">
+                                            <div class="flex ac sb">
+                                                <p class="ellipsis">이교통</p>
+                                                <div class="btnGroup">
+                                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="txt-left">
+                                            <div class="flex ac sb">
+                                                <p class="ellipsis">이교통</p>
+                                                <div class="btnGroup">
+                                                    <button type="button" class="btnTable remove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                        </div>
+                    </div>
+                    <div class="btnArea flex center" style="margin-top:40px;">
+                        <button type="button" class="btn blue lg"><span>그룹추가</span></button>
+                        <button type="button" class="btn blue lg"><span>구성원추가</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

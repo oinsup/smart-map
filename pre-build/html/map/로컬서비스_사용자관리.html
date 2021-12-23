@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head_map_admin.html')
+
+<body>
+    <div id="wrap_admin">
+        @@include('include/header_map_smart.html')
+        <div class="wrapTop">
+            <h2><strong>로컬서비스</strong> 시스템 관리</h2>
+            <div class="frMenu">
+                <span class="toNmap">로컬서비스</span>
+                <button type="button" class="btnLogout"><i class="ico logout"></i><span>로그아웃</span></button>
+                <button class="noneHeight btnMenu"><img src="../../images/ico_board_menu.png" alt="메뉴열기"></button>
+            </div>
+        </div>
+
+        <div class="fullWid">
+            <div class="w_1200">
+                <ul class="flex ac sb">
+                    <li class="topInner ac"><a href="#">로컬서비스 사용자</a></li>
+                    <li class="topInner"><a href="#">사용자 접속현황</a></li>
+                    <li class="topInner"><a href="#">서비스 사용현황</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w_1200">
+            <div class="titArea flex">
+                <select style="margin:0 10px 0 auto;width:130px;">
+                    <option value="등록일순" selected>등록일순</option>
+                </select>
+                <button type="button" class="btn navy w_130"><span>조회</span></button>
+            </div>
+            <div class="graphArea">
+                <div class="inner"></div>
+            </div>
+
+            <div class="tableBox_02 noHover">
+                <table>
+                    <caption>접속현황</caption>
+                    <colgroup>
+                        <col style="width:auto"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                        <col style="width:88px"/>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">1월</th>
+                        <th scope="col">2월</th>
+                        <th scope="col">3월</th>
+                        <th scope="col">4월</th>
+                        <th scope="col">5월</th>
+                        <th scope="col">6월</th>
+                        <th scope="col">7월</th>
+                        <th scope="col">8월</th>
+                        <th scope="col">9월</th>
+                        <th scope="col">10월</th>
+                        <th scope="col">11월</th>
+                        <th scope="col">12월</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>소계</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>  
+    @@include('include/footer.html') 
+</body>
+
+</html>

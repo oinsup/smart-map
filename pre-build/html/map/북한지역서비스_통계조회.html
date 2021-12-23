@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left: 753px; width: 654px; top: 49px;">
+            <div class="head">
+                <strong class="tit">지목별 규모현황</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <section class="popSec pos-r">
+                        <button type="button" class="btnSearchCondition">
+                            <span>검색조건닫기</span>
+                            <span>검색조건열기</span>
+                        </button>
+                        <div class="inputBox p20">
+                            <div class="flex sb ac">
+                                <div class="labelInput f1">
+                                    <label>통계구분</label>
+                                    <select>
+                                        <option value="DB구축현황">DB구축현황</option>
+                                    </select>
+                                </div>
+                                <div class="labelInput f1">
+                                    <label>행정구역</label>
+                                    <div class="flex">
+                                        <select>
+                                            <option value="전국">전국</option>
+                                        </select>
+                                        <select>
+                                            <option value="전체">전체</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex sb ac mt10">
+                                <div class="labelInput f1">
+                                    <label>대상연도</label>
+                                    <select>
+                                        <option value="DB구축현황">DB구축현황</option>
+                                    </select>
+                                </div>
+                                <div class="labelInput f1">
+                                    <label>지목</label>
+                                    <select>
+                                        <option value="DB구축현황">DB구축현황</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="btnArea flex center" style="margin-top:20px;">
+                                <button type="button" class="btn grey3 lg"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="popSec mt40">
+                        <div class="titArea">
+                            <strong class="titSec">통계표</strong>
+                            <button type="button" class="btn greyLine h34 pd10"><i class="ico excel lt"></i> 엑셀 다운로드</button>
+                        </div>
+                        <div class="graphArea type02"></div>
+                    </section>
+                    <section class="popSec">
+                        <strong class="titSec">통계그래프</strong>
+                        <div class="graphArea type02"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+        <!--popup-->
+        <div class="popup" style="left: 1253px; width: 476px; top: 49px;">
+            <div class="head">
+                <strong class="tit">행정구역 비교검색</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList static">
+                            <li class="active">지목별</li>
+                            <li>소유구분별</li>
+                            <li>면적별</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont white active">
+                        <div class="inner">
+                            <section class="popSec">
+                                <strong class="titSec">토지현황</strong>
+                                <div class="inputBox">
+                                    <div class="flex sb ac">
+                                        <div class="match">
+                                            <strong class="titSec type02">비교행정구역 1</strong>
+                                            <span class="addrBox">강원도 양구군 수입면 두포리</span>
+                                        </div>
+                                        <div class="match">
+                                            <strong class="titSec type03">비교행정구역 2</strong>
+                                            <span class="addrBox">경기도 개성군 서면 광정리</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--compare-->
+                                <div class="compare">
+                                    <div class="flex ac center">
+                                        <div class="compareObj type02">
+                                            <img src="../../images/map/popup/ico-compare-land-type02.png" alt="필지"/>
+                                            <p><span>0</span>필지</p>
+                                        </div>
+                                        <div class="compareArrow left">
+                                            <span>지번수</span>
+                                        </div>
+                                        <div class="compareObj type03">
+                                            <img src="../../images/map/popup/ico-compare-land-type03.png" alt="필지"/>
+                                            <p><span>499</span>필지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//compare-->
+                                <!--compare-->
+                                <div class="compare">
+                                    <div class="flex ac center">
+                                        <div class="compareObj type02">
+                                            <img src="../../images/map/popup/ico-compare-space-type02.png" alt="면적"/>
+                                            <p><span>0</span>㎡</p>
+                                        </div>
+                                        <div class="compareArrow right">
+                                            <span>면적</span>
+                                        </div>
+                                        <div class="compareObj type03">
+                                            <img src="../../images/map/popup/ico-compare-space-type03.png" alt="면적"/>
+                                            <p><span>1,208,518.2</span>㎡</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//compare-->
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec">지목별 현황</strong>
+                                <div class="graphArea">
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white"></div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

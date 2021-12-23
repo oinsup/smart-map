@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left: 553px; width: 701px; top: 49px;">
+            <div class="head">
+                <strong class="tit">Q&A 상세정보</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <strong class="titCont">Q&A 제목</strong>
+                    <!--table-->
+                    <div class="table h40 type03">
+                        <table>
+                            <caption>첨부파일</caption>
+                            <colgroup>
+                                <col style="width:150px;"/>
+                                <col style="width:auto;"/>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">첨부파일</th>
+                                <td class="txt-left">
+                                    <div class="flex ac" style="flex-wrap: wrap;">
+                                        <p class="flex ac">
+                                            공지사항.pdf(1.45MB)<a href="#" class="ico fileDown" title="공지사항.pdf(1.45MB)"><span class="hidden">다운로드</span></a>
+                                        </p>
+                                        <p class="flex ac">
+                                            공지사항.pdf(1.45MB)<a href="#" class="ico fileDown" title="공지사항.pdf(1.45MB)"><span class="hidden">다운로드</span></a>
+                                        </p>
+                                        <p class="flex ac">
+                                            공지사항.pdf(1.45MB)<a href="#" class="ico fileDown" title="공지사항.pdf(1.45MB)"><span class="hidden">다운로드</span></a>
+                                        </p>
+                                        <p class="flex ac">
+                                            공지사항.pdf(1.45MB)<a href="#" class="ico fileDown" title="공지사항.pdf(1.45MB)"><span class="hidden">다운로드</span></a>
+                                        </p>
+                                        <p class="flex ac">
+                                            공지사항.pdf(1.45MB)<a href="#" class="ico fileDown" title="공지사항.pdf(1.45MB)"><span class="hidden">다운로드</span></a>
+                                        </p>
+                                        <button type="button" class="btn blue downAll" style="margin-left:auto;"><span>전체다운로드</span></button>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                    <div class="txtBox type02 cScroll" style="min-height:70px;max-height:320px">
+                        <p>공지사항입니다.</p>
+                    </div>
+                    <div class="inputBox p20">
+                        <div class="flex">
+                            <input type="text" placeholder="댓글을 입력하세요." style="flex:1;margin-right:10px;"/>
+                            <button type="button" class="btn grey3 h34 w70"><span>댓글작성</span></button>
+                        </div>
+                    </div>
+                    <div class="totalArea mt20">
+                        <strong class="total">답변 <span class="colorType blue">500</span>건 <span class="bar"></span> 댓글 <span class="colorType blue">0</span>건</strong>
+                    </div>
+                    <div class="inputBox p30">
+                        <p class="replyRow"><span class="reply">답변</span>테스트<span class="date">2021-07-21</span></p>
+                        <textarea class="cScroll" style="height:80px;width:100%;"></textarea>
+                        <div class="btnArea flex right" style="margin-top:10px;">
+                            <button type="button" class="btn grey2 w90 h38"><span>취소</span></button>
+                            <button type="button" class="btn blue w90 h38"><span>저장</span></button>
+                        </div>
+                    </div>
+                    <div class="btnArea" style="margin-top:10px;">
+                        <button type="button" class="btn grey2 sm h38"><span>목록</span></button>
+                    </div>
+                    <!--pagination-->
+                    <div class="pagination">
+                        <a href="#" class="first" title="처음으로"><span class="hidden">처음으로</span></a>
+                        <a href="#" class="prev" title="이전페이지"><span class="hidden">이전페이지</span></a>
+                        <a href="#" class="pagiNum" title="1">1</a>
+                        <a href="#" class="pagiNum" title="2">2</a>
+                        <a href="#" class="pagiNum" title="3">3</a>
+                        <a href="#" class="pagiNum" title="4">4</a>
+                        <a href="#" class="pagiNum" title="5">5</a>
+                        <a href="#" class="pagiNum" title="6">6</a>
+                        <a href="#" class="pagiNum" title="7">7</a>
+                        <a href="#" class="pagiNum" title="8">8</a>
+                        <a href="#" class="pagiNum" title="9">9</a>
+                        <a href="#" class="next" title="다음페이지"><span class="hidden">다음페이지</span></a>
+                        <a href="#" class="last" title="끝으로"><span class="hidden">끝으로</span></a>
+                    </div>
+                    <!--//pagination-->
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

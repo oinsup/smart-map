@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_r.html')
+<body>
+    <div id="skipNavi">
+        <strong>컨텐츠 바로가기</strong>
+        <ul>
+            <li><a href="#content">본문으로 바로가기</a></li>
+            <li><a href="#menu">주메뉴 바로가기</a></li>
+        </ul>
+    </div>
+    <div class="wrap_100">
+        @@include('include/header.html')
+        <div id="wrapMain">
+            <div class="board_top_01">
+                <h2>공지사항</h2>
+            </div>
+            <div class="location">
+                <div class="loc_inner">
+                    <div class="fr">
+                        <span class="locLine"></span>
+                        <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png"
+                                    alt="home으로 바로가기"></a></div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">고객지원
+                            <img src="../../images/ico_loc_arrow.png" alt="">
+                        </div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">공지사항</div>
+                        <span class="locLine"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <div class="leftMenu">
+                    <h3><span class="tri_menu"></span>고객지원</h3>
+                    <ul class="depthTwo">
+                        <li><a href="">시스템안내<span></span></a></li>
+                        <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                        <li><a href="">문의사항<span></span></a></li>
+                    </ul>
+                </div>
+                <div class="contentInner">
+                    <div class="searchBox">
+                        <div class="searchBox_TwoRow">
+                            <div class="search_left">
+                                <div class="boardRow">
+                                    <div class="boardRowInner">
+                                        <div class="labelLike">등록일</div>
+                                        <input type="text" title="변경일 시작" class="input_month w_150" id="datetimepicker_mask">
+                                        <span class="month_">~</span>
+                                        <input type="text" title="변경일 종료" class="input_month w_150 mr_10" id="datetimepicker_mask_02">
+                                    </div>
+                                    <div class="boardRowInner">
+                                        <label for="sel_04" class="boardLabel t_centerM">검색어</label>
+                                        <select name="" id="sel_04" class="selBoard w_130 mr_7">
+                                            <option value="">선택</option>
+                                            <option value="">검색조건</option>
+                                            <option value="">검색조건</option>
+                                        </select>
+                                        <div class="searchBoardBox">
+                                            <label for="search" class="offscreen"></label>
+                                            <input type="text" class="searchBoard_input mml_7" id="search">
+                                            <button class="btnSearch">검색버튼</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search_right">
+                                <button class="btnBoard h40_m90">검색</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tableBox">
+                        <div class="allN">전체 <span class="blue">500</span>건</div>
+                        <table>
+                            <caption>공지사항 목록</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">등록일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="numT">
+                                        <img src="../../images/ico_pin.png" alt="주요사항" class="mmHide_in">
+                                        <img src="../../images/ico_pin_no.png" alt="주요사항" class="mmShow_in">
+                                    </td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">사이트점검사이트점검사이트점검사이트점검사이트점검사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+                                    <td class="numT">12</td>
+                                    <td><button class="btnB greenB" type="button">분야2</button></td>
+                                    <td class="bTitle">
+                                        <a href="">마이페이지 버그수정</a>
+                                        <img src="../../images/ico_new.png" alt="" class="vText">
+                                    </td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+                                    <td class="numT">11</td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">
+                                            사이트점검</a>
+                                        <img src="../../images/ico_lock.png" alt="" class="vText">
+                                    </td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+                                    <td class="numT">10</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">9</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">8</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">7</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">6</td>
+                                    <td><button class="btnB greenB" type="button">분야2</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">5</td>
+                                    <td><button class="btnB greenB" type="button">분야2</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">4</td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">3</td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <div class="btnBox">
+                        <button type="button" class="btnS greyBack">삭제</button>
+                        <button type="submit" class="btnS blueBack">등록</button>
+                        <button type="button" class="btnS blueB">수정</button>
+                    </div> -->
+                        <div class="numBox">
+                            <button type="button" class="btnFirst">처음</button>
+                            <button type="button" class="btnPrev">이전</button>
+                            <a href="" class="active">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="">5</a>
+                            <a href="">6</a>
+                            <a href="">7</a>
+                            <a href="">8</a>
+                            <a href="">9</a>
+                            <a href="">10</a>
+                            <button type="button" class="btnNext">다음</button>
+                            <button type="button" class="btnLast">마지막</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    @@include('include/footer.html')
+    <!--달력-->
+    <script src="../../js/cmm/jquery.datetimepicker.full.js"></script>
+    <script>
+        $('#datetimepicker_mask').datetimepicker({
+        });
+        $('#datetimepicker_mask_02').datetimepicker({
+        });
+    </script>
+</body>
+
+</html>

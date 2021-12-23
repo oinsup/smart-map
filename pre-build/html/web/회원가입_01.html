@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>마이페이지</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원안내
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원가입</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="w_1200">
+    <div class="content" id="content">
+        <div class="leftMenu">
+            <h3><span class="tri_menu"></span>고객지원</h3>
+            <ul class="depthTwo">
+                <li><a href="">시스템안내<span></span></a></li>
+                <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                <li><a href="">문의사항<span></span></a></li>
+            </ul>
+        </div>
+        <div class="contentInner">
+            <div class="stepRe">
+                <ul>
+                    <li class="stepRe_Inner stepRe_on"><span>1</span>약관조회<span class="abUnderline"></span></li>
+                    <li class="stepRe_Inner"><span>2</span>정보입력</li>
+                    <li class="stepRe_Inner"><span>3</span>신청완료</li>
+                </ul>
+                <div class="abLine_01"></div>
+            </div>
+            <div class="txt-center">
+                <div class="whiteBox t_left">
+                    <h3 class="titPage">이용약관에 대한 동의</h3>
+
+                    <div class="scrollY_Box cScroll" style="max-height:200px;">
+                        <h4>1. 개인정보의 처리 목적</h4>
+                        공간정보Dream은 개인정보를 다음의 목적을 위해 처리합니다. 처리한 개인정보는 다음의 목적이외의 용도로는 사용되지 않으며 이용 목적이 변경될 시에는 사전 동의를 구할 예정입니다.<br>
+                        가. 홈페이지 회원가입 및 관리<br>
+                        회원 가입의사확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 제한적 인확인제 시행에 따른 본인확인,
+                        서비스 부정이용 방지, 각종 고지 · 통지, 고충처리, 분쟁 조정을 위한 기 록 보존 등을 목적으로 개인정보를 처리합니다.<br>
+                        나. 사무 처리<br>
+                        신원 확인, 사실조사를 위한 연락 · 통지, 처리결과 통보 등을 목적으로 개인정보를 처리합니다.<br><br>
+
+                        <h4>2. 처리하는 개인정보의 항목 작성</h4>
+                        1 공간정보 Dream 시스템은 다음의 개인정보 항목을 처리하고 있습니다.<br>
+                        - 필수항목 : 사용자ID, 사용자명, 소속기관, 휴대폰번호, 이메일<br><br>
+
+                        <h4>3. 개인정보의 처리 및 보유 기간</h4>
+                        1 개인정보 보유·이용기간 또는 정보주체로부터 개인정보를 수집시에 동의 받은 개인정보 보유, 이용기간 내에서 개인정보를 처리, 보유합니다. <br><br>
+
+                        <h4>4. 동의 거부 권리 및 동의 거부에 따른 불이익</h4>
+                    </div>
+                    <div class="fr mt_10 mb_40">
+                        <input type="checkbox" name="xxx" value="yyy" id="check_01">
+                        <label for="check_01" class="fl">
+                            <span class="mt_2"></span>
+                        </label>
+                        <p class="login_ex fl"><span class="blue">(필수)</span> 이용약관에 동의합니다.</p>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="confirmation">
+                        GPKI 인증서<br>
+                        본인인증
+                    </div>
+                    <p class="caution t_center"><img src="../../images/ico_i_login.png" alt="">
+                        <span class="blue">GPKI 인증서 본인인증 후</span> 회원가입이 가능합니다.
+                    </p>
+                </div>
+
+
+
+
+                <button type="button" class="roundLink greyBack_03 mr_10">
+                    메인으로
+                    <img src="../../images/triangle.png" alt="" class="ml_5">
+                </button>
+                <button type="button" class="roundLink">
+                    다음단계
+                    <img src="../../images/triangle.png" alt="" class="ml_5">
+                </button>
+            </div>
+        </div>
+    </div>`
+</div>
+@@include('include/footer.html')     
+</body>
+</html>

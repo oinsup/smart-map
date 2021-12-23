@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>마이페이지</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원안내
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">비밀번호변경</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+<div class="w_1200">
+    <div class="content" id="content">
+        <div class="leftMenu">
+            <h3><span class="tri_menu"></span>고객지원</h3>
+            <ul class="depthTwo">
+                <li><a href="">시스템안내<span></span></a></li>
+                <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                <li><a href="">문의사항<span></span></a></li>
+            </ul>
+        </div>
+        <div class="contentInner">
+            <div class="login">
+                <div class="bgSide mt0">
+                    <h3>안전한 개인정보 보호를 위해 <span class="blue">비밀번호를 변경해 주세요.</span></h3>
+                    <p class="login_ex mt_20">회원님은 <span class="blue">최근 3개월(90일)</span> 동안 비밀번호를 변경하지 않으셨습니다.<br>
+                        <span class="blue">정기적인 비밀번호 변경</span>으로 회원님의 개인정보를 보호해 주세요.</p>
+
+                    <div class="whiteBox">
+                        <img src="../../images/ico_find_pass_change.png" alt="">
+                        <p class="caution t_left">
+                            <img src="../../images/ico_i_login.png" alt="">
+                            비밀번호는 9~12자리로 입력해주세요. ( 영문, 숫자, 특수문자 포함 )
+                        </p>
+                        <label for="pw_01" class="offscreen"></label>
+                        <input type="password" class="inputNormal w_100 mb_10 mt_10" id="pw_01" placeholder="현재비밀번호">
+                        <label for="pw_02" class="offscreen"></label>
+                        <input type="password" class="inputNormal w_100" id="pw_02" placeholder="신규비밀번호">
+                        <span class="blue fl">사용가능한 비밀번호입니다.</span>
+                        <label for="pw_03" class="offscreen"></label>
+                        <input type="password" class="inputNormal w_100 mt_10" id="pw_03" placeholder="신규비밀번호">
+                        <span class="red fl">비밀번호가 일치하지 않습니다.</span>
+                    </div>
+
+                    <button type="button" class="roundLink mr_10" id="change">
+                        변경하기
+                        <img src="../../images/triangle.png" alt="" class="ml_5">
+                    </button>
+                    <button type="button" class="roundLink greyBack_02">
+                        90일 뒤에 변경하기
+                        <img src="../../images/triangle.png" alt="" class="ml_5">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>`
+</div>
+
+<!--alert-->
+<div class="alert" style="left:calc(50% - 195px);top:200px;">
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle"> </span>
+        <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont">
+        <!--popPd-->
+        <div class="popPd wide">
+            <div class="popInner">
+                <div class="imgBox complete"></div>
+                <p>비밀번호 재설정이 완료되었습니다.</p>
+                <div class="btnArea">
+                    <button type="button" class="blue">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--alert-->
+<div class="alert" style="left:calc(50% - 195px);top:200px;">
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle"> </span>
+        <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont">
+        <!--popPd-->
+        <div class="popPd wide">
+            <div class="popInner">
+                <div class="imgBox warning"></div>
+                <p>다운로드에 실패했습니다.</p>
+                <div class="btnArea">
+                    <button type="button" class="blue">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--alert-->
+<div class="alert" style="left:calc(50% - 195px);top:200px;">
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle"> </span>
+        <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont">
+        <!--popPd-->
+        <div class="popPd wide">
+            <div class="popInner">
+                <div class="imgBox question"></div>
+                <p>게시글을 삭제하시겠습니까?</p>
+                <span class="blue">해당 글은 복구할 수 없으며, 완전히 삭제됩니다.</span>
+
+                <div class="btnArea">
+                    <button type="button" class="gray">취소</button>
+                    <button type="button" class="blue">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('include/footer.html')     
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>일괄등록</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">공간정보목록조사
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>                    
+                    <span class="locLine"></span>
+                    <div class="loc_depth">등록방법</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <!--leftMenu-->
+            <div class="leftMenu">
+                <h3><span class="tri_menu"></span>공간정보목록조사</h3>
+                <ul class="depthTwo">
+                    <li class="menuL_on"><a href="">등록방법<span class="span_on"></span></a></li>
+                    <li><a href="">공간정보목록조회<span></span></a></li>
+                    <li><a href="">공간정보목록조사<span></span></a></li>
+                    <li><a href="">공간정보목록통계<span></span></a></li>
+                </ul>
+            </div>
+            <!--//leftMenu-->
+            <!--rightCont-->
+            <div class="rightCont">
+                <h4 class="titPage">일괄등록</h4>
+                <h5 class="bulletTxt">엑셀등록</h5>
+                <a href="javascript:openWindowPop('help.html', 'popup');">
+                    <div class="help fr"> 
+                        <img src="../../images/ico_i.png" alt="">
+                        입력사항 도움말
+                    </div>
+                </a>
+                <div class="table row">
+                    <table>
+                        <caption>엑셀등록</caption>
+                        <colgroup>
+                            <col style="width:200px">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">저장구분<span class="redDot"></span></th>
+                                <td>
+                                    <div class="mb_6">
+                                        <input type="radio" name="b" value="a" id="radio_01" checked="">
+                                        <label for="radio_01" class="mr_10">
+                                        <span></span>
+                                        기존데이터 삭제 후 억셀파일로 덮어쓰기
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="b" value="b" id="radio_02">
+                                        <label for="radio_02" class="mr_10">
+                                        <span></span>
+                                        기존데이터 유지하고 엑셀파일로 추가하기
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">성명<span class="redDot"></span></th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">등록부서명<span class="redDot"></span></th>
+                                <td>국토교통부 주택토지실 국토정보정책관 국가공간정보센터</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">엑셀파일<span class="redDot"></span></th>
+                                <td class="box_upload"> 
+                                    <label for="fileUp" class="offscreen">파일선택 결과</label>   
+                                    <input type="text" readonly="readonly" class="inputNormal w_45 fl" id="fileUp">
+                                    <label for="file" class="btnLike">찾아보기</label>
+                                    <input type="file" id="file" onchange="javascript:document.getElementById('fileUp').value=this.value">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p class="c444_16">
+                        ※ <span class="blue">조사서(엑셀)파일 등록 전 검증을 먼저 진행</span>하셔야 합니다.  
+                    </p>
+                </div>
+                <div class="fr mb_30">
+                    <button type="button" class="greyBack w_140 mr_5">취소</button>
+                    <button type="button" class="blueBack w_140" id="layerClick">검증</button>
+                </div>
+
+                <h5 class="bulletTxt mt_20">오류 검증결과 및 조치방법</h5>
+                <div class="table row">
+                    <table>
+                        <caption>오류 검증결과 및 조치방법</caption>
+                        <colgroup>
+                            <col style="width:15%">
+                            <col style="width:15%">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" rowspan="2">개요 검증</th>
+                                <th scope="row">결과</th>
+                                <td><sapn class="blue">1건 오류</sapn></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">조치방법</th>
+                                <td>
+                                    <a href="" class="excel pFree fl wAuto mb_6">
+                                        <img src="../../images/ico_excel.png" alt="">
+                                        오류결과 다운로드
+                                    </a>
+                                    <dl class="clear">
+                                        <dt>1. <span class="blue">'엑셀' 버튼을 클릭</span>하여 데이터 오류결과 파일을 다운로드</dt>
+                                        <dt>2. 데이터 오류결과 파일의 <span class="blue">붉은 글씨로 표시된 항목이 오류데이터</span></dt>
+                                            <dd>
+                                                <dl class="dl_2depth">
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">필수입력</span> : 반드시 작성해야 하는 항목
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">입력길이 초과</span> : 해당 항목 입력 데이터의 최대길이를 벗어난 경우</dd>
+                                                <dt>-</dt>
+                                                <dd><span class="blue">부정확한 값 입력</span> : 해당 항목의 입력데이터가 옳지 않은 경우</dd>
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">직접입력 선택 시 입력 가능</span> : 직접입력 외 다른 데이터를 선택하고, 직접 입력도 작성한 경우</dd>
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">연계 가능인 경우 입력</span> : 연계 가능여부 항목에 불가능을 선택하고, 연계 희망연도 또는 연계 희망시기를 작성한 경우 </dd>
+                                                </dl>
+                                            </dd>
+                                        <dt>3. 데이터 오류결과 파일을 참고하여, 해당 항목을 수정한 후 조사서(엑셀)파일을 재검증 </dt>
+                                    </dl>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">입력데이터<br>
+                                    검증</th>
+                                <th scope="row">결과</th>
+                                <td><sapn class="blue">4건 오류</sapn></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">조치방법</th>
+                                <td>
+                                    <a href="" class="excel pFree fl wAuto mb_6">   
+                                        <img src="../../images/ico_excel.png" alt="">
+                                        오류결과 다운로드    
+                                    </a>
+                                    <dl class="clear">
+                                        <dt>1. <span class="blue">'엑셀' 버튼을 클릭</span>하여 데이터 오류결과 파일을 다운로드</dt>
+                                        <dt>2. 데이터 오류결과 파일의 <span class="blue">붉은 글씨로 표시된 항목이 오류데이터</span></dt>
+                                            <dd>
+                                                <dl class="dl_2depth">
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">필수입력</span> : 반드시 작성해야 하는 항목
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">입력길이 초과</span> : 해당 항목 입력 데이터의 최대길이를 벗어난 경우</dd>
+                                                <dt>-</dt>
+                                                <dd><span class="blue">부정확한 값 입력</span> : 해당 항목의 입력데이터가 옳지 않은 경우</dd>
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">직접입력 선택 시 입력 가능</span> : 직접입력 외 다른 데이터를 선택하고, 직접 입력도 작성한 경우</dd>
+                                                <dt>-</dt> 
+                                                <dd><span class="blue">연계 가능인 경우 입력</span> : 연계 가능여부 항목에 불가능을 선택하고, 연계 희망연도 또는 연계 희망시기를 작성한 경우 </dd>
+                                                </dl>
+                                            </dd>
+                                        <dt>3. 데이터 오류결과 파일을 참고하여, 해당 항목을 수정한 후 조사서(엑셀)파일을 재검증 </dt>
+                                    </dl>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" rowspan="2">중복데이터<br>
+                                    검증</th>
+                                <th scope="row">결과</th>
+                                <td><sapn class="blue">2건 오류<br>
+                                    - 공간정보 : 2</sapn></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">조치방법</th>
+                                <td>1. 해당 위치와 명칭을 수정한 후 조사서(엑셀)파일을 재검증</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h5 class="bulletTxt mt_50">중복데이터</h5>
+                <div class="table row">
+                    <table>
+                        <caption>오류 검증결과 및 조치방법</caption>
+                        <colgroup>
+                            <col style="width:30%">
+                            <col style="width:auto">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">공간정보 중복</th>
+                                <td>2건</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">속성정보 중복</th>
+                                <td>0건</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tab_area mt_30">
+                    <ul id="tab">
+                        <li><a title="tab_01">공간정보</a></li>
+                        <li><a title="tab_02">속성정보</a></li>
+                    </ul>
+                    <div class="panel" id="tab_01">
+                        <div class="tableBox scrollBox cScroll h_600 mt_0">
+                            <table>
+                                <caption>공간정보</caption>
+                                <colgroup>
+                                    <col style="width:80px;"/>
+                                    <col style="width:auto;"/>
+                                    <col style="width:auto;"/>
+                                    <col style="width:210px;"/>
+                                    <col style="width:140px;"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">한글명</th>
+                                        <th scope="col">데이터 영문명</th>
+                                        <th scope="col">오류구분</th>
+                                        <th scope="col">오류위치</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td><div class="ellipsis"><span>(연속주제)_건축/재해위험구역</span></div></td>
+                                        <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        <td><div class="ellipsis"><span>파일 내 영문명 중복</span></div></td>
+                                        <td>A11, A17</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h5 class="bulletTxt mt_20">엑셀데이터 파싱결과(개요)</h5>
+                        <div class="table row">
+                            <table>
+                                <caption>엑셀데이터 파싱결과(개요)</caption>
+                                <colgroup>
+                                    <col style="width:200px;">
+                                    <col style="width:400px;">
+                                    <col style="width:200px;">
+                                    <col style="width:400px;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">관리부서</th>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">사업년도</th>
+                                        <td></td>
+                                        <th scope="row">사업</th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">시스템</th>
+                                        <td colspan="3">국가공간정보통합체계</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">담당자 성명</th>
+                                        <td>홍길동</td>
+                                        <th scope="row">담당자 연락처</th>
+                                        <td>031-000-0000</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">담당자 부서</th>
+                                        <td colspan="3">국가공간정보센터</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">행정망 사용여부</th>
+                                        <td>사용</td>
+                                        <th scope="row">연계 가능여부</th>
+                                        <td>가능</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">연계 희망연도</th>
+                                        <td>2021</td>
+                                        <th scope="row">연계 희망시기</th>
+                                        <td>상반기</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                       </div>
+                       <div class="fl w_630 mr_30">
+                            <h5 class="bulletTxt mt_50">엑셀데이터 파싱결과(데이터)</h5>
+                            <div class="tableBox scrollBox cScroll h_600">
+                                <table class="mb_0">
+                                    <caption>엑셀데이터 파싱결과(데이터)</caption>
+                                    <colgroup>
+                                        <col style="width:80px;"/>
+                                        <col style="width:150px;"/>
+                                        <col style="width:auto;"/>
+                                        <col style="width:auto;"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">순번</th>
+                                            <th scope="col">정보분류</th>
+                                            <th scope="col">한글명</th>
+                                            <th scope="col">데이터 영문명</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>공간</td>
+                                            <td><div class="ellipsis"><span>건축/재해위험구역</span></div></td>
+                                            <td><div class="ellipsis"><span>LSMD_CONT_ZH824</span></div></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                       </div>
+                       <div class="fl w_340">
+                        <h5 class="bulletTxt mt_50">등록된 데이터 목록</h5>
+                        <div class="tableBox scrollBox cScroll h_600">
+                            <table class="mb_0">
+                                <caption>엑셀데이터 파싱결과(데이터)</caption>
+                                <colgroup>
+                                    <col style="width:80px;"/>
+                                    <col style="width:auto;"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">순번</th>
+                                        <th scope="col">명칭</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><div class="ellipsis"><span>용도지역지구</span></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                       </div>
+                       <p class="subTxt">
+                        ※ <span class="blue">조사서(엑셀)파일의 데이터와 사업관리시스템에 등록된 데이터를 비교 후 등록</span>하여 주시기 바랍니다. 
+                       </p>
+
+                       <button type="button" class="blueBack w_140 mAuto mt_50 d_Block" id="layerClick_02">등록</button>
+                    </div>
+                    <div class="panel" id="tab_02">
+                        tab_02
+                    </div>
+                </div>
+            </div> <!--//rightCont-->
+           
+        </div>
+    </div>
+</div>
+
+<!--popup-->
+<div class="layerPopup w_516" id="dataPop"\>
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle"> </span>
+        <button type="button" class="btnClose" id="btnPop_01"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont">
+        <!--popPd-->
+        <div class="popPd">
+            <div class="popInner">
+                <img src="../../images/ico_!.png" alt="">
+                <p>해당파일을 업로드 할 수 없습니다.<br>
+                    공간정보목록 조사서(엑셀파일)만 검증이 가능합니다.</p>
+                
+                <button type="button" class="blueBack w_140 mt_30">확인</button>   
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--popup-->
+<div class="layerPopup w_516" id="dataPop_02"\>
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle"> </span>
+        <button type="button" class="btnClose" id="btnPop_02"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont">
+        <!--popPd-->
+        <div class="popPd">
+            <div class="popInner">
+                <img src="../../images/ico_!.png" alt="">
+                <p>엑셀 파일 검증결과 오류가 없습니다.<br>
+                    사업관리시스템의 공간정보목록과 비교 및 검토 후<br>
+                    등록 완료해주세요. </p>
+                
+                <button type="button" class="blueBack w_140 mt_30">확인</button>   
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openWindowPop(url, name){
+    var options = 'top=200, left=200, width=1000, height=600, status=no, menubar=no, toolbar=no, resizable=no';
+    window.open(url, name, options);
+}
+</script>
+@@include('include/footer.html')
+</body>
+</html>

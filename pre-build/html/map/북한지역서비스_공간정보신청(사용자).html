@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+    @@include('include/north_layout.html')
+
+    <!--toc-->
+    @@include('include/toc3.html')
+    <!--//toc-->
+
+    <div class="popup" style="left: calc(50% - 209px); width: 420px; top: 49px;">
+        <div class="head">
+            <strong class="tit">공간정보신청</strong>
+            <div class="btnGroup">
+                <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="inner">
+                <section class="popSec">
+                    <strong class="titSec">공간 데이터</strong>
+                    <div class="inputBox">
+                        <div class="flex ac sb">
+                            <select>
+                                <option value="공간데이터 선택" selected>공간데이터 선택</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section class="popSec">
+                    <strong class="titSec">영역유형</strong>
+                    <div class="inputBox p20">
+                        <div class="flex sb ac">
+                            <button type="button" class="btnSquare w160 active">
+                                <i class="ico type area2"></i>
+                                <span>행정구역선택</span>
+                            </button>
+                            <button type="button" class="btnSquare w160">
+                                <i class="ico type area"></i>
+                                <span>영역선택</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="popSec">
+                    <strong class="titSec">데이터 범위</strong>
+                    <div class="inputBox">
+                        <div class="flex ac sb">
+                            <select style="flex:1;margin-right:10px;">
+                                <option value="전국" selected>전국</option>
+                            </select>
+                            <select style="flex:1;margin-right:10px;">
+                                <option value="전체" selected>전체</option>
+                            </select>
+                            <button type="button" class="btn lightGrey w70 h34"><span>추가</span></button>
+                        </div>
+                        <div class="flex ac sb" style="display:none;">
+                            <button type="button" class="btnSquare type02 f1">
+                                <i class="ico type article1"></i>
+                                <span>다각형</span>
+                            </button>
+                            <button type="button" class="btnSquare type02 f1">
+                                <i class="ico type article5"></i>
+                                <span>사각형</span>
+                            </button>
+                            <button type="button" class="btnSquare type02 f1">
+                                <i class="ico type article2"></i>
+                                <span>원</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="popSec">
+                    <strong class="titSec">데이터목록</strong>
+                    <!--table-->
+                    <div class="table type02 hover scroll cScroll" style="max-height:240px;">
+                        <table>
+                            <caption>데이터목록</caption>
+                            <colgroup>
+                                <col style="width:130px;"/>
+                                <col style="width:170px;"/>
+                                <col style="width:auto;"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">데이터</th>
+                                <th scope="col">지역</th>
+                                <th scope="col">삭제</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>연속지적도</td>
+                                <td>함경북도 경성군</td>
+                                <td><button type="button" class="ico fileRemove"></button> </td>
+                            </tr>
+                            <tr>
+                                <td>연속지적도</td>
+                                <td>함경북도 경성군</td>
+                                <td><button type="button" class="ico fileRemove"></button> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </section>
+                <section class="popSec">
+                    <strong class="titSec">신청목적</strong>
+                    <div class="inputBox">
+                        <div class="flex ac sb">
+                            <select>
+                                <option value="업무활용" selected>업무활용</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section class="popSec">
+                    <strong class="titSec">첨부파일</strong>
+                    <div class="inputBox">
+                        <div class="fileSelect">
+                            <input class="fileLocal" value="" disabled="disabled" style="flex:1;margin-right:10px;" ">
+                            <label for="file02" class="btnFileSelect" style="width:70px;">파일선택</label>
+                            <input type="file" id="file02" class="fileHidden">
+                        </div>
+                    </div>
+                </section>
+                <div class="btnArea flex center" style="margin-top:25px;">
+                    <button type="button" class="btn blue"><span>신청</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    $('.btnSquare').on({
+        "click":function (){
+            $(this).addClass('active').siblings('.btnSquare').removeClass('active');
+            if($(this).closest('.popSec').index() == 1){
+                let idx = $(this).index();
+                $(this).closest('.popSec').next('.popSec').find('.flex').eq(idx).show().siblings('.flex').hide();
+            }
+        }
+    })
+</script>
+</body>
+</html>

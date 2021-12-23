@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <div class="sheetView">
+            <button type="button" class="btnLayerToggle"><span class="hidden">열기/닫기</span></button>
+            <div class="head">
+                <strong class="tit">그래픽 임시레이어_168545632987<span>(총: 1건)</span></strong>
+                <div class="toggleBtn">
+                    <span>연속편집</span>
+                    <button type="button" class="toggle"><span class="hidden">on/off</span></button>
+                </div>
+                <button type="button" class="btn navy xsm"><span>취소</span></button>
+                <button type="button" class="btn peacock xsm"><span>완료</span></button>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <div class="tableArea" style="height:210px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--popup-->
+        <div class="popup" style="left:604px;width:375px;">
+            <div class="head">
+                <strong class="tit">보상사업관리 영역</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <section class="popSec type02">
+                        <p class="titSec">
+                            <strong class="step">STEP<span class="num">1</span></strong>
+                            형식
+                            <span class="colorType red">*</span>
+                        </p>
+                        <div class="inputBox">
+                            <select title="">
+                                <option value="선택">선택</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section class="popSec type02">
+                        <p class="titSec">
+                            <strong class="step">STEP<span class="num">2</span></strong>
+                            타입선택
+                            <span class="colorType red">*</span>
+                        </p>
+                        <div class="inputBox">
+                            <div class="flex sb ac">
+                                <button type="button" class="btnSquare f1">
+                                    <i class="ico type point"></i>
+                                    <span>점</span>
+                                </button>
+                                <button type="button" class="btnSquare f1">
+                                    <i class="ico type line"></i>
+                                    <span>선</span>
+                                </button>
+                                <button type="button" class="btnSquare f1">
+                                    <i class="ico type curve"></i>
+                                    <span>곡선</span>
+                                </button>
+                                <button type="button" class="btnSquare f1">
+                                    <i class="ico type circle"></i>
+                                    <span>원</span>
+                                </button>
+                                <button type="button" class="btnSquare f1">
+                                    <i class="ico type square"></i>
+                                    <span>사각형</span>
+                                </button>
+                                <button type="button" class="btnSquare f1">
+                                    <i class="ico type polygon"></i>
+                                    <span>면</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="popSec type02">
+                        <p class="titSec">
+                            <strong class="step">STEP<span class="num">3</span></strong>
+                            레이어명
+                            <span class="colorType red">*</span>
+                        </p>
+                        <div class="inputBox">
+                            <input type="text" placeholder="레이어 명을 입력해주세요"/>
+                        </div>
+                    </section>
+                    <div class="btnArea flex left" style="margin-top:40px;">
+                        <button type="button" class="btn blue" style="flex:1;"><span>생성</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+        <!--popup-->
+        <div class="popup" style="left:1104px;width:375px;">
+            <div class="head">
+                <strong class="tit">속성입력</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <section class="popSec">
+                        <div class="table type03">
+                            <table>
+                                <caption>속성입력</caption>
+                                <colgroup>
+                                    <col style="width:112px;"/>
+                                    <col style="width:auto;"/>
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">영역명</th>
+                                    <td class="txt-left"><input type="text" style="width:100%;" /></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                    <div class="btnArea flex center" style="margin-top:30px;">
+                        <button type="button" class="btn blue lg"><span>완료</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

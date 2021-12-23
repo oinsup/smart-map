@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/cmm/ncmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/rweb/rweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/cmm/jquery.datetimepicker.css" />
+    <script src="../../js/cmm/jquery-1.12.4.js"></script>
+    <script src="../../js/cmm/jquery-ui.js"></script>
+    <script src="../../js/web/ui_web.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+</head>
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    <header id="menu">
+    <h1><a href="../../index.html"><img src="../../images/logo.png" alt="국토교통부"></a></h1>
+    <nav id="gnb" class="mmHide">
+        <ul>
+            <li><a href="#">정보조회</a></li>
+            <li><a href="#">토지찾기</a>
+                <ul class="sub">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li><a href="#">공간정보목록</a>
+                <ul class="sub">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객지원</a>
+                <ul class="sub">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+
+            <!-- 로그인시
+            <li class="orgMenu" style="margin-left:auto">
+                <a href="#">공공보상정보지원</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">공간정보목록조사</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">정책정보제공</a>
+            </li>-->
+        </ul>
+    </nav>
+    <!-- 로그인시
+    <div class="userBtn">
+        <button type="button" class="btnLogout"><span>로그아웃</span></button>
+        <button type="button" class="btnMypage"><span>마이페이지</span></button>
+    </div>-->
+    <div class="org" id="loginWrap">기관업무</div>
+    <div class="loginBox" id="loginBox">
+        <div class="ab_c"></div>
+        <p class="ex_01">기관업무자만 접근이 가능한 메뉴입니다</p>
+        <p class="ex_02">로그인후 이용하시길 바랍니다</p>
+        <div class="loginInput_Box">
+            <button type="button" class="downSecure type02"><span>보안프로그램 내려받기</span></button>
+            <label for="id" class="offscreen">아이디</label>
+            <input type="text" class="inputNormal w_100 mb_10" id="id" placeholder="아이디입력">
+            <label for="pw" class="offscreen">비밀번호</label>
+            <input type="text" class="inputNormal w_100" id="pw" placeholder="비밀번호 입력">
+
+            <button class="flex center blueBack w_140 mr_10 fl mt_24">
+                <img src="../../images/ico_gpki.png" style="margin-right:5px;" alt="">
+                GPKI 로그인
+            </button>
+            <button class="flex center greenBack w_140 fl mt_24">
+                <img src="../../images/ico_npki.png" style="margin-right:5px;" alt="">
+                NPKI 로그인
+            </button>
+
+
+            <div class="loginLink">
+                <a href="">아이디찾기</a>
+                <a href="">비밀번호찾기</a>
+                <a href="">회원가입</a>
+                <a href="#" class="certOpen">인증서 등록</a>
+            </div>
+            <div class="certChk">
+                <button type="button" class="selGpki blueBack"><span>GPKI 인증서 등록</span></button>
+                <button type="button" class="selNpki greenBack"><span>NPKI 인증서 등록</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mMenuBtn">
+        <img src="../../images/btn_m_menu.png" alt="메뉴버튼">
+    </div>
+    <!-- <div class="login_m">
+        <a href="login.html"><img src="../images/ico_login_b.png" alt="기관업무" width="21"></a>
+    </div> -->
+
+    <div id="mMenuBox" class="m_menu_box mmShow">
+        <ul>
+            <li class="set">
+                <a href="#"><span>정보조회</span></a>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>토지찾기</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>공간정보목록</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>고객지원</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="setUp mmShow">설정</div>
+    </div>
+</header>
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>마이페이지</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원안내
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원가입</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+<div class="w_1200">
+    <div class="content" id="content">
+        <div class="leftMenu">
+            <h3><span class="tri_menu"></span>고객지원</h3>
+            <ul class="depthTwo">
+                <li><a href="">시스템안내<span></span></a></li>
+                <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                <li><a href="">문의사항<span></span></a></li>
+            </ul>
+        </div>
+        <div class="contentInner">
+            <div class="stepRe">
+                <ul>
+                    <li class="stepRe_Inner"><span>1</span>약관조회</li>
+                    <li class="stepRe_Inner stepRe_on"><span>2</span>
+                        정보입력<span class="abUnderline"></span>
+                    </li>
+                    <li class="stepRe_Inner"><span>3</span>신청완료</li>
+                </ul>
+                <div class="abLine_01"></div>
+                <div class="abLine_02"></div>
+            </div>
+            <div class="txt-center">
+                <div class="whiteBox t_left">
+                    <h3 class="titPage">이용약관에 대한 동의</h3>
+                    <div class="table row">
+                        <table>
+                            <caption>정보입력</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row"><label for="re_01">소속기관<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="text" id="re_01" class="w_201 fl">
+                                    <button type="button" class="blueBack w_79 fl">기관검색</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_02">이름<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="text" id="re_02" class="w_201 fl">
+                                    <button type="button" class="blueBack w_79 fl">사용자검색</button>
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_01" class=" h_40">
+                                    <label for="check_01" class="fl">
+                                        <span class="ml_10 mt_9"></span>수동입력
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_s03">사용자구분<span class="redDot"></span></label></th>
+                                <td>
+                                    <select name="" id="re_s03" class="w_290">
+                                        <option value="">시군구</option>
+                                        <option value="">시군구</option>
+                                        <option value="">시군구</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">근무지소개<span class="redDot"></span></label></th>
+                                <td>
+                                    <select title="시 선택" name="" id="re_s04" class="w_139 mr_10">
+                                        <option value="">안양시</option>
+                                        <option value="">안양시</option>
+                                        <option value="">안양시</option>
+                                    </select>
+                                    <select title="구 선택"  name="" id="re_s05" class="w_139">
+                                        <option value="">동안구</option>
+                                        <option value="">동안구</option>
+                                        <option value="">동안구</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_04">아이디<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="text" id="re_04" class="w_290">
+                                    <span class="blue f_14 h_40 ml_10">사용가능한 아이디입니다.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_05">비밀번호<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="password" id="re_05" class="w_290"><span class="blue f_14 h_40 ml_10">사용가능한 비밀번호입니다.</span>
+                                    <p class="caution mt_0"><img src="../../images/ico_i_login.png" alt="">
+                                        비밀번호는 9~12자리로 입력해주세요. ( 영문, 숫자, 특수문자 포함 )
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_06">비밀번호 확인<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="password" id="re_06" class="w_290">
+                                    <span class="red f_14 h_40 ml_10">비밀번호가 일치하지 않습니다.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">행정전화번호<span class="redDot"></span></label></th>
+                                <td>
+                                    <select title="전화번호 첫째자리" name="" id="re_s06" class="w_79">
+                                        <option value="">02</option>
+                                        <option value="">02</option>
+                                        <option value="">02</option>
+                                    </select>
+                                    <span class="dash">-</span>
+
+                                    <input title="전화번호 둘째자리" type="text" id="re_08" class="w_79">
+                                    <span class="dash">-</span>
+
+                                    <input title="전화번호 셋째자리" type="text" id="re_09" class="w_79">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">휴대전화번호<span class="redDot"></span></label></th>
+                                <td>
+                                    <select title="휴대폰번호 첫째자리" name="" id="re_s10" class="w_79">
+                                        <option value="">010</option>
+                                        <option value="">010</option>
+                                        <option value="">010</option>
+                                    </select>
+                                    <span class="dash">-</span>
+
+                                    <input title="휴대폰번호 둘째자리" type="text" id="re_11" class="w_79">
+                                    <span class="dash">-</span>
+
+                                    <input title="휴대폰번호 셋째자리" type="text" id="re_12" class="w_79">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_07">담당자업무 및 사용목적<span class="redDot"></span></label></th>
+                                <td><input type="text" id="re_07" class="w_290"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+                <button type="button" class="roundLink greyBack_03 mr_10">
+                    이전으로
+                    <img src="../../images/triangle.png" alt="" class="ml_5">
+                </button>
+                <button type="button" class="roundLink">
+                    사용신청
+                    <img src="../../images/triangle.png" alt="" class="ml_5">
+                </button>
+            </div>
+        </div>
+    </div>`
+</div>
+<footer>
+    <div class="footer">
+        <h5><img src="../../images/logo_footer.png" alt="국토교통부"></h5>
+        <div class="footerCenter">
+            <!--
+            <div class="lnb">
+                <ul>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">문의하기</a></li>
+                </ul>
+            </div>
+            -->
+            <div class="address">
+                30103 세종특별자치시 도움6로 11 국토교통부<br>                
+                (주간)1599-0001 (야간)044-201-4672 / Fax (주간)044-860-9500 (야간)044-201-5700<br>
+                Copyright (c) Ministry of Land, Infrastructure and Transport. All Rights reserved.
+            </div>
+        </div>
+        <div class="footerSite">
+            <select name="" title="관련싸이트" class="siteCombo" onchange="window.open(value, '_blank');" id="site">
+                <option value="">관련싸이트</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+            </select>
+        </div> 
+    </div>
+</footer>     
+</body>
+</html>

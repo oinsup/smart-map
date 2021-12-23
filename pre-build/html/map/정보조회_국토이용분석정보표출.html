@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_r.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+        @@include('include/jungbo_layout.html')
+        <!--toc-->
+        @@include('include/toc2.html')
+        <!--//toc-->
+
+
+        <!--popup-->
+        <div class="popup small" style="left:920px;top:210px;width:375px;">
+            <div class="head">
+                <strong class="tit">관양2동</strong>
+                <div class="moreInfo">
+                    <button type="button" class="btnMoreInfo">
+                        <span>상세정보보기</span>
+                    </button>
+                </div>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <!-- popSec -->
+                <section class="popSec">
+                    <div class="inner">
+                        <strong class="titSec">토지현황</strong>
+                        <div class="addrDetail">
+                            <ul>
+                                <li><strong>면적</strong><p>766,6696.4 ㎡</p></li>
+                                <li><strong>지번수</strong><p>52필지</p></li>
+                                <li><strong>가액</strong><p>931,453,380,390원</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- //popSec -->
+
+                <!-- popSec -->
+                <section class="popSec">
+                    <div class="inner grey">
+                        <strong class="titSec">소유구분별 현황</strong>
+                        <div class="graphArea">그래프</div>
+                    </div>
+                </section>
+                <!-- //popSec -->
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

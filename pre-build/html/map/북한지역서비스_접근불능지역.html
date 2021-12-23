@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+<div id="wrap" class="north">
+    @@include('include/north_layout.html')
+
+    <!--toc-->
+    @@include('include/toc3.html')
+    <!--//toc-->
+
+    <div class="popup" style="left: calc(50% - 209px); width: 564px; top: 49px;">
+        <div class="head">
+            <strong class="tit">공간정보신청</strong>
+            <div class="btnGroup">
+                <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+            </div>
+        </div>
+        <div class="cont">
+            <div class="inner">
+                <section class="popSec">
+                    <strong class="titSec">데이터 범위</strong>
+                    <div class="inputBox">
+                        <div class="flex ac sb">
+                            <select title="년도선택" style="margin-right:10px;flex:1;">
+                                <option value="2020" selected>2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                            </select>
+                            <select title="" style="margin-right:10px;flex:1;">
+                                <option value="전체" selected>전체</option>
+                                <option value="국토실태DB">국토실태DB</option>
+                                <option value="기본공간정보">기본공간정보</option>
+                            </select>
+                            <select title="" style="margin-right:10px;flex:1;">
+                                <option value="전체" selected>전체</option>
+                                <option value="행정경계">행정경계</option>
+                                <option value="시설물">시설물</option>
+                                <option value="교통">교통</option>
+                                <option value="수자원">수자원</option>
+                                <option value="식생">식생</option>
+                            </select>
+                            <button type="button" class="btn lightGrey w70 h34"><span>추가</span></button>
+                        </div>
+                    </div>
+                </section>
+                <section class="popSec">
+                    <strong class="titSec">데이터목록</strong>
+                    <!--table-->
+                    <div class="table type02 hover scroll cScroll" style="max-height:240px;">
+                        <table>
+                            <caption>데이터목록</caption>
+                            <colgroup>
+                                <col style="width:130px;"/>
+                                <col style="width:170px;"/>
+                                <col style="width:auto;"/>
+                                <col style="width:80px;"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">년도</th>
+                                <th scope="col">공간정보구분</th>
+                                <th scope="col">형태</th>
+                                <th scope="col">삭제</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2019</td>
+                                <td>국토실태 DB</td>
+                                <td>농지</td>
+                                <td><button type="button" class="ico fileRemove"></button> </td>
+                            </tr>
+                            <tr>
+                                <td>2019</td>
+                                <td>국토실태 DB</td>
+                                <td>농지</td>
+                                <td><button type="button" class="ico fileRemove"></button> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </section>
+                <section class="popSec">
+                    <strong class="titSec"><label>신청목적</label></strong>
+                    <div class="inputBox">
+                        <div class="flex ac sb">
+                            <select>
+                                <option value="업무활용" selected>업무활용</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section class="popSec">
+                    <strong class="titSec">첨부파일</strong>
+                    <div class="inputBox">
+                        <div class="fileSelect">
+                            <input class="fileLocal" value="" disabled="disabled" style="flex:1;margin-right:10px;" ">
+                            <label for="file02" class="btnFileSelect" style="width:70px;">파일선택</label>
+                            <input type="file" id="file02" class="fileHidden">
+                        </div>
+                    </div>
+                </section>
+                <div class="btnArea flex center" style="margin-top:25px;">
+                    <button type="button" class="btn blue"><span>신청</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    $('.btnSquare').on({
+        "click":function (){
+            $(this).addClass('active').siblings('.btnSquare').removeClass('active');
+            if($(this).closest('.popSec').index() == 1){
+                let idx = $(this).index();
+                $(this).closest('.popSec').next('.popSec').find('.flex').eq(idx).show().siblings('.flex').hide();
+            }
+        }
+    })
+</script>
+</body>
+</html>

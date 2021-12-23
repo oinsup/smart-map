@@ -1,0 +1,66 @@
+
+
+#wrap{width:100%;height:100%;}
+.localLogin{position:relative;overflow-y:hidden;min-width:1920px;height:100%;background:url("../../images/local/img-local-bg.png")no-repeat left;
+  .localLogo{position:absolute;top:360px;left:260px;opacity:0;transition:.8s;
+    &.active{left:360px;opacity:1;}
+  }
+  &.active{
+    &:before{bottom:0}
+    &:after{bottom:-35px;}
+  }
+  &:before,&:after{transition:1s;}
+  &:before{position:absolute;left:0;bottom:-100px;display:block;content:'';min-width:1920px;height:427px;background:url("../../images/local/img-local-item2.png")no-repeat left -335px top;}
+  &:after{position:absolute;left:0;bottom:-100px;z-index:11;display:block;content:'';min-width:1920px;height:364px;background:url("../../images/local/img-local-item.png")no-repeat left top;}
+  .loginForm{position:absolute;left:992px;bottom:-100%;transition:1s;opacity:0;z-index:10;visibility:hidden;width:580px;background:#fff;border:1px solid #dbdbdb;border-radius:10px;box-sizing:border-box;
+    &.active{bottom:100px;opacity:1;visibility:visible;
+      .tit{transform:translateY(0);opacity:1;}
+      .inputArea{transform:translateY(0);opacity:1;}
+      .linkArea{transform:translateY(0);opacity:1;}
+      .tip{transform:translateY(0);opacity:1;}
+    }
+    .inner{padding:92px 80px 185px;}
+    .tit{color:#353990;font-size:32px;font-family:'Noto Sans DemLight';margin-bottom:40px;opacity:0;transform:translateY(-30px);transition:.4s 1s;
+      strong{display:block;font-size:50px;font-family:'Noto Sans Medium';font-weight:normal;}
+    }
+    .inputArea{padding-bottom:30px;margin-bottom:14px;border-bottom:1px solid #dbdbdb;opacity:0;transform:translateY(-30px);transition:.4s 1.5s;
+      input[type="text"],input[type="password"]{width:100%;height:60px;margin-bottom:14px;border-radius:8px;text-indent:57px;font-size:18px;font-family:'Noto Sans';
+        border:1px solid #b5b5b5;box-sizing:border-box;box-shadow:3px 2px 6px 0 rgba(0, 0, 0, 0.16);color:#585858;
+        &:focus{border:2px solid #353990;outline:transparent;
+          &::placeholder{color:#fff;}
+        }
+      }
+      input[type="text"]{background:#fff url("../../images/local/ico-local-id.png")no-repeat 25px center;
+        &:focus{background:#fff url("../../images/local/ico-local-id-hover.png")no-repeat 24px center;}
+      }
+      input[type="password"]{margin-bottom:20px;background:#fff url("../../images/local/ico-local-password.png")no-repeat 25px center;
+        &:focus{background:#fff url("../../images/local/ico-local-password-hover.png")no-repeat 24px center;}
+      }
+      button{width:300px;height:60px;border-radius:60px;color:#fff;font-size:20px;font-family: 'Noto Sans Medium';text-align:left;text-indent:31px;
+        background:#353990 url("../../images/local/ico-arrow.png")no-repeat right 21px center;transition:.4s;
+        &:hover{background-color: #001b58;background-position:right 15px center;}
+      }
+    }
+    .linkArea{opacity:0;transform:translateY(-30px);transition:.4s 2s;
+      a{position:relative;color:#353990;font-size:14px;font-family:'Noto Sans Medium';font-weight:normal;text-decoration:underline;
+        span{position:relative;z-index:10;}
+        &:first-child{margin:0 10px 0 3px;
+          &:after{position:absolute;right:-7px;top:4px;display: block;content:'';width:1px;height:13px;background:#353990;}
+        }
+        &:nth-child(2){margin-right:35px;}
+        &:hover{
+          &:before{width:calc(100% + 10px);left:-5px;}
+        }
+        &:before{position:absolute;display: block;z-index:1;content:'';left:50%;bottom:-2px;width:0;height:9px;background-color:#dbddf5;transition:.2s;}
+      }
+    }
+    .tip{position:relative;display:block;opacity:0;padding-left:20px;margin-top:5px;color:#858585;transform:translateY(-30px);transition:.4s 2.5s;
+      font-size:14px;font-family:'Noto Sans DemLight';font-style:normal;word-break:keep-all;
+      &:before{position:absolute;left:0;top:0;display:block;content:'※';}
+    }
+  }
+  .shine{position:absolute;left:1280px;top:380px;transform:translateX(-50%);width:1150px;height:1090px;z-index:1;display:block;content:'';opacity:0;transition:2s;
+    background:url("../../images/local/bg-login-shine.png")no-repeat center bottom -750px;
+    &.active{opacity:1;}
+  }
+}

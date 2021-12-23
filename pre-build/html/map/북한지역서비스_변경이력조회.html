@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left: 1253px; width: 470px; top: 49px;">
+            <div class="head">
+                <strong class="tit">변경이력조회</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!--table-->
+                    <div class="table type03 h40">
+                        <table>
+                            <caption>변경이력조회</caption>
+                            <colgroup>
+                                <col style="width:116px;"/>
+                                <col style="width:auto;"/>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row">행정구역</th>
+                                <td class="txt-left">가나다라마바사아자차카타파하</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">이력</th>
+                                <td class="txt-left">이력내용입니다이력내용입니다이력내용입니다이력내용입니다이력내용입니다이력내용입니다이력내용입니다이력내용입니다이력내용입니다이력내용입니다</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">출처</th>
+                                <td class="txt-left">가나다라마바사아자차카타파하</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

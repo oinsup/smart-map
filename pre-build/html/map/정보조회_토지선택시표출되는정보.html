@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_r.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/jungbo_layout.html')
+
+        <!--toc-->
+        @@include('include/toc2.html')
+        <!--//toc-->
+
+
+        <!--popup-->
+        <div class="popup modal choiceSrch" style="left:920px;top:210px;width:375px;">
+            <div class="head">
+                <strong class="tit">토지검색필터</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <!-- popSec -->
+                <section class="popSec">
+                    <!-- inner -->
+                    <div class="inner">
+                        <strong class="titSec">지목</strong>
+                        <!-- btnList -->
+                        <div class="btnList">
+                            <ul>
+                                <li>
+                                    <button type="button" class="btnSec">전체</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">전</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">답</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">과수원</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">목장용지</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">임야</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">광천지</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec seeMore">
+                                        <span>더보기</span>
+                                    </button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">염전</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">대지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">공장용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">학교용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">주차장</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">주유소용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">창고용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">도로</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">철도용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">제방</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">하천</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">구거</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">유지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">양어장</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">수도용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">공원용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">체육유지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">유원지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">종교용지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">사적지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">묘지</button>
+                                </li>
+                                <li class="hideMenu">
+                                    <button type="button" class="btnSec">집종지</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //btnList -->
+                    </div>
+                    <!-- //inner -->
+                </section>
+                <!-- //popSec -->
+
+                <!-- popSec -->
+                <section class="popSec">
+                    <!-- inner -->
+                    <div class="inner grey">
+                        <strong class="titSec">면적</strong>
+                        <!-- flex -->
+                        <div class="flex ac">
+                            <div class="inputGroup">
+                                <input type="text" placeholder="300">
+                                <span class="unit">㎡</span>
+                            </div>
+                            <span class="tilde">~</span>
+                            <div class="inputGroup">
+                                <input type="text" placeholder="7000">
+                                <span class="unit">㎡</span>
+                            </div>
+                        </div>
+                        <!-- //flex -->
+                    </div>
+                    <!-- //inner -->
+                </section>
+                <!-- //popSec -->
+
+                <!-- popSec -->
+                <section class="popSec">
+                    <!-- inner -->
+                    <div class="inner">
+                        <strong class="titSec">소유구분</strong>
+                        <!-- btnList -->
+                        <div class="btnList">
+                            <ul>
+                                <li>
+                                    <button type="button" class="btnSec">전체</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">개인</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">국유지</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">도유지</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">군유지</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">법인</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec">종교단체</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btnSec seeMore">
+                                        <span>더보기</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //btnList -->
+                    </div>
+                    <!-- //inner -->
+                </section>
+
+                <!-- popSec -->
+                <section class="popSec">
+                    <!-- inner -->
+                    <div class="inner grey">
+                        <strong class="titSec">개별공시지가</strong>
+                        <!-- flex -->
+                        <div class="flex ac">
+                            <div class="inputGroup">
+                                <input type="text" placeholder="0">
+                                <span class="unit">천원</span>
+                            </div>
+                            <span class="tilde">~</span>
+                            <div class="inputGroup">
+                                <input type="text" placeholder="3,535">
+                                <span class="unit">천원</span>
+                            </div>
+                        </div>
+                        <!-- //flex -->
+                    </div>
+                    <!-- //inner -->
+                </section>
+                <!-- //popSec -->
+
+                <!-- btnArea -->
+                <div class="btnArea flex center">
+                    <button type="button" class="btn grey2 lg">취소</button>
+                    <button type="button" class="btn blue lg">적용</button>
+                </div>
+                <!-- //btnArea -->
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

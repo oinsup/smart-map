@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map.html')
+
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);width:701px;">
+            <div class="head">
+                <strong class="tit">공지사항</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+
+                    <!--popSearch-->
+                    <div class="popSearch">
+                        <div class="inner">
+                            <div class="flex ac">
+                                <input type="text" class="searchInput" placeholder="제목 또는 내용을 입력하세요." style="flex:1;" />
+                                <button type="button" class="btn grey"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//popSearch-->
+                    <div class="totalArea">
+                        <strong class="total">전체 <span class="colorType blue">500</span>건</strong>
+                        <select style="width:105px;">
+                            <option value="등록일 순">등록일 순</option>
+                        </select>
+                    </div>
+
+
+                    <!--table-->
+                    <div class="table type02 hover">
+                        <table>
+                            <caption>공지사항</caption>
+                            <colgroup>
+                                <col style="width:78px;"/>
+                                <col style="width:auto;"/>
+                                <col style="width:78px;"/>
+                                <col style="width:100px;"/>
+                                <col style="width:80px;"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">첨부</th>
+                                <th scope="col">등록일</th>
+                                <th scope="col">조회수</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>13</td>
+                                <td class="txt-left"><p>전체 테스트 공지</p></td>
+                                <td><a href="#" class="ico fileClip" title="다운로드"><span class="hidden">다운로드</span></a></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="txt-left"><p>2020년 국가공간정보통합체계 유지관리 및 운영지원</p></td>
+                                <td></td>
+                                <td>2020-07-12</td>
+                                <td>123</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//table-->
+                    <!--pagination-->
+                    <div class="pagination">
+                        <a href="#" class="first" title="처음으로"><span class="hidden">처음으로</span></a>
+                        <a href="#" class="prev" title="이전페이지"><span class="hidden">이전페이지</span></a>
+                        <a href="#" class="pagiNum" title="1">1</a>
+                        <a href="#" class="pagiNum" title="2">2</a>
+                        <a href="#" class="pagiNum" title="3">3</a>
+                        <a href="#" class="pagiNum" title="4">4</a>
+                        <a href="#" class="pagiNum" title="5">5</a>
+                        <a href="#" class="pagiNum" title="6">6</a>
+                        <a href="#" class="pagiNum" title="7">7</a>
+                        <a href="#" class="pagiNum" title="8">8</a>
+                        <a href="#" class="pagiNum" title="9">9</a>
+                        <a href="#" class="next" title="다음페이지"><span class="hidden">다음페이지</span></a>
+                        <a href="#" class="last" title="끝으로"><span class="hidden">끝으로</span></a>
+                    </div>
+                    <!--//pagination-->
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+        <div class="loading type02">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>로딩중입니다.<br/><span>잠시만 기다려주세요</span></strong>
+        </div>
+    </div>
+</body>
+</html>

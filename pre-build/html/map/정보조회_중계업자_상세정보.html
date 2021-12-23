@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_r.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/jungbo_layout.html')
+
+        <!--toc-->
+        @@include('include/toc2.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup modal" style="left:811px;top:190px;width:375px;">
+            <div class="head">
+                <strong class="tit">중계업자 상세정보</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!-- table -->
+                    <div class="table type03">
+                        <table>
+                            <caption>중계업자</caption>
+                            <colgroup>
+                                <col style="width: 40%;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">자격증번호</th>
+                                    <td class="txt-left">11-2016-01773</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">자격증취득일</th>
+                                    <td class="txt-left">2016년 12월 12일</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">소재지</th>
+                                    <td class="txt-left">서울시 강동구 고덕동 364-12번지 1층</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">휴대전화</th>
+                                    <td class="txt-left">010-1234-5678</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">전화번호</th>
+                                    <td class="txt-left">02-433-1234</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fax</th>
+                                    <td class="txt-left">02-344-1234</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">E-mail</th>
+                                    <td class="txt-left">korea@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //table -->
+                </div>
+                <div class="btnArea mHide flex center" style="padding:10px 0 30px;">
+                    <button type="button" class="btn blue lg">확인</button>
+                </div>
+                <div class="btnArea mShow flex center" style="padding:10px 0 30px;">
+                    <button type="button" class="btn grey2 lg">닫기</button>
+                    <button type="button" class="btn blue lg">전화걸기</button>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

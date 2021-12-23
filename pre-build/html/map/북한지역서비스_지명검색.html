@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left: 1253px; width: 477px; top: 49px;">
+            <div class="head">
+                <strong class="tit">지명검색</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <div class="popSearch type03">
+                        <div class="inner">
+                            <div class="flex ac">
+                                <input type="text" class="searchInput" placeholder="검색할 지명을 입력해주세요 (예:평양역)" style="flex:1;">
+                                <button type="button" class="btn grey3"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--resultList-->
+                    <div class="resultList">
+                        <div class="totalArea mt20">
+                            <strong class="total">전체 <span class="colorType blue">500</span>건</strong>
+                        </div>
+                        <ul>
+                            <li>평안남도 XXX XXXXXXXXX XXXXXXX</li>
+                            <li>평안남도 XXX XXXXXXXXX XXXXXXX</li>
+                            <li>평안남도 XXX XXXXXXXXX XXXXXXX</li>
+                            <li>평안남도 XXX XXXXXXXXX XXXXXXX</li>
+                            <li>평안남도 XXX XXXXXXXXX XXXXXXX</li>
+                        </ul>
+                    </div>
+                    <!--//resultList-->
+                    <!--pagination-->
+                    <div class="pagination">
+                        <a href="#" class="first" title="처음으로"><span class="hidden">처음으로</span></a>
+                        <a href="#" class="prev" title="이전페이지"><span class="hidden">이전페이지</span></a>
+                        <a href="#" class="pagiNum" title="1">1</a>
+                        <a href="#" class="pagiNum" title="2">2</a>
+                        <a href="#" class="pagiNum" title="3">3</a>
+                        <a href="#" class="pagiNum" title="4">4</a>
+                        <a href="#" class="pagiNum" title="5">5</a>
+                        <a href="#" class="next" title="다음페이지"><span class="hidden">다음페이지</span></a>
+                        <a href="#" class="last" title="끝으로"><span class="hidden">끝으로</span></a>
+                    </div>
+                    <!--//pagination-->
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

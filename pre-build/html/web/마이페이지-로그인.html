@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>마이페이지</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원안내
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">아이디찾기</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w_1200">
+    <div class="content" id="content">
+        <div class="contentInner">
+            <div class="login">
+                <ul class="tabLike">
+                    <li><a href="" class="onLogin">아이디 찾기</a></li>
+                    <li><a href="">비밀번호 찾기</a></li>
+                </ul>
+                <div class="bgSide">
+                    <h3>아이디 찾기</h3>
+                    <div class="whiteBox">
+                        <label for="name_input" class="offscreen">이름입력</label>
+                        <input type="text" id="name_input" class="inputNormal w_100 mb_10" placeholder="이름입력">
+                        <label for="phone" class="offscreen">전화번호 앞자리 선택</label>
+                        <select name="" id="phone" class="selBoard w_150 mr_10 mb_10">
+                            <option value="">010</option>
+                            <option value="">010</option>
+                            <option value="">010</option>
+                        </select>
+                        <label for="phone_back" class="offscreen">전화번호</label>
+                        <input type="text" id="phone_back" class="inputNormal w_360" placeholder="'-'없이 숫자만 입력">
+                    </div>
+                    <button type="button" class="roundLink">
+                        확인
+                        <img src="../../images/triangle.png" alt="" class="ml_5">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>`
+</div>
+<div class="loginPopup">
+    <div class="loginInputArea">
+        <div class="loginBox">
+            <div class="inner">
+                <button type="button" class="downSecure type02"><span>보안프로그램 내려받기</span></button>
+                <label for="logId"><input type="text" id="logId" placeholder="아이디 입력"/></label>
+                <label for="logPw"><input type="password" id="logPw" placeholder="비밀번호 입력"/></label>
+                <div class="btnArea flex mt_20">
+                    <button type="button" class="btn blue round"><span>로그인</span></button>
+                </div>
+                <div class="btnArea flex mt_10">
+                    <button type="button" class="btn blueLine round"><span>GPKI 로그인</span></button>
+                    <button type="button" class="btn peacockLine round"><span>NPKI 로그인</span></button>
+                </div>
+                <div class="loginLink">
+                    <a href="">아이디찾기</a>
+                    <a href="">비밀번호찾기</a>
+                    <a href="">회원가입</a>
+                    <a href="">인증서 등록</a>
+                </div>
+            </div>
+        </div>
+        <p class="caution" style="margin-top:10px;">
+            <img src="../../images/ico_i_login.png" alt="">
+            <span class="blue">비밀번호 5회 이상 로그인 실패시</span> 더이상 로그인 할 수 없습니다.
+        </p>
+        <p class="caution" style="margin-top:4px;">
+            <img src="../../images/ico_i_login.png" alt="">
+            로그인을 위해서는 인증서가 필요합니다.
+        </p>
+    </div>
+</div>
+@@include('include/footer.html')
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#wrapMain">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02">
+            <h2>토지 찾기</h2>
+        </div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../../html/index.html"><img src="../../images/ico_loc_home.png"
+                                                                                                    alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">토지찾기
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">조상땅 찾기</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <!--leftMenu-->
+            <div class="leftMenu">
+                <h3><span class="tri_menu"></span>토지찾기</h3>
+                <ul class="depthTwo">
+                    <li><a href="">이용안내<span></span></a></li>
+                    <li class="menuL_on"><a href="">내 토지 찾기</a></li>
+                    <li><a href="">조상땅 찾기<span class="span_on"></span></a></li>
+                    <li><a href="">신청내역<span></span></a></li>
+                </ul>
+            </div>
+            <!--//leftMenu-->
+
+            <div class="contentInner">
+                <h4 class="titPage mb_10">이용안내</h4>
+                <div class="tab_area">
+                    <ul id="tab">
+                        <li><a title="tab_01">내토지찾기</a></li>
+                        <li><a title="tab_02">조상땅찾기</a></li>
+                    </ul>
+                    <div class="panel rightCont" id="tab_01" style="padding-top:20px;">
+                        <div class="infoArea">
+                            <div class="greyBox">
+                                <div class="inner">
+                                    <p><b>내토지찾기</b>는 본인이 소유한 토지와 아파트를 조회하는 서비스입니다.</p>
+                                </div>
+                            </div>
+                            <section class="section">
+                                <h4 class="bulletTxt">신청자격</h4>
+                                <p class="indent">본인인증이 가능한 토지 소유자가 신청</p>
+                            </section>
+                            <section class="section">
+                                <h4 class="bulletTxt">신청방법</h4>
+                                <p class="indent">* 스마트국토정보 홈페이지 내 내토지찾기에서 즉시 조회(열람) 할 수 있음</p>
+                                <p class="indent">* 수수료 : 없음</p>
+                            </section>
+                            <section>
+                                <div class="flex center">
+                                    <div class="progressBox">
+                                        <div class="imgArea type01"></div>
+                                        <span>본인인증</span>
+                                    </div>
+                                    <span class="next"></span>
+                                    <div class="progressBox">
+                                        <div class="imgArea type02"></div>
+                                        <span>내토지찾기</span>
+                                    </div>
+                                    <span class="next"></span>
+                                    <div class="progressBox">
+                                        <div class="imgArea type03"></div>
+                                        <span>결과 출력 및 QR확인</span>
+                                    </div>
+                                    <span class="next"></span>
+                                    <div class="progressBox">
+                                        <div class="imgArea type04"></div>
+                                        <span>토지 상세정보 조회</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="btnArea flex center" style="margin-top:40px;">
+                                <button type="button" class="btn blue"><i class="ico ico-myland"></i>
+                                    <span>내 토지 찾기</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel rightCont" id="tab_02" style="padding-top:20px;">
+                        <div class="infoArea">
+                            <div class="greyBox">
+                                <div class="inner">
+                                    <p><b>조상땅찾기</b>는 상속인에게 토지소재지를 알려줌으로써 국민들의 재산권행사에 도움을 주고, <br/>불법 부당한 행위로부터 국민의 재산권
+                                        보호를 지원하는 행정서비스입니다</p>
+                                </div>
+                            </div>
+                            <section class="section">
+                                <h4 class="bulletTxt">신청자격</h4>
+                                <p class="indent">* 사망한 토지 소유자의 재산 상속인이 직접 신청<br/>
+                                    <span>
+                                        - 1960년 이전 사망자의 재산상속은 장자상속으로 호주상속인이 재산상속인이 됨<br/>
+                                        - 1960년 1월 1일 이후 사망자는 배우자, 직계비속 모두 상속인이 되므로 열람 신청 가능<br/>
+                                        - 직계비속이 여러명이 있는 경우에 촌수가 같으면 그 직계비속들은 동순위로 상속인이 되고 촌수가 다르면 촌수가 가까운 직계 비속이 먼저 상속인이 된다.<br/>
+                                        &nbsp;&nbsp;예) 子가 여러명인 경우에는 이 자들은 동순위로 상속인이 되며, 직계비속으로서 子와 孫이 있을 때에는 자는 손보다 우선하여 상속인이 된다.
+                                        </span>
+                                </p>
+                            </section>
+                            <section class="section">
+                                <h4 class="bulletTxt">신청방법</h4>
+                                <p class="indent">스마트국토정보 홈페이지 내 조상땅찾기에서 즉시 조회(열람) 할 수 있음</p>
+                            </section>
+                            <section>
+                                <div class="flex center">
+                                    <div class="progressBox">
+                                        <div class="imgArea type01"></div>
+                                        <span>본인인증</span>
+                                    </div>
+                                    <span class="next"></span>
+                                    <div class="progressBox">
+                                        <div class="imgArea type02"></div>
+                                        <span>조상땅찾기</span>
+                                    </div>
+                                    <span class="next"></span>
+                                    <div class="progressBox">
+                                        <div class="imgArea type03"></div>
+                                        <span>결과 출력 및 QR확인</span>
+                                    </div>
+                                    <span class="next"></span>
+                                    <div class="progressBox">
+                                        <div class="imgArea type04"></div>
+                                        <span>토지 상세정보 조회</span>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="btnArea flex center" style="margin-top:40px;">
+                                <button type="button" class="btn peacock"><i class="ico ico-myland2"></i>
+                                    <span>조상땅 찾기</span></button>
+                            </div>
+                            <div class="offlineBox">
+                                <strong class="tit">[오프라인 조상땅찾기 신청 안내]</strong>
+                                <div class="inner">
+                                    <section class="section">
+                                        <h4 class="bulletTxt">신청자격</h4>
+                                        <p class="indent">* 사망한 토지 소유자의 재산 상속인이 직접 방문하여 신청<br>
+                                            <span>
+                                        - 1960년 이전 사망자의 재산상속은 장자상속으로 호주상속인이 재산상속인이 됨<br/>
+- 1960년 1월 1일 이후 사망자는 배우자, 직계비속 모두 상속인이 되므로 열람 신청 가능<br/>
+- 직계비속이 여러명이 있는 경우에 촌수가 같으면 그 직계비속들은 동순위로 상속인이 되고 촌수가 다르면 촌수가 가까운 직계 비속이 먼저 상속인이 된다.<br/>
+   &nbsp;&nbsp;예) 子가 여러명인 경우에는 이 자들은 동순위로 상속인이 되며, 직계비속으로서 子와 孫이 있을 때에는 자는 손보다 우선하여 상속인이 된다.
+                                        </span>
+                                        </p>
+                                        <p class="indent">* 재산상속인이 위임을 하는 경우<br>
+                                            <span>
+                                        - 위임장, 위임자 및 대리인의 자필서명이 있는 신분증 사본을 지참하여 방문 신청
+                                            </span>
+                                        </p>
+                                    </section>
+                                    <section class="section">
+                                        <h4 class="bulletTxt">신청방법 및 장소</h4>
+                                        <p class="indent">가까운 시 · 군 · 구청 및 서울시 · 광역시 · 도청의 조상땅찾기 담당부서를 방문하여 신청하면 즉시 조회(열람) 할 수 있음</p>
+                                    </section>
+                                    <section class="section">
+                                        <h4 class="bulletTxt">자료열람 범위 및 처리</h4>
+                                        <p class="indent">* 주민등록번호가 있으면 전국토지 조회<br/>
+                                            * 주민등록번호가 없으면 특정지역 3개 지정하여 조회</p>
+                                    </section>
+                                    <section class="section">
+                                        <h4 class="bulletTxt">기타범위</h4>
+                                        <p class="indent">* 채권확보 · 담보물권 확보 등 이해관계인이나 제3자에 대한 개인정보는 조회 불가<br/>
+                                            * 근거법령 : 개인정보 보호법 제35조(개인정보의 열람)</p>
+                                    </section>
+                                    <section class="section">
+                                        <h4 class="bulletTxt">구비서류</h4>
+                                        <p class="indent">* 제적등본 (찾고자하는 사람 각각의 사망일자가 등재되어 있는 제적등본)<br/>
+                                           <span>
+                                               - 2008년 1월 1일 이후 사망자는 사망자 기본증명서, 신청인 가족관계증명서<br/>
+                                                - 1968년 이후 사망자는 말소자주민등록초본(조회자료 확인에 도움이 됨)<br/>
+                                                - 제적등본(가족관계증명서)에 신청인과 사망자의 혈연관계가 명시되어야 함<br/>
+                                           </span>
+                                        </p>
+                                        <p class="indent">* 신분확인 : 신청인의 주민등록증 또는 운전면허증 등 신분증<br/>
+                                            * 수수료 : 없음
+                                        </p>
+                                    </section>
+                                    <section class="section">
+                                        <h4 class="bulletTxt">신청서식 다운로드</h4>
+                                        <div class="indent">
+                                            <div class="btnArea" style="margin-top:8px;">
+                                                <button type="button" class="blueB pFree wAhto down">
+                                                    <img src="../../images/ico_down.png" alt="다음">
+                                                    조상땅찾기 열람청구서 서식</button>
+                                                <button type="button" class="blueB pFree wAhto down">
+                                                    <img src="../../images/ico_down.png" alt="다음">
+                                                    조상땅찾기 위임장 서식</button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="section">
+                                        <h4 class="bulletTxt">조상땅찾기 담당 연락처 (전국)</h4>
+                                        <div class="indent">
+                                            <div class="table row">
+                                                <table>
+                                                    <caption></caption>
+                                                    <colgroup>
+                                                        <col style="width:22%"/>
+                                                        <col style="width:28%"/>
+                                                        <col style="width:22%"/>
+                                                        <col style="width:auto"/>
+                                                    </colgroup>
+                                                    <tbody>
+                                                    <tr>
+                                                        <th scope="row">서울특별시 토지관리과</th>
+                                                        <td class="txt-left">
+                                                            02 - 2133 - 4682
+                                                        </td>
+                                                        <th scope="row">부산광역시 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            051 - 888 - 2645
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">대구광역시 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            053 - 803 - 4665
+                                                        </td>
+                                                        <th scope="row">인천광역시 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            032 - 440 - 4599
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">광주광역시 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            062 - 613 - 4574
+                                                        </td>
+                                                        <th scope="row">대전광역시 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            042 - 270 - 6483
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">울산광역시 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            052 - 229 - 4465
+                                                        </td>
+                                                        <th scope="row">세종특별자치시 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            044 - 300 - 2962
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">경기도청 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            031 - 8008 - 4974
+                                                        </td>
+                                                        <th scope="row">강원도청 토지과</th>
+                                                        <td class="txt-left">
+                                                            033 - 249 - 2866
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">충북도청 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            043 - 220 - 4433
+                                                        </td>
+                                                        <th scope="row">충남도청 토지관리과</th>
+                                                        <td class="txt-left">
+                                                            041 - 635 - 2863
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">전북도청 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            066 - 280 - 2367
+                                                        </td>
+                                                        <th scope="row">전남도청 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            061 - 286 - 7633
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">경북도청 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            053 - 950 - 3465
+                                                        </td>
+                                                        <th scope="row">경남도청 토지정보과</th>
+                                                        <td class="txt-left">
+                                                            055 - 211 - 4435
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">제주도청 건축지적과</th>
+                                                        <td class="txt-left">
+                                                            064 - 710 - 2495
+                                                        </td>
+                                                        <th scope="row"></th>
+                                                        <td class="txt-left">
+
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('include/footer.html')
+</body>
+</html>

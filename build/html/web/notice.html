@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/cmm/ncmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/cmm/rcmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/rweb/rweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb.css" type="text/css">
+    <link rel="stylesheet" href="../../css/rweb/rweb.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/cmm/jquery.datetimepicker.css" />
+    <script src="../../js/cmm/jquery-1.12.4.js"></script>
+    <script src="../../js/cmm/jquery-ui.js"></script>
+    <script src="../../js/web/ui_web.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+</head>
+<body>
+    <div id="skipNavi">
+        <strong>컨텐츠 바로가기</strong>
+        <ul>
+            <li><a href="#content">본문으로 바로가기</a></li>
+            <li><a href="#menu">주메뉴 바로가기</a></li>
+        </ul>
+    </div>
+    <div class="wrap_100">
+        <header id="menu">
+    <h1><a href="../../index.html"><img src="../../images/logo.png" alt="국토교통부"></a></h1>
+    <nav id="gnb" class="mmHide">
+        <ul>
+            <li><a href="#">정보조회</a></li>
+            <li><a href="#">토지찾기</a>
+                <ul class="sub">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li><a href="#">공간정보목록</a>
+                <ul class="sub">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객지원</a>
+                <ul class="sub">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+
+            <!-- 로그인시
+            <li class="orgMenu" style="margin-left:auto">
+                <a href="#">공공보상정보지원</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">공간정보목록조사</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">정책정보제공</a>
+            </li>-->
+        </ul>
+    </nav>
+    <!-- 로그인시
+    <div class="userBtn">
+        <button type="button" class="btnLogout"><span>로그아웃</span></button>
+        <button type="button" class="btnMypage"><span>마이페이지</span></button>
+    </div>-->
+    <div class="org" id="loginWrap">기관업무</div>
+    <div class="loginBox" id="loginBox">
+        <div class="ab_c"></div>
+        <p class="ex_01">기관업무자만 접근이 가능한 메뉴입니다</p>
+        <p class="ex_02">로그인후 이용하시길 바랍니다</p>
+        <div class="loginInput_Box">
+            <button type="button" class="downSecure type02"><span>보안프로그램 내려받기</span></button>
+            <label for="id" class="offscreen">아이디</label>
+            <input type="text" class="inputNormal w_100 mb_10" id="id" placeholder="아이디입력">
+            <label for="pw" class="offscreen">비밀번호</label>
+            <input type="text" class="inputNormal w_100" id="pw" placeholder="비밀번호 입력">
+
+            <button class="flex center blueBack w_140 mr_10 fl mt_24">
+                <img src="../../images/ico_gpki.png" style="margin-right:5px;" alt="">
+                GPKI 로그인
+            </button>
+            <button class="flex center greenBack w_140 fl mt_24">
+                <img src="../../images/ico_npki.png" style="margin-right:5px;" alt="">
+                NPKI 로그인
+            </button>
+
+
+            <div class="loginLink">
+                <a href="">아이디찾기</a>
+                <a href="">비밀번호찾기</a>
+                <a href="">회원가입</a>
+                <a href="#" class="certOpen">인증서 등록</a>
+            </div>
+            <div class="certChk">
+                <button type="button" class="selGpki blueBack"><span>GPKI 인증서 등록</span></button>
+                <button type="button" class="selNpki greenBack"><span>NPKI 인증서 등록</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mMenuBtn">
+        <img src="../../images/btn_m_menu.png" alt="메뉴버튼">
+    </div>
+    <!-- <div class="login_m">
+        <a href="login.html"><img src="../images/ico_login_b.png" alt="기관업무" width="21"></a>
+    </div> -->
+
+    <div id="mMenuBox" class="m_menu_box mmShow">
+        <ul>
+            <li class="set">
+                <a href="#"><span>정보조회</span></a>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>토지찾기</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>공간정보목록</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>고객지원</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="setUp mmShow">설정</div>
+    </div>
+</header>
+        <div id="wrapMain">
+            <div class="board_top_01">
+                <h2>공지사항</h2>
+            </div>
+            <div class="location">
+                <div class="loc_inner">
+                    <div class="fr">
+                        <span class="locLine"></span>
+                        <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png"
+                                    alt="home으로 바로가기"></a></div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">고객지원
+                            <img src="../../images/ico_loc_arrow.png" alt="">
+                        </div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">공지사항</div>
+                        <span class="locLine"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <div class="leftMenu">
+                    <h3><span class="tri_menu"></span>고객지원</h3>
+                    <ul class="depthTwo">
+                        <li><a href="">시스템안내<span></span></a></li>
+                        <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                        <li><a href="">문의사항<span></span></a></li>
+                    </ul>
+                </div>
+                <div class="contentInner">
+                    <div class="searchBox">
+                        <div class="searchBox_TwoRow">
+                            <div class="search_left">
+                                <div class="boardRow">
+                                    <div class="boardRowInner">
+                                        <div class="labelLike">등록일</div>
+                                        <input type="text" title="변경일 시작" class="input_month w_150" id="datetimepicker_mask">
+                                        <span class="month_">~</span>
+                                        <input type="text" title="변경일 종료" class="input_month w_150 mr_10" id="datetimepicker_mask_02">
+                                    </div>
+                                    <div class="boardRowInner">
+                                        <label for="sel_04" class="boardLabel t_centerM">검색어</label>
+                                        <select name="" id="sel_04" class="selBoard w_130 mr_7">
+                                            <option value="">선택</option>
+                                            <option value="">검색조건</option>
+                                            <option value="">검색조건</option>
+                                        </select>
+                                        <div class="searchBoardBox">
+                                            <label for="search" class="offscreen"></label>
+                                            <input type="text" class="searchBoard_input mml_7" id="search">
+                                            <button class="btnSearch">검색버튼</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search_right">
+                                <button class="btnBoard h40_m90">검색</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tableBox">
+                        <div class="allN">전체 <span class="blue">500</span>건</div>
+                        <table>
+                            <caption>공지사항 목록</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">등록일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="numT">
+                                        <img src="../../images/ico_pin.png" alt="주요사항" class="mmHide_in">
+                                        <img src="../../images/ico_pin_no.png" alt="주요사항" class="mmShow_in">
+                                    </td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">사이트점검사이트점검사이트점검사이트점검사이트점검사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+                                    <td class="numT">12</td>
+                                    <td><button class="btnB greenB" type="button">분야2</button></td>
+                                    <td class="bTitle">
+                                        <a href="">마이페이지 버그수정</a>
+                                        <img src="../../images/ico_new.png" alt="" class="vText">
+                                    </td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+                                    <td class="numT">11</td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">
+                                            사이트점검</a>
+                                        <img src="../../images/ico_lock.png" alt="" class="vText">
+                                    </td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+                                    <td class="numT">10</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">9</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">8</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">7</td>
+                                    <td><button class="btnB blackB" type="button">분야3</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">6</td>
+                                    <td><button class="btnB greenB" type="button">분야2</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">5</td>
+                                    <td><button class="btnB greenB" type="button">분야2</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">4</td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="numT">3</td>
+                                    <td><button class="btnB redB" type="button">분야1</button></td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td class="date">2021.07.23</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <div class="btnBox">
+                        <button type="button" class="btnS greyBack">삭제</button>
+                        <button type="submit" class="btnS blueBack">등록</button>
+                        <button type="button" class="btnS blueB">수정</button>
+                    </div> -->
+                        <div class="numBox">
+                            <button type="button" class="btnFirst">처음</button>
+                            <button type="button" class="btnPrev">이전</button>
+                            <a href="" class="active">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="">5</a>
+                            <a href="">6</a>
+                            <a href="">7</a>
+                            <a href="">8</a>
+                            <a href="">9</a>
+                            <a href="">10</a>
+                            <button type="button" class="btnNext">다음</button>
+                            <button type="button" class="btnLast">마지막</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+    <div class="footer">
+        <h5><img src="../../images/logo_footer.png" alt="국토교통부"></h5>
+        <div class="footerCenter">
+            <!--
+            <div class="lnb">
+                <ul>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">문의하기</a></li>
+                </ul>
+            </div>
+            -->
+            <div class="address">
+                30103 세종특별자치시 도움6로 11 국토교통부<br>                
+                (주간)1599-0001 (야간)044-201-4672 / Fax (주간)044-860-9500 (야간)044-201-5700<br>
+                Copyright (c) Ministry of Land, Infrastructure and Transport. All Rights reserved.
+            </div>
+        </div>
+        <div class="footerSite">
+            <select name="" title="관련싸이트" class="siteCombo" onchange="window.open(value, '_blank');" id="site">
+                <option value="">관련싸이트</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+            </select>
+        </div> 
+    </div>
+</footer>
+    <!--달력-->
+    <script src="../../js/cmm/jquery.datetimepicker.full.js"></script>
+    <script>
+        $('#datetimepicker_mask').datetimepicker({
+        });
+        $('#datetimepicker_mask_02').datetimepicker({
+        });
+    </script>
+</body>
+
+</html>

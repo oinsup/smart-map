@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left: 553px; width: 800px; top: 49px;">
+            <div class="head">
+                <strong class="tit">공간정보신청</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <section class="popSec">
+
+                        <strong class="titSec">공간정보 신청이력</strong>
+                        <div class="popSearch type03">
+                            <div class="inner">
+                                <div class="flex ac sb">
+                                    <div class="labelInput">
+                                        <label>처리상태</label>
+                                        <select style="width:80px;">
+                                            <option value="전체">전체</option>
+                                        </select>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>신청일</label>
+                                        <div class="flex">
+                                            <input type="text" class="cal" style="width:128px;"/>
+                                            <input type="text" class="cal" style="width:128px;"/>
+                                        </div>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>신청자</label>
+                                        <input type="text" placeholder="신청자명" style="width:100px;"/>
+                                    </div>
+                                    <button type="button" class="btn grey3"><span>검색</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="totalArea mt20">
+                            <strong class="total">전체 <span class="colorType blue">500</span>건</strong>
+                        </div>
+                        <div class="table type02 hover scroll cScroll" style="max-height:240px;">
+                           <table>
+                               <caption>공간정보 신청이력</caption>
+                               <colgroup>
+                                   <col style="width:50px"/>
+                                   <col style="width:auto"/>
+                                   <col style="width:150px"/>
+                                   <col style="width:94px"/>
+                                   <col style="width:100px"/>
+                                   <col style="width:100px"/>
+                               </colgroup>
+                               <thead>
+                               <tr>
+                                   <th scope="col">NO</th>
+                                   <th scope="col">신청기관</th>
+                                   <th scope="col">신청자</th>
+                                   <th scope="col">신청일</th>
+                                   <th scope="col">처리상태</th>
+                                   <th scope="col">신청데이터</th>
+                                   <th scope="col">추출데이터</th>
+                                   <th scope="col">다운로드</th>
+                               </tr>
+                               </thead>
+                               <tbody>
+                               <tr>
+                                   <td>6</td>
+                                   <td>국가공간정보센터</td>
+                                   <td>User1</td>
+                                   <td>2021-07-21</td>
+                                   <td><span class="colorType red">반려</span></td>
+                                   <td>6건</td>
+                                   <td>0건</td>
+                                   <td>0건</td>
+                               </tr>
+                               <tr>
+                                   <td>5</td>
+                                   <td>국가공간정보센터</td>
+                                   <td>User1</td>
+                                   <td>2021-07-21</td>
+                                   <td>접수</td>
+                                   <td>6건</td>
+                                   <td>0건</td>
+                                   <td>0건</td>
+                               </tr>
+                               <tr>
+                                   <td>4</td>
+                                   <td>국가공간정보센터</td>
+                                   <td>User1</td>
+                                   <td>2021-07-21</td>
+                                   <td><span class="colorType blue">승인</span></td>
+                                   <td>6건</td>
+                                   <td>0건</td>
+                                   <td>0건</td>
+                               </tr>
+                               <tr>
+                                   <td>3</td>
+                                   <td>국가공간정보센터</td>
+                                   <td>User1</td>
+                                   <td>2021-07-21</td>
+                                   <td>접수</td>
+                                   <td>6건</td>
+                                   <td>0건</td>
+                                   <td>0건</td>
+                               </tr>
+                               <tr>
+                                   <td>2</td>
+                                   <td>국가공간정보센터</td>
+                                   <td>User1</td>
+                                   <td>2021-07-21</td>
+                                   <td>접수</td>
+                                   <td>6건</td>
+                                   <td>0건</td>
+                                   <td>0건</td>
+                               </tr>
+                               <tr>
+                                   <td>1</td>
+                                   <td>국가공간정보센터</td>
+                                   <td>User1</td>
+                                   <td>2021-07-21</td>
+                                   <td>접수</td>
+                                   <td>6건</td>
+                                   <td>0건</td>
+                                   <td>0건</td>
+                               </tr>
+                               </tbody>
+                           </table>
+                        </div>
+                    </section>
+                    <div class="flex ab sb mt20">
+                        <!--pagination-->
+                        <div class="pagination">
+                            <a href="#" class="first" title="처음으로"><span class="hidden">처음으로</span></a>
+                            <a href="#" class="prev" title="이전페이지"><span class="hidden">이전페이지</span></a>
+                            <a href="#" class="pagiNum" title="1">1</a>
+                            <a href="#" class="pagiNum" title="2">2</a>
+                            <a href="#" class="pagiNum" title="3">3</a>
+                            <a href="#" class="pagiNum" title="4">4</a>
+                            <a href="#" class="pagiNum" title="5">5</a>
+                            <a href="#" class="pagiNum" title="6">6</a>
+                            <a href="#" class="pagiNum" title="7">7</a>
+                            <a href="#" class="pagiNum" title="8">8</a>
+                            <a href="#" class="pagiNum" title="9">9</a>
+                            <a href="#" class="next" title="다음페이지"><span class="hidden">다음페이지</span></a>
+                            <a href="#" class="last" title="끝으로"><span class="hidden">끝으로</span></a>
+                        </div>
+                        <!--//pagination-->
+                        <button type="button" class="btn blue lg"><span>신청</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

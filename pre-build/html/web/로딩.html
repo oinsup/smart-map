@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>공간정보목록조사</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">공간정보목록조사
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">공간정보목록조사관리</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <!--leftMenu-->
+            <div class="leftMenu">
+                <h3><span class="tri_menu"></span>공간정보목록조사</h3>
+                    <ul class="depthTwo">
+                        <li><a href="">공간정보목록조회<span></span></a></li>
+                        <li class="menuL_on"><a href="">공간정보목록조사<span class="span_on"></span></a></li>
+                        <li><a href="">공간정보목록통계<span></span></a></li>
+                    </ul>
+            </div>
+            <!--//leftMenu-->
+            <!--rightCont-->
+            <div class="rightCont">
+                <h4 class="titPage">소속부서</h4>
+                <!--table-->
+                <div class="table row">
+                    <table>
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">성명<span class="redDot"></span></th>
+                            <td>홍길동</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="num01">부서<span class="redDot"></span></label>
+                            </th>
+                            <td>
+                                <div class="row">
+                                    <input type="text" id="num01" style="width: 632px;">
+                                    <button type="button" class="blue" id="branch">검색</button>
+                                </div>
+                                <p class="subTxt">※ <span>소속부서명이 상이한 경우 검색버튼을 클릭</span>하여 기관검색 팝업에서 소속부서를 선택합니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="num02">전화번호<span class="redDot"></span></label>
+                            </th>
+                            <td>
+                                <select id="num02" style="width: 150px;">
+                                    <option value="">선택</option>
+                                </select>
+                                <span>-</span>
+                                <label for="phone_02" class="offscreen">전화번호 둘째자리</label>
+                                <input type="text" style="width: 150px;" id="phone_02">
+                                <span>-</span>
+                                <label for="phone_03" class="offscreen">전화번호 셋째자리</label>
+                                <input type="text" style="width: 150px;" id="phone_03">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+                <p class="subTxt">※ <span>국가공간정보 목록조사 서비스는 소속부서의 공간정보목록만 관리 가능</span>합니다.</p>
+                <p class="subTxt">※ 국가공간정보 목록조사 서비스 문의는 070-0000-0000으로 부탁드립니다.</p>
+                <!--btnArea-->
+                <div class="btnArea txt-right">
+                    <button type="button" class="dkBlue wide">다음단계</button>
+                </div>
+                <!--//btnArea-->
+            </div>
+            <!--//rightCont-->
+        </div>
+
+    </div>
+
+    <!--popup-->
+    <div class="layerPopup w_841" id="branchPopup">
+        <!--popHead-->
+        <div class="popHead">
+            <span class="hdTitle">기관검색</span>
+            <button type="button" class="btnClose" id="btnPop_02"><span class="hidden">닫기</span></button>
+        </div>
+        <!--//popHead-->
+        <!--popCont-->
+        <div class="popCont">
+            <!--popPd-->
+            <div class="popPd">
+                <h4 class="titPage">기관검색</h4>
+                <!--table-->
+                <div class="table row">
+                    <table>
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col style="width: 200px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row"><label for="num03">관리부서</label></th>
+                            <td>
+                                <div class="row">
+                                    <select id="num03" style="width: 260px; margin-right:10px">
+                                        <option value="">자치행정조직</option>
+                                    </select>
+                                    <label for="all" class="offscreen">선택</label>
+                                    <select style="width: 160px;" id="all">
+                                        <option value="">전체</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td rowspan="2">
+                                <button type="button" class="blue" style="height: 97px;">검색</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="num04">기관명<span class="redDot"></span></label>
+                            </th>
+                            <td>
+                                <input type="text" id="num04">
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+                <div class="tableTit">총 <span>23개</span>의 항목이 검색되었습니다.</div>
+                <!--table-->
+                <div class="table col pop_h400">
+                    <table>
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col style="width: 80px;">
+                            <col style="width: 160px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th scope="col">순번</th>
+                            <th scope="col">기관코드</th>
+                            <th scope="col">기관명</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>12</td>
+                            <td>385839</td>
+                            <td class="txt-left">경기도 안양시 동안구 건설과</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>385839</td>
+                            <td class="txt-left">경기도 안양시 동안구 건설과</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>385839</td>
+                            <td class="txt-left">경기도 안양시 동안구 건설과</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>385839</td>
+                            <td class="txt-left">경기도 안양시 동안구 건설과</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>385839</td>
+                            <td class="txt-left">경기도 안양시 동안구 건설과</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>385839</td>
+                            <td class="txt-left">경기도 안양시 동안구 건설과</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>385839</td>
+                            <td class="txt-left">경기도 안양시 동안구 건설과</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+                <p class="blue">※ 기관코드 검색이 안될 시 헬프데스크(070-7162-2174 / 070-7167-2178)으로 연락주시기 바랍니다.</p>
+                <div class="t_center mt_30">
+                    <span class="roundEx">
+                        스크롤을 내리면 목록을 더 볼 수 있습니다.
+                    </span> 
+                </div>
+                <div class="t_center mt_9">
+                    <img src="../../images/ico_mouse_scroll.png" alt="">
+                </div>
+            </div>
+            <!--//popPd-->
+        </div>
+        <!--//popCont-->
+    </div>
+    <!--//popup-->
+    <!-- <div id="dimmed"></div> -->
+
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <strong>로딩중입니다.<br/><span>잠시만 기다려주세요</span></strong>
+    </div>
+</div>
+@@include('include/footer.html')
+</body>
+</html>

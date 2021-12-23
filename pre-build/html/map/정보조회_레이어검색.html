@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_r.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+        @@include('include/jungbo_layout.html')
+
+        <!--toc-->
+        @@include('include/toc2.html')
+        <!--//toc-->
+
+
+        <!--popup-->
+        <div class="popup infoSearch" style="left:450px;top:70px;width:510px;">
+            <div class="head">
+                <strong class="tit">레이어 검색</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <div class="searchArea">
+                        <input type="text" placeholder="검색어를 입력하세요.">
+                        <button type="button" class="btn grey3 w90"><span>검색</span></button>
+                    </div>
+                    <div class="filterToggleArea">
+                        <ul>
+                            <li class="total" tabindex="0">전체</li>
+                            <li tabindex="0"><i class="ico point"></i><span>점</span></li>
+                            <li tabindex="0"><i class="ico line"></i><span>선</span></li>
+                            <li tabindex="0"><i class="ico polygon"></i><span>면</span></li>
+                        </ul>
+                    </div>
+                    <div class="titArea">
+                        <p class="total">전체<span class="num">111</span>건</p>
+                    </div>
+                    <div class="table scroll acc cScroll" style="max-height:300px;">
+                        <table>
+                            <caption>레이어 검색결과</caption>
+                            <colgroup>
+                                <col style="width:75px;"/>
+                                <col style="width:auto;"/>
+                                <col style="width:75px;"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>유형</th>
+                                <th>레이어명</th>
+                                <th>추가</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="innerTb">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:75px;"/>
+                                                <col style="width:auto;"/>
+                                                <col style="width:75px;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="ico type S"><span class="hidden">S</span></i></td>
+                                                <td class="txt-left">
+                                                    <div class="flexGroup">
+                                                        <p class="ellipsis">(금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역</p>
+                                                        <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="desc">
+                                                    토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="innerTb">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:75px;"/>
+                                                <col style="width:auto;"/>
+                                                <col style="width:75px;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="ico type T"><span class="hidden">T</span></i></td>
+                                                <td class="txt-left">
+                                                    <div class="flexGroup">
+                                                        <p class="ellipsis">(금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역</p>
+                                                        <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="desc">
+                                                    토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="innerTb">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:75px;"/>
+                                                <col style="width:auto;"/>
+                                                <col style="width:75px;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="ico type F"><span class="hidden">F</span></i></td>
+                                                <td class="txt-left">
+                                                    <div class="flexGroup">
+                                                        <p class="ellipsis">(금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역</p>
+                                                        <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="desc">
+                                                    토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="innerTb">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:75px;"/>
+                                                <col style="width:auto;"/>
+                                                <col style="width:75px;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="ico type M"><span class="hidden">M</span></i></td>
+                                                <td class="txt-left">
+                                                    <div class="flexGroup">
+                                                        <p class="ellipsis">(금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역</p>
+                                                        <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="desc">
+                                                    토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="innerTb">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:75px;"/>
+                                                <col style="width:auto;"/>
+                                                <col style="width:75px;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="ico type point"><span class="hidden">점</span></i></td>
+                                                <td class="txt-left">
+                                                    <div class="flexGroup">
+                                                        <p class="ellipsis">(금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역</p>
+                                                        <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="desc">
+                                                    토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="innerTb">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:75px;"/>
+                                                <col style="width:auto;"/>
+                                                <col style="width:75px;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="ico type polygon"><span class="hidden">다각형</span></i></td>
+                                                <td class="txt-left">
+                                                    <div class="flexGroup">
+                                                        <p class="ellipsis">(금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역</p>
+                                                        <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="desc">
+                                                    토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="innerTb">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width:75px;"/>
+                                                <col style="width:auto;"/>
+                                                <col style="width:75px;"/>
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="ico type line"><span class="hidden">선</span></i></td>
+                                                <td class="txt-left">
+                                                    <div class="flexGroup">
+                                                        <p class="ellipsis">(금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역 (금강)건축 등 허가제한지역</p>
+                                                        <button type="button" class="btnInTable"><span class="hidden">상세보기</span></button>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btnTable add"><span class="hidden">추가</span></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="desc">
+                                                    토지를 경제적 효율적으로 이용하고 토지이용외 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보((금강) 건축 등 허가제한지역)
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+
+
+    </div>
+</body>
+</html>

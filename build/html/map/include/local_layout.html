@@ -1,0 +1,1392 @@
+
+<!--지도 api 영역-->
+<div id="map">
+    <div class="poi" style="left:700px;top:550px;">
+        <strong>관양2동</strong>
+        <p>466,666.4<span>㎡</span></p>
+    </div>
+</div>
+<!--//지도 api 영역 -->
+
+
+
+<!--menuArea-->
+<div class="menuArea">
+    <button type="button" class="btn btnMenu"><span class="hidden">전체메뉴</span></button>
+</div>
+<!--//menuArea-->
+
+<!--utilArea-->
+<div class="utilArea">
+    <ul>
+        <li>
+            <button type="button" class="btn btnMenu09"><span>저장소관리</span></button>
+        </li>
+        <li>
+            <button type="button" class="btn btnMenu10"><span>서비스현황</span></button>
+        </li>
+        <li>
+            <button type="button" class="btn btnMenu11"><span>서비스신청</span></button>
+        </li>
+        <li>
+            <button type="button" class="btn btnMenu12"><span>시스템관리</span></button>
+        </li>
+        <li>
+            <button type="button" class="btn btnMenu13"><span>로그아웃</span></button>
+        </li>
+    </ul>
+</div>
+<!--//utilArea-->
+
+<!--toolbar-->
+<div class="toolbar">
+    <div class="dep1">
+        <button type="button" class="btn btnToc"><span class="hidden">toc</span></button>
+        <!--
+        <div class="dep2">
+            <button type="button" class="btn favorite submit"><span>등록</span></button>
+            <button type="button" class="btn favorite search"><span>조회</span></button>
+        </div>
+        -->
+    </div>
+    <div class="dep1">
+        <button type="button" class="btn btnCurrent"><span class="hidden">현위치</span></button>
+        <div class="dep2">
+            <button type="button" class="btn mapView en"><span>영문지도</span></button>
+            <button type="button" class="btn mapView baroE"><span>바로e맵</span></button>
+            <div class="dep3">
+                <button type="button" class="btn mapView airplane"><span>항공사진</span></button>
+                <select title="항공사진 년도선택">
+                    <option value="Base" selected>Base</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                </select>
+            </div>
+            <button type="button" class="btn mapView whiteMap"><span>백지도</span></button>
+        </div>
+    </div>
+    <!--scale-->
+    <div class="scale">
+        <button type="button" class="btnScaleUp"><span class="hidden">확대</span></button>
+        <button type="button" class="btnScaleDown"><span class="hidden">축소</span></button>
+    </div>
+    <!--//scale-->
+    <!--btnTool-->
+    <div class="btnTool">
+        <button type="button" class="btn btnReset"><span>초기화</span></button>
+        <div class="dep1">
+            <button type="button" class="btn btnDraw"><span>그리기</span></button>
+            <div class="dep2">
+                <button type="button" class="btn draw text"><span>텍스트</span></button>
+                <button type="button" class="btn draw polygon"><span>다각형</span></button>
+                <button type="button" class="btn draw line"><span>라인</span></button>
+                <button type="button" class="btn draw point"><span>포인트</span></button>
+                <button type="button" class="btn draw circle"><span>원</span></button>
+                <button type="button" class="btn draw rectangle"><span>사각형</span></button>
+                <button type="button" class="btn draw curve"><span>곡선</span></button>
+                <button type="button" class="btn draw buffer"><span>버퍼</span></button>
+
+            </div>
+        </div>
+        <div class="dep1">
+            <button type="button" class="btn btnRuler"><span>측정</span></button>
+            <div class="dep2">
+                <button type="button" class="btn ruler area"><span>면적</span></button>
+                <button type="button" class="btn ruler distance"><span>거리</span></button>
+            </div>
+        </div>
+        <div class="dep1">
+            <button type="button" class="btn btnPrint"><span>출력</span></button>
+            <div class="dep2">
+                <button type="button" class="btn print capture"><span>화면저장</span></button>
+                <button type="button" class="btn print printing"><span>출력</span></button>
+            </div>
+        </div>
+        <button type="button" class="btn btnHelp"><span>도움말</span></button>
+    </div>
+    <!--//btnTool-->
+</div>
+<!--//toolbar-->
+
+<!--toc-->
+<div id="toc" class="info">
+    <button type="button" class="btnTocToggle"><span class="hidden">TOC열기/닫기</span></button>
+    <div class="wrap">
+        <div class="left local">
+            <!--layerArea-->
+            <div class="layerArea">
+                <!--head-->
+                <div class="head">
+                    <strong class="tit">레이어 목록</strong>
+                    <div class="btnGroup">
+                        <button type="button" class="btnLayerView"><span class="hidden">전체보이기/숨기기</span></button>
+                        <button type="button" class="btnLayerSave"><span class="hidden">저장</span></button>
+                        <button type="button" class="btnLayerGroupAdd"><span class="hidden">그룹추가</span></button>
+                        <button type="button" class="btnLayerUpload"><span class="hidden">레이어 업로드</span></button>
+                        <button type="button" class="btnLayerSearch"><span class="hidden">검색창 열기</span></button>
+                    </div>
+                </div>
+                <!--//head-->
+                <!--cont-->
+                <div class="cont">
+                    <div class="contentList">
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">지도 레이어</p>
+                                <div class="editBox">
+                                    <input type="text" />
+                                    <button type="button" class="btn blue"><span class="hidden">수정</span></button>
+                                    <button type="button" class="btn grey2"><span class="hidden">취소</span></button>
+                                </div>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn setting"><span class="hidden">설정</span></button>
+                                    <button type="button" class="icoBtn bookmark"><span class="hidden">북마크</span></button>
+                                    <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                    <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico line"></i>
+                                    <p class="name">지적원도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico point"></i>
+                                    <p class="name">지적원도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico polygon"></i>
+                                    <p class="name">지적원도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                    <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico f"></i>
+                                    <p class="name">시도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico t"></i>
+                                    <p class="name">시군구</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">읍면동</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">주제도</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                    <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico polygon"></i>
+                                    <p class="name">지목별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico point"></i>
+                                    <p class="name">소유구분별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico line"></i>
+                                    <p class="name">면적별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">접근불능지역</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                    <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 19년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico polygon"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico point"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico line"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 18년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico polygon"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico point"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico line"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">최신행정경계레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                    <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 19년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico polygon"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico point"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico line"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 18년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico polygon"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico point"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico line"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">통계주제도</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn edit"><span class="hidden">수정</span></button>
+                                    <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">소유구분별 통계</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn share"><span class="hidden">공유</span></button>
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                    </div>
+                </div>
+                <!--//cont-->
+            </div>
+            <!--//layerArea-->
+        </div>
+        <div class="right local">
+            <button type="button" class="btnTocClose"><span class="hidden">닫기</span></button>
+            <!--head-->
+            <div class="head">
+                <strong class="titLayer">U0001822</strong>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont">
+                <!--tabContWrap-->
+                <div class="tabContWrap type01">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList">
+                            <li class="active">정보</li>
+                            <li>설정</li>
+                            <li>분석</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont active">
+                        <div class="inner">
+                            <section class="tocSec">
+                                <div class="inner">
+                                    <!--table-->
+                                    <div class="table type03 h45">
+                                        <table>
+                                            <caption>정보</caption>
+                                            <colgroup>
+                                                <col style="width:74px;">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">레이어명</th>
+                                                <td class="txt-left">
+                                                    <div class="flex at">
+                                                        <input type="text" style="flex:1;"/>
+                                                        <button type="button" class="btnDescEdit"><span class="hidden">수정</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">별칭</th>
+                                                <td class="txt-left">
+                                                    <div class="flex at">
+                                                        <input type="text" style="flex:1;"/>
+                                                        <button type="button" class="btnDescEdit"><span class="hidden">수정</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">레이어설명</th>
+                                                <td class="txt-left">
+                                                    <div class="flex at">
+                                                        <textarea style="flex:1;height:94px;"></textarea>
+                                                        <button type="button" class="btnDescEdit"><span class="hidden">수정</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">좌표계</th>
+                                                <td class="txt-left">[GRS80] UTM-K(EPSG:5179)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">소유자</th>
+                                                <td class="txt-left">홍길동</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">생성일자</th>
+                                                <td class="txt-left">2021-03-01 15:15</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">데이터수</th>
+                                                <td class="txt-left">XX건</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수정일</th>
+                                                <td class="txt-left">2021-03-02 16:12</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--//table-->
+                                    <div class="btnArea flex center" style="margin-top:20px;">
+                                        <button type="button" class="btn w100 greyblue"><span>속성정보</span></button>
+                                        <button type="button" class="btn w100 blue"><span>목록에서 삭제</span></button>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont">
+                        <div class="inner">
+                            <section class="tocSec" style="margin-bottom:20px;">
+                                <div class="inner">
+                                    <div class="radioGroup dep1">
+                                        <div class="radio">
+                                            <input type="radio" name="radGroup01" id="rad01" />
+                                            <label for="rad01">단일</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="radGroup01" id="rad02" />
+                                            <label for="rad02">범위별</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="radGroup01" id="rad03" />
+                                            <label for="rad03">유형별</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="radGroup01" id="rad04" />
+                                            <label for="rad04">라벨</label>
+                                        </div>
+                                    </div>
+                                    <div class="radioGroup dep2 hide">
+                                        <div class="radio">
+                                            <input type="radio" name="radGroup02" id="rad05" />
+                                            <label for="rad05">단일설정</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="radGroup02" id="rad06" />
+                                            <label for="rad06">다중설정</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--tabContWrap-->
+                            <div class="tabContWrap type03">
+                                <!--tabNav-->
+                                <div class="tabNav">
+                                    <ul class="tabList">
+                                        <li class="active">채우기</li>
+                                        <li>윤곽선</li>
+                                    </ul>
+                                </div>
+                                <!--//tabNav-->
+                                <!--tabCont-->
+                                <div class="tabCont t10 active">
+                                    <section class="tocSec">
+                                        <div class="inner">
+                                            <!--greyBox-->
+                                            <div class="greyBox">
+                                                <div class="inBox type02">
+                                                    <label>투명도</label>
+                                                    <div class="slider">
+                                                        <div class="customHandle"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>필드</label>
+                                                    <div class="flex ac">
+                                                        <select style="flex:1;">
+                                                            <option value="선택" selected>선택</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>단계</label>
+                                                    <div class="flex ac">
+                                                        <select style="flex:1;">
+                                                            <option value="선택" selected>선택</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>표출</label>
+                                                    <div class="flex ac">
+                                                        <div class="toggleBtn type02">
+                                                            <button type="button" class="toggle"><span class="hidden">on/off</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--greyBox-->
+                                            <div class="greyBox mt20">
+                                                <div class="inBox">
+                                                    <div style="width:72px;min-width:72px;text-align: center;">
+                                                        <span class="choiceColor" style="background:#376fee"></span>
+                                                    </div>
+                                                    <div class="flex ac ellipsis" style="margin-left:19px;flex:1;">
+                                                        <p class="ellipsis">기본 심볼</p>
+                                                        <button type="button" class="btnTable edit2"><span class="hidden">수정</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>색상</label>
+                                                    <div class="flex ac">
+                                                        <select style="flex:1;">
+                                                            <option value="선택" selected>선택</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>크기</label>
+                                                    <div class="flex ac">
+                                                        <input type="number"/>
+                                                        <span>PX</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>색상</label>
+                                                    <div class="flex ac">
+                                                        <input type="text"/>
+                                                        <span class="choiceColor" style="background:#ffe400;"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>가시범위</label>
+                                                    <div class="flex ac">
+                                                        <select style="flex:1;">
+                                                            <option value="선택" selected>선택</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--rowGroup-->
+                                            <div class="rowGroup mt20">
+                                                <!--greyBox-->
+                                                <div class="greyBox">
+                                                    <div class="inBox">
+                                                        <label>크기</label>
+                                                        <div class="flex ac">
+                                                            <input type="number"/>
+                                                            <span>PX</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--//greyBox-->
+                                                <!--greyBox-->
+                                                <div class="greyBox">
+                                                    <div class="inBox">
+                                                        <label>스타일</label>
+                                                        <div class="flex ac">
+                                                            <button type="button" class="btnStyle style01"><span class="hidden">스타일01</span></button>
+                                                            <button type="button" class="btnStyle style02"><span class="hidden">스타일02</span></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--//greyBox-->
+                                            </div>
+                                            <!--//rowGroup-->
+                                            <!--rowGroup-->
+                                            <div class="rowGroup mt10">
+                                                <!--greyBox-->
+                                                <div class="greyBox">
+                                                    <div class="inBox">
+                                                        <label>정렬</label>
+                                                        <div class="flex ac">
+                                                            <div class="alignBox">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span class="active"></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--//greyBox-->
+                                                <!--greyBox-->
+                                                <div class="greyBox">
+                                                    <div class="inBox">
+                                                        <label>후광</label>
+                                                        <div class="flex ac">
+                                                            <div class="checkbox">
+                                                                <input type="checkbox" id="chk01-01"/>
+                                                                <label for="chk01-01"></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--//greyBox-->
+                                            </div>
+                                            <!--//rowGroup-->
+                                            <!--imgSelectArea-->
+                                            <div class="imgSelectArea mt20">
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                                <div class="imgBox">
+                                                    <img src="../../images/map/layout/img-dummy-01.png"/>
+                                                    <button type="button" class="btnImgRemove"><span class="hidden">삭제</span></button>
+                                                </div>
+                                            </div>
+                                            <!--//imgSelectArea-->
+                                            <!--colorPickArea-->
+                                            <div class="colorPickArea mt20">
+                                                <div class="colorGroup">
+
+                                                    <span class="colorPick c1"></span>
+                                                    <span class="colorPick c2"></span>
+                                                    <span class="colorPick c3"></span>
+                                                    <span class="colorPick c4"></span>
+                                                    <span class="colorPick c5"></span>
+                                                    <span class="colorPick c6"></span>
+                                                    <span class="colorPick c7"></span>
+                                                    <span class="colorPick c8"></span>
+                                                    <span class="colorPick c9"></span>
+                                                    <span class="colorPick c10"></span>
+                                                    <span class="colorPick c11"></span>
+                                                    <span class="colorPick c12"></span>
+                                                    <span class="colorPick c13"></span>
+                                                    <span class="colorPick c14"></span>
+                                                    <span class="colorPick c15"></span>
+                                                    <span class="colorPick c16"></span>
+                                                    <span class="colorPick c17"></span>
+                                                    <span class="colorPick c18"></span>
+                                                    <span class="colorPick c19"></span>
+                                                    <span class="colorPick c20"></span>
+                                                    <span class="colorPick c21"></span>
+                                                    <span class="colorPick c22"></span>
+                                                    <span class="colorPick c23"></span>
+                                                    <span class="colorPick c24"></span>
+                                                    <span class="colorPick c25"></span>
+                                                    <span class="colorPick c26"></span>
+                                                    <span class="colorPick c27"></span>
+                                                    <span class="colorPick c28"></span>
+                                                    <span class="colorPick c29"></span>
+                                                    <span class="colorPick c30"></span>
+                                                    <span class="colorPick c31"></span>
+                                                    <span class="colorPick c32"></span>
+                                                    <span class="colorPick c33"></span>
+                                                    <span class="colorPick c34"></span>
+                                                    <span class="colorPick c35"></span>
+                                                    <span class="colorPick c36"></span>
+                                                    <span class="colorPick c37"></span>
+                                                    <span class="colorPick c38"></span>
+                                                    <span class="colorPick c39"></span>
+                                                    <span class="colorPick c40"></span>
+                                                    <span class="colorPick c41"></span>
+                                                    <span class="colorPick c42"></span>
+                                                    <span class="colorPick c43"></span>
+                                                    <span class="colorPick c44"></span>
+                                                    <span class="colorPick c45"></span>
+                                                    <span class="colorPick c46"></span>
+                                                    <span class="colorPick c47"></span>
+                                                    <span class="colorPick c48"></span>
+                                                </div>
+                                                <button type="button" class="btn greyLine"><span>더보기</span></button>
+                                            </div>
+                                            <!--//colorPickArea-->
+
+                                            <!--table-->
+                                            <div class="table type02 mt20">
+                                                <table>
+                                                    <caption>레이어</caption>
+                                                    <colgroup>
+                                                        <col style="width:100px;"/>
+                                                        <col style="width:auto"/>
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col">심볼</th>
+                                                        <th scope="col">필드명</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><span class="choiceColor" style="background:#5cd1e5;"></span></td>
+                                                        <td class="txt-left">
+                                                            <div class="flex ac sb">
+                                                                <p class="ellipsis">126.605050…126.605050…126.605050…126.605050…</p>
+                                                                <button type="button" class="btnTable edit2" style="margin-right:20px;"><span class="hidden">수정</span></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="choiceColor" style="background:#5f00ff;"></span></td>
+                                                        <td class="txt-left">
+                                                            <div class="flex ac sb">
+                                                                <p class="ellipsis">126.605050…126.605050…126.605050…126.605050…</p>
+                                                                <button type="button" class="btnTable edit2" style="margin-right:20px;"><span class="hidden">수정</span></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="choiceColor" style="background:#003399;"></span></td>
+                                                        <td class="txt-left">
+                                                            <div class="flex ac sb">
+                                                                <p class="ellipsis">126.605050…126.605050…126.605050…126.605050…</p>
+                                                                <button type="button" class="btnTable edit2" style="margin-right:20px;"><span class="hidden">수정</span></button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!--//table-->
+
+                                            <!--table-->
+                                            <div class="table type02 mt20">
+                                                <table>
+                                                    <caption>레이어</caption>
+                                                    <colgroup>
+                                                        <col style="width:100px;"/>
+                                                        <col style="width:auto"/>
+                                                    </colgroup>
+                                                    <thead>
+                                                    <tr>
+                                                        <th scope="col">색상</th>
+                                                        <th scope="col">단계</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td><span class="choiceColor round" style="background:#5cd1e5;"></span></td>
+                                                        <td class="txt-left">
+                                                            1
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="choiceColor round" style="background:#5f00ff;"></span></td>
+                                                        <td class="txt-left">
+                                                            1.00 - 10.00
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><span class="choiceColor round" style="background:#003399;"></span></td>
+                                                        <td class="txt-left">
+                                                            10.00 - 19.00
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!--//table-->
+
+                                            <div class="btnArea topLine flex center" style="margin-top:40px;">
+                                                <button type="button" class="btn greyblue w100"><span>초기화</span></button>
+                                                <button type="button" class="btn blue w100"><span>적용</span></button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--//tabCont-->
+                                <!--tabCont-->
+                                <div class="tabCont t10">
+                                    <section class="tocSec">
+                                        <div class="inner">
+                                            <!--greyBox-->
+                                            <div class="greyBox">
+                                                <div class="inBox type02">
+                                                    <label>투명도</label>
+                                                    <div class="slider">
+                                                        <div class="customHandle"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <!--colorPickArea-->
+                                            <div class="colorPickArea mt20">
+                                                <div class="colorGroup">
+
+                                                    <span class="colorPick c1"></span>
+                                                    <span class="colorPick c2"></span>
+                                                    <span class="colorPick c3"></span>
+                                                    <span class="colorPick c4"></span>
+                                                    <span class="colorPick c5"></span>
+                                                    <span class="colorPick c6"></span>
+                                                    <span class="colorPick c7"></span>
+                                                    <span class="colorPick c8"></span>
+                                                    <span class="colorPick c9"></span>
+                                                    <span class="colorPick c10"></span>
+                                                    <span class="colorPick c11"></span>
+                                                    <span class="colorPick c12"></span>
+                                                    <span class="colorPick c13"></span>
+                                                    <span class="colorPick c14"></span>
+                                                    <span class="colorPick c15"></span>
+                                                    <span class="colorPick c16"></span>
+                                                    <span class="colorPick c17"></span>
+                                                    <span class="colorPick c18"></span>
+                                                    <span class="colorPick c19"></span>
+                                                    <span class="colorPick c20"></span>
+                                                    <span class="colorPick c21"></span>
+                                                    <span class="colorPick c22"></span>
+                                                    <span class="colorPick c23"></span>
+                                                    <span class="colorPick c24"></span>
+                                                    <span class="colorPick c25"></span>
+                                                    <span class="colorPick c26"></span>
+                                                    <span class="colorPick c27"></span>
+                                                    <span class="colorPick c28"></span>
+                                                    <span class="colorPick c29"></span>
+                                                    <span class="colorPick c30"></span>
+                                                    <span class="colorPick c31"></span>
+                                                    <span class="colorPick c32"></span>
+                                                    <span class="colorPick c33"></span>
+                                                    <span class="colorPick c34"></span>
+                                                    <span class="colorPick c35"></span>
+                                                    <span class="colorPick c36"></span>
+                                                    <span class="colorPick c37"></span>
+                                                    <span class="colorPick c38"></span>
+                                                    <span class="colorPick c39"></span>
+                                                    <span class="colorPick c40"></span>
+                                                    <span class="colorPick c41"></span>
+                                                    <span class="colorPick c42"></span>
+                                                    <span class="colorPick c43"></span>
+                                                    <span class="colorPick c44"></span>
+                                                    <span class="colorPick c45"></span>
+                                                    <span class="colorPick c46"></span>
+                                                    <span class="colorPick c47"></span>
+                                                    <span class="colorPick c48"></span>
+                                                </div>
+                                                <button type="button" class="btn greyLine"><span>더보기</span></button>
+                                            </div>
+                                            <!--//colorPickArea-->
+
+
+                                            <!--greyBox-->
+                                            <div class="greyBox mt10">
+                                                <div class="inBox">
+                                                    <label>색상</label>
+                                                    <div class="flex ac">
+                                                        <input type="text"/>
+                                                        <span class="choiceColor" style="background:#ffe400;"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//greyBox-->
+                                            <div class="btnArea flex center" style="margin-top:29px;">
+                                                <button type="button" class="btn greyblue w100"><span>초기화</span></button>
+                                                <button type="button" class="btn blue w100"><span>적용</span></button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--//tabCont-->
+                            </div>
+                            <!--//tabContWrap-->
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont">
+                        <div class="inner">
+                            <div class="tabContWrap type03">
+                                <!--tabNav-->
+                                <div class="tabNav">
+                                    <ul class="tabList">
+                                        <li class="active">레이어 분석</li>
+                                        <li>레이어 연산</li>
+                                    </ul>
+                                </div>
+                                <!--//tabNav-->
+                                <!--tabCont-->
+                                <div class="tabCont t10 active">
+                                    <section class="tocSec mb20">
+                                        <div class="inner">
+                                            <div class="layerAnalysis">
+                                                <ul>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-analysis-01.png" alt="버퍼"/>
+                                                        <span>버퍼</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-analysis-02.png" alt="포인트집계"/>
+                                                        <span>포인트집계</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-analysis-03.png" alt="핫스팟"/>
+                                                        <span>핫스팟</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-analysis-04.png" alt="밀도계산"/>
+                                                        <span>밀도계산</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-analysis-05.png" alt="다중링버퍼"/>
+                                                        <span>다중링버퍼</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-analysis-06.png" alt="클러스터링"/>
+                                                        <span>클러스터링</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tip">
+                                                <p>점/선/면 모든 유형 가능합니다.</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="tocSec mb20">
+                                        <div class="inner">
+                                            <div class="titArea flex sb">
+                                                <strong class="titSec">거리설정(km)</strong>
+                                                <button type="button" class="btn peacock baloon h34 md"><i class="ico ruler lt"></i><span>아이템 추가</span></button>
+                                            </div>
+                                            <div class="setAnalysis">
+                                                <div class="flex ac">
+                                                    <input type="number" />
+                                                    <button type="button" class="btnTable plus"><span class="hidden">더하기</span></button>
+                                                    <button type="button" class="btnTable minus"><span class="hidden">추가</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="tip">
+                                                <p>분석/연산 시 시간이 많이 소요될 수 있습니다.</p>
+                                            </div>
+                                            <div class="btnArea flex center" style="margin-top:14px;">
+                                                <button type="button" class="btn blue w100"><span>수행</span></button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="tocSec mb20">
+                                        <div class="inner">
+                                            <div class="titArea flex sb">
+                                                <strong class="titSec">범위설정</strong>
+                                            </div>
+                                            <div class="setAnalysis">
+                                                <div class="radioGroup underLine">
+                                                    <div class="radio">
+                                                        <input type="radio" name="rad-set" id="rad-set-01"/>
+                                                        <label for="rad-set-01">레이어 선택</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" name="rad-set" id="rad-set-02"/>
+                                                        <label for="rad-set-02">영역지정</label>
+                                                    </div>
+                                                </div>
+                                                <select style="width:100%;margin-top:10px;">
+                                                    <option value="기본_면_레이어111">기본_면_레이어111</option>
+                                                </select>
+                                            </div>
+                                            <div class="tip">
+                                                <p>분석/연산 시 시간이 많이 소요될 수 있습니다.</p>
+                                            </div>
+                                            <div class="btnArea flex center" style="margin-top:14px;">
+                                                <button type="button" class="btn blue w100"><span>수행</span></button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="tocSec mb20">
+                                        <div class="inner">
+                                            <div class="titArea flex sb">
+                                                <strong class="titSec">디졸브 방법</strong>
+                                            </div>
+                                            <div class="setAnalysis">
+                                                <div class="radioGroup underLine">
+                                                    <div class="radio">
+                                                        <input type="radio" name="rad-set-2" id="rad-set-03"/>
+                                                        <label for="rad-set-03">인접영역</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <input type="radio" name="rad-set-2" id="rad-set-04"/>
+                                                        <label for="rad-set-04">필드 선택</label>
+                                                    </div>
+                                                </div>
+                                                <div class="flex sb mt10">
+                                                    <select style="flex:1;margin-right:12px;">
+                                                        <option value="필드 선택">필드 선택</option>
+                                                    </select>
+                                                    <select style="flex:1;">
+                                                        <option value="통계 선택">통계 선택</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="tip">
+                                                <p>분석/연산 시 시간이 많이 소요될 수 있습니다.</p>
+                                            </div>
+                                            <div class="btnArea flex center" style="margin-top:14px;">
+                                                <button type="button" class="btn blue w100"><span>수행</span></button>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--//tabCont-->
+                                <!--tabCont-->
+                                <div class="tabCont t10">
+                                    <section class="tocSec mb20">
+                                        <div class="inner">
+                                            <div class="layerAnalysis type02">
+                                                <ul>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-calculate-01.png" alt="병합"/>
+                                                        <span>병합</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-calculate-02.png" alt="교차"/>
+                                                        <span>교차</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-calculate-03.png" alt="유니온"/>
+                                                        <span>유니온</span>
+                                                    </li>
+                                                    <li>
+                                                        <img src="../../images/map/layout/bg-calculate-04.png" alt="경계디졸브"/>
+                                                        <span>경계디졸브</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tip">
+                                                <p>면 유형의 레이어만 선택 가능합니다.</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!--//tabCont-->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+</div>
+<!--//toc-->
+
+<script>
+
+    $(".radioGroup.dep1 .radio label").click(function(){
+        if($(this).closest('.radio').index() === 2){
+            $(this).closest('.radioGroup').siblings('.dep2').removeClass('hide');
+        }else{
+            $(this).closest('.radioGroup').siblings('.dep2').addClass('hide');
+        }
+
+    })
+    $(".radioGroup.dep2 .radio label").click(function(){
+        if($(this).closest('.radio').index() === 0){
+            alert('s')
+        }else{
+            alert('ss')
+        }
+    })
+
+
+
+
+
+</script>

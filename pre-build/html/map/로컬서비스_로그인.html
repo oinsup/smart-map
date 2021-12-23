@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_local_login.html')
+<body>
+<div id="wrap" class="local">
+    <div class="localLogin">
+        <h1 class="localLogo"><img src="../../images/local/logo.png" alt="언제 어디서나 모든이에게 K-GEO플랫폼 로컬서비스"/></h1>
+        <div class="loginForm">
+            <div class="inner">
+                <p class="tit">
+                    로컬서비스에 오신걸 환영합니다
+                    <strong>LOGIN</strong>
+                </p>
+                <div class="inputArea">
+                    <input type="text" placeholder="아이디"/>
+                    <input type="password" placeholder="비밀번호"/>
+                    <button type="button"><span>로그인</span></button>
+                </div>
+                <div class="linkArea">
+                    <a href="#" title="아이디 찾기"><span>아이디 찾기</span></a>
+                    <a href="#" title="비밀번호 찾기"><span>비밀번호 찾기</span></a>
+                    <a href="#" title="회원가입"><span>회원가입</span></a>
+                </div>
+                <i class="tip">K-Geo 플랫폼 로컬서비스를 이용하기 위해서는 K-Geo 플랫폼에 회원가입이 되어 있어야 합니다.</i>
+            </div>
+        </div>
+        <div class="shine"></div>
+    </div>
+</div>
+<script>
+
+    /* 로컬서비스 로그인 페이지 인터랙션*/
+    const localLogo = () => {
+        $('.localLogo').addClass('active')
+    }
+    const loginForm = () => {
+        $('.loginForm').addClass('active')
+    }
+    const shine = () => {
+        $('.shine').addClass('active')
+    }
+    const localLogin = () => {
+        $('.localLogin').addClass('active')
+        setTimeout(localLogo,500)
+        setTimeout(loginForm,500)
+        setTimeout(shine,1000)
+    }
+    setTimeout(localLogin,600)
+</script>
+</body>
+</html>

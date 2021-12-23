@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>공지사항관리</title>
+    @@include('include/head_map_admin.html')
+</head>
+
+<body>
+    <div id="wrap_admin">
+        @@include('include/header_map_smart.html')
+        <div class="wrapTop">
+            <h2><strong>공공보상정보지원</strong> 시스템 관리</h2>
+            <div class="frMenu">
+                <span class="toNmap">공공보상정보지원</span>
+                <button type="button" class="btnLogout"><i class="ico logout"></i><span>로그아웃</span></button>
+                <button class="noneHeight btnMenu"><img src="../../images/ico_board_menu.png" alt="메뉴열기"></button>
+            </div>
+        </div>
+
+        <div class="fullWid">
+            <div class="w_1200">
+                <ul class="flex ac sb">
+                    <li class="topInner ac">
+                        <a href="">
+                            공지사항 관리
+                        </a>
+                    </li>
+                    <li class="topInner"><a href="#">사용자 관리</a></li>
+                    <li class="topInner"><a href="#">기관레이어 관리</a></li>
+                    <li class="topInner"><a href="#">주민정보 관리</a></li>
+                    <li class="topInner"><a href="#">공공보상표준API</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w_1200">
+            <div class="searchArea_map">
+                <div class="searchArea_inner_01">
+                    <label for="input_01" class="offscreen">검색</label>
+                    <input type="text" class="w_656 mr_5" id="input_01">
+                    <button class="blueBack w_136 fr">검색</button>
+                </div>
+            </div>
+            <div>
+                <div class="allN ml_10 mt_20">전체 <span class="blue">500</span>건</div>
+                <select title="정렬" name="" id="search" class="selBoard w_130 fr mb_10">
+                    <option value="">등록일순</option>
+                    <option value="">선택</option>
+                    <option value="">선택</option>
+                </select>
+            </div>
+            <div class="tableBox_02">
+                <table>
+                    <caption>공지사항 목록</caption>
+                    <colgroup>
+                        <col style="width:10%">
+                        <col style="width:auto">
+                        <col style="width:10%">
+                        <col style="width:10%">
+                        <col style="width:15%">
+                        <col style="width:10%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>첨부</th>
+                            <th>팝업여부</th>
+                            <th>등록일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td class="t_left">전체 테스트 공지</td>
+                            <td><img src="../../images/map/admin/ico_clip.png" alt=""></td>
+                            <td>N</td>
+                            <td class="f_999">2021.08.03</td>
+                            <td>120</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="blueBack w_140 fr mb_68">등록</button>
+
+                <div class="numBox">
+                    <button type="button" class="btnFirst">처음</button>
+                    <button type="button" class="btnPrev">이전</button>
+                    <a href="" class="active">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                    <button type="button" class="btnNext">다음</button>
+                    <button type="button" class="btnLast">마지막</button>
+                </div>
+            </div>
+        </div>       
+    </div>  
+    @@include('include/footer.html') 
+</body>
+
+</html>

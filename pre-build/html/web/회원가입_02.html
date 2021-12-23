@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>마이페이지</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원안내
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원가입</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </div>
+
+<div class="w_1200">
+    <div class="content" id="content">
+        <div class="leftMenu">
+            <h3><span class="tri_menu"></span>고객지원</h3>
+            <ul class="depthTwo">
+                <li><a href="">시스템안내<span></span></a></li>
+                <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                <li><a href="">문의사항<span></span></a></li>
+            </ul>
+        </div>
+        <div class="contentInner">
+            <div class="stepRe">
+                <ul>
+                    <li class="stepRe_Inner"><span>1</span>약관조회</li>
+                    <li class="stepRe_Inner stepRe_on"><span>2</span>
+                        정보입력<span class="abUnderline"></span>
+                    </li>
+                    <li class="stepRe_Inner"><span>3</span>신청완료</li>
+                </ul>
+                <div class="abLine_01"></div>
+                <div class="abLine_02"></div>
+            </div>
+            <div class="txt-center">
+                <div class="whiteBox t_left">
+                    <h3 class="titPage">이용약관에 대한 동의</h3>
+                    <div class="table row">
+                        <table>
+                            <caption>정보입력</caption>
+                            <colgroup>
+                                <col style="width:200px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row"><label for="re_01">소속기관<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="text" id="re_01" class="w_201 fl">
+                                    <button type="button" class="blueBack w_79 fl">기관검색</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_02">이름<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="text" id="re_02" class="w_201 fl">
+                                    <button type="button" class="blueBack w_79 fl">사용자검색</button>
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_01" class=" h_40">
+                                    <label for="check_01" class="fl">
+                                        <span class="ml_10 mt_9"></span>수동입력
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_s03">사용자구분<span class="redDot"></span></label></th>
+                                <td>
+                                    <select name="" id="re_s03" class="w_290">
+                                        <option value="">시군구</option>
+                                        <option value="">시군구</option>
+                                        <option value="">시군구</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">근무지소개<span class="redDot"></span></label></th>
+                                <td>
+                                    <select title="시 선택" name="" id="re_s04" class="w_139 mr_10">
+                                        <option value="">안양시</option>
+                                        <option value="">안양시</option>
+                                        <option value="">안양시</option>
+                                    </select>
+                                    <select title="구 선택"  name="" id="re_s05" class="w_139">
+                                        <option value="">동안구</option>
+                                        <option value="">동안구</option>
+                                        <option value="">동안구</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_04">아이디<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="text" id="re_04" class="w_290">
+                                    <span class="blue f_14 h_40 ml_10">사용가능한 아이디입니다.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_05">비밀번호<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="password" id="re_05" class="w_290"><span class="blue f_14 h_40 ml_10">사용가능한 비밀번호입니다.</span>
+                                    <p class="caution mt_0"><img src="../../images/ico_i_login.png" alt="">
+                                        비밀번호는 9~12자리로 입력해주세요. ( 영문, 숫자, 특수문자 포함 )
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_06">비밀번호 확인<span class="redDot"></span></label></th>
+                                <td>
+                                    <input type="password" id="re_06" class="w_290">
+                                    <span class="red f_14 h_40 ml_10">비밀번호가 일치하지 않습니다.</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">행정전화번호<span class="redDot"></span></label></th>
+                                <td>
+                                    <select title="전화번호 첫째자리" name="" id="re_s06" class="w_79">
+                                        <option value="">02</option>
+                                        <option value="">02</option>
+                                        <option value="">02</option>
+                                    </select>
+                                    <span class="dash">-</span>
+
+                                    <input title="전화번호 둘째자리" type="text" id="re_08" class="w_79">
+                                    <span class="dash">-</span>
+
+                                    <input title="전화번호 셋째자리" type="text" id="re_09" class="w_79">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">휴대전화번호<span class="redDot"></span></label></th>
+                                <td>
+                                    <select title="휴대폰번호 첫째자리" name="" id="re_s10" class="w_79">
+                                        <option value="">010</option>
+                                        <option value="">010</option>
+                                        <option value="">010</option>
+                                    </select>
+                                    <span class="dash">-</span>
+
+                                    <input title="휴대폰번호 둘째자리" type="text" id="re_11" class="w_79">
+                                    <span class="dash">-</span>
+
+                                    <input title="휴대폰번호 셋째자리" type="text" id="re_12" class="w_79">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="re_07">담당자업무 및 사용목적<span class="redDot"></span></label></th>
+                                <td><input type="text" id="re_07" class="w_290"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+                <button type="button" class="roundLink greyBack_03 mr_10">
+                    이전으로
+                    <img src="../../images/triangle.png" alt="" class="ml_5">
+                </button>
+                <button type="button" class="roundLink">
+                    사용신청
+                    <img src="../../images/triangle.png" alt="" class="ml_5">
+                </button>
+            </div>
+        </div>
+    </div>`
+</div>
+@@include('include/footer.html')     
+</body>
+</html>

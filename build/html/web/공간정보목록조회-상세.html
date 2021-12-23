@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/cmm/ncmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/cmm/rcmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/rweb/rweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb.css" type="text/css">
+    <link rel="stylesheet" href="../../css/rweb/rweb.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/cmm/jquery.datetimepicker.css" />
+    <script src="../../js/cmm/jquery-1.12.4.js"></script>
+    <script src="../../js/cmm/jquery-ui.js"></script>
+    <script src="../../js/web/ui_web.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+</head>
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    <header id="menu">
+    <h1><a href="../../index.html"><img src="../../images/logo.png" alt="국토교통부"></a></h1>
+    <nav id="gnb" class="mmHide">
+        <ul>
+            <li><a href="#">정보조회</a></li>
+            <li><a href="#">토지찾기</a>
+                <ul class="sub">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li><a href="#">공간정보목록</a>
+                <ul class="sub">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객지원</a>
+                <ul class="sub">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+
+            <!-- 로그인시
+            <li class="orgMenu" style="margin-left:auto">
+                <a href="#">공공보상정보지원</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">공간정보목록조사</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">정책정보제공</a>
+            </li>-->
+        </ul>
+    </nav>
+    <!-- 로그인시
+    <div class="userBtn">
+        <button type="button" class="btnLogout"><span>로그아웃</span></button>
+        <button type="button" class="btnMypage"><span>마이페이지</span></button>
+    </div>-->
+    <div class="org" id="loginWrap">기관업무</div>
+    <div class="loginBox" id="loginBox">
+        <div class="ab_c"></div>
+        <p class="ex_01">기관업무자만 접근이 가능한 메뉴입니다</p>
+        <p class="ex_02">로그인후 이용하시길 바랍니다</p>
+        <div class="loginInput_Box">
+            <button type="button" class="downSecure type02"><span>보안프로그램 내려받기</span></button>
+            <label for="id" class="offscreen">아이디</label>
+            <input type="text" class="inputNormal w_100 mb_10" id="id" placeholder="아이디입력">
+            <label for="pw" class="offscreen">비밀번호</label>
+            <input type="text" class="inputNormal w_100" id="pw" placeholder="비밀번호 입력">
+
+            <button class="flex center blueBack w_140 mr_10 fl mt_24">
+                <img src="../../images/ico_gpki.png" style="margin-right:5px;" alt="">
+                GPKI 로그인
+            </button>
+            <button class="flex center greenBack w_140 fl mt_24">
+                <img src="../../images/ico_npki.png" style="margin-right:5px;" alt="">
+                NPKI 로그인
+            </button>
+
+
+            <div class="loginLink">
+                <a href="">아이디찾기</a>
+                <a href="">비밀번호찾기</a>
+                <a href="">회원가입</a>
+                <a href="#" class="certOpen">인증서 등록</a>
+            </div>
+            <div class="certChk">
+                <button type="button" class="selGpki blueBack"><span>GPKI 인증서 등록</span></button>
+                <button type="button" class="selNpki greenBack"><span>NPKI 인증서 등록</span></button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mMenuBtn">
+        <img src="../../images/btn_m_menu.png" alt="메뉴버튼">
+    </div>
+    <!-- <div class="login_m">
+        <a href="login.html"><img src="../images/ico_login_b.png" alt="기관업무" width="21"></a>
+    </div> -->
+
+    <div id="mMenuBox" class="m_menu_box mmShow">
+        <ul>
+            <li class="set">
+                <a href="#"><span>정보조회</span></a>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>토지찾기</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>공간정보목록</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>고객지원</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="setUp mmShow">설정</div>
+    </div>
+</header>
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>공간정보목록조사</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">공간정보목록조사
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">공간정보목록조회</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <!--leftMenu-->
+            <div class="leftMenu">
+                <h3><span class="tri_menu"></span>공간정보목록조사</h3>
+                <ul class="depthTwo">
+                    <li class="menuL_on"><a href="">공간정보목록조회<span class="span_on"></span></a></li>
+                    <li><a href="">공간정보목록조사<span></span></a></li>
+                    <li><a href="">공간정보목록통계<span></span></a></li>
+                </ul>
+            </div>
+            <!--//leftMenu-->
+            <!--rightCont-->
+            <div class="rightCont">
+                <h4 class="titPage">공간정보목록 상세조회</h4>
+                <h5 class="bulletTxt">관리부서 및 시스템 정보</h5>
+                <!--table-->
+                <div class="table row">
+                    <table>
+                        <caption>관리부서 및 시스템 정보</caption>
+                        <colgroup>
+                            <col style="width: 110px;">
+                            <col style="width: 150px;">
+                            <col style="width: 260px;">
+                            <col style="width: 150px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row" colspan="2" class="blue_02_m">관리부서명</th>
+                            <td colspan="3">국토교통부 주택토지실 국토정보정책관 국가공간정보 센터</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="2" class="blue_02_m">사업명</th>
+                            <td colspan="3">2020년 국가공간정보통합체계 유지관리 및 운영지원</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="6" class="blue_02_m">시스템정보</th>
+                            <th scope="row" class="border">시스템명</th>
+                            <td colspan="3">국가공간정보통합체계</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border">사이트</th>
+                            <td colspan="3">datahub.nsid.go.kr</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border">서비스 구분</th>
+                            <td>행정용</td>
+                            <th scope="row">데이터</th>
+                            <td>국가공간정보 제공 업무</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border">담당자 성명</th>
+                            <td>홍길동</td>
+                            <th scope="row">담당자 연락처</th>
+                            <td>031-000-0000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border">담당자 부서</th>
+                            <td colspan="3">국가곻간정보센터</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border">비고</th>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="2" class="blue_02_m"></th>
+                            <th scope="row" class="border">행정망 사용여부</th>
+                            <td>사용</td>
+                            <th scope="row">연체 가능여부</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="border">연계 희망연도</th>
+                            <td></td>
+                            <th scope="row">연체 희망시기</th>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+
+                <h4 class="titPage mt_50 mb_10">보유 데이터 목록</h4>
+                <div class="searchBox">
+                    <div class="searchBox_TwoCol">
+                        <div class="search_left">
+                            <div class="boardRow">
+                                <label for="sel_01" class="boardLabel">검색조건1</label>
+                                <select name="" id="sel_01" class="selBoard w_180 mr_40">
+                                    <option value="">선택</option>
+                                    <option value="">검색조건</option>
+                                    <option value="">검색조건</option>
+                                </select>
+                                <label for="sel_02" class="boardLabel">검색조건2</label>
+                                <select name="" id="sel_02" class="selBoard w_180 mr_40">
+                                    <option value="">선택</option>
+                                    <option value="">검색조건</option>
+                                    <option value="">검색조건</option>
+                                </select>
+                                <label for="sel_03" class="boardLabel">검색조건3</label>
+                                <select name="" id="sel_03" class="selBoard w_180 mr_10">
+                                    <option value="">선택</option>
+                                    <option value="">검색조건</option>
+                                    <option value="">검색조건</option>
+                                </select>
+                            </div>
+                            <div class="boardRow">
+                                <label for="dater" class="boardLabel mm_w100">데이터명</label>
+                                <input type="text" id="dater" class="inputNormal w_90 mm_mb10">     
+                            </div>
+                        </div>
+                        <div class="search_right">  
+                            <button class="btnBoard h_To_40">검색</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tableBox scrollBox cScroll h_600">
+                    <table>
+                        <caption>보유 데이터 목록</caption>
+                        <colgroup>
+                            <col style="width:5%">
+                            <col style="width:5%">
+                            <col style="width:8%">
+                            <col style="width:auto">
+                            <col style="width:19%">
+                            <col style="width:19%">
+                            <col style="width:8%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_01">
+                                    <label for="check_01">
+                                        <span></span>
+                                    </label>
+                                </th>
+                                <th scope="col">번호</th>
+                                <th scope="col">정보분류</th>
+                                <th scope="col">데이털한글명</th>
+                                <th scope="col">데이터영문명</th>
+                                <th scope="col">분류</th>
+                                <th scope="col">공개</th>
+                                <th scope="col">비용</th>
+                            </tr>    
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_02">
+                                    <label for="check_02">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td id="layerClick" class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_03" checked>
+                                    <label for="check_03">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_04">
+                                    <label for="check_04">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_05">
+                                    <label for="check_05">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_06">
+                                    <label for="check_06">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_07">
+                                    <label for="check_07">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_08">
+                                    <label for="check_08">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_09">
+                                    <label for="check_09">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_10">
+                                    <label for="check_10">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_11">
+                                    <label for="check_11">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_12">
+                                    <label for="check_12">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="numT_data">
+                                    <input type="checkbox" name="xxx" value="yyy" id="check_13">
+                                    <label for="check_13">
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>1</td>
+                                <td class="infoBranch">공간</td>
+                                <td class="nameK">연속주제_건축/재해위험구역</td>
+                                <td class="nameE">LSMD_ONCT_ZH834</td>
+                                <td>국토관리 지역개발용도지역지구</td>
+                                <td>공개</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="t_center mt_30">
+                        <span class="roundEx">
+                            스크롤을 내리면 목록을 더 볼 수 있습니다.
+                        </span>
+                    </div>
+                    <div class="t_center mt_9">
+                        <img src="../../images/ico_mouse_scroll.png" alt="">
+                    </div>
+                </div>    
+                <div class="btnBox">
+                    <button type="button" class="btnS greyBack">삭제</button>
+                    <button type="submit" class="btnS blueBack">목록</button>
+                    <button type="button" class="btnS blueB wAhto pFree">일괄수정화면이동</button>
+                </div>
+                <div class="numBox">                        
+                    <button type="button" class="btnFirst">처음</button>
+                    <button type="button" class="btnPrev">이전</button>
+                    <a href="" class="active">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                    <button type="button" class="btnNext">다음</button>
+                    <button type="button" class="btnLast">마지막</button>   
+                </div>
+            </div>
+            <!--//rightCont-->
+        </div>
+    </div>
+</div>
+<!--popup-->
+<div class="layerPopup pop_1000" id="dataPop"\>
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle">공간정보목록 보유데이터 </span>
+        <button type="button" class="btnClose" id="btnPop_01"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont h_600">
+        <!--popPd-->
+        <div class="popPd">
+            <div class="table row">
+                <table>
+                    <caption>공간정보목록 보유데이터 </caption>
+                    <colgroup>
+                        <col width="15%">
+                        <col width="15%">
+                        <col width="27.5%">
+                        <col width="15%">
+                        <col width="27.5%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="4" class="blue_02_m">주제정보<br>
+                                설명
+                                </th>
+                            <th scope="row">분류</th>
+                            <td colspan="3">공간정보</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주제도명</th>
+                            <td colspan="3">용도지역지구</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">목적</th>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">검색키워드</th>
+                            <td colspan="3">토지 계획</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3" class="blue_02_m">레이어<br>
+                                (테이블)
+                                </th>
+                            <th scope="row">한글 명
+                            </th>
+                            <td>연속주제)_가평군조례/향토유적보호</td>
+                            <th scope="row">영문 명</th>
+                            <td>LSMD_CONT_ZH824
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">표준분류</th>
+                            <td colspan="3">[국토관리,지역개발]-[용도지역지구]
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">설명</th>
+                            <td colspan="3">토지를 경제적, 효율적으로 이용하고 토지이용의 종합적 조정,관리등을 위하여 도시관리계획으로 결정하는 지역정보 (가평군조례/향토유적보호)
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3" class="blue_02_m">파일형식</th>
+                            <th scope="row">벡터</th>
+                            <td colspan="3">Polygon</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">래스터</th>
+                            <td colspan="3">공간정보</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">용량(MB)</th>                                </th>
+                            <td colspan="3">0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="2" class="blue_02_m">파일출처<br> 
+                                및 언어
+                                </th>
+                            <th scope="row">언어</th>
+                            <td colspan="3">한국어</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">URL</th>
+                            <td colspan="3"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="2" class="blue_02_m">정보생성<br>
+                                및 갱신</th>
+                            <th scope="row">정보갱신주기</th>
+                            <td>수시</td>
+                            <th scope="row">정보갱신범위</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">최초생성일</th>
+                            <td></td>
+                            <th scope="row">최초갱신일</th>
+                            <td>2020-03-18</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btnBox mbt_30">
+                <button type="button" class="btnS blueBack" id="modify">수정</button>
+                <button type="button" class="btnS greyBack">삭제</button>
+            </div>
+        </div>
+        <!--//popPd-->
+    </div>
+    <!--//popCont-->
+</div>
+<!--//popup-->
+
+<!--popup--수정화면-->
+<div class="layerPopup pop_1000" id="dataPop_m">
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle">데이터 상세정보 수정</span>
+        <button type="button" class="btnClose" id="btnPop_03"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont h_600">
+        <!--popPd-->
+        <div class="popPd">
+            <h4 class="titPage">데이터 상세정보 수정</h4>
+            <div class="help fr"> 
+                <img src="../../images/ico_i.png" alt="">
+                입력사항 도움말
+            </div>
+            <div class="table row">
+                <table>
+                    <caption>데이터 상세정보 수정
+                    </caption>
+                    <colgroup>
+                        <col width="15%">
+                        <col width="15%">
+                        <col width="27.5%">
+                        <col width="15%">
+                        <col width="27.5%">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="4" class="blue_02_m">주제정보<br>
+                                설명
+                                </th>
+                            <th scope="row">분류</th>
+                            <td colspan="3">공간정보</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="input_01">주제도명</label></th>
+                            <td colspan="3"><input type="text" id="input_01" class="w_100 inputNormal"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="input_02">목적</label></th>
+                            <td colspan="3"><input type="text" id="input_02" class="w_100 inputNormal"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="sel_01">검색키워드</label></th>
+                            <td colspan="3">
+                                <select name="" id="sel_01" class="w_100">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="4"  class="blue_02_m">레이어<br>
+                                (테이블)
+                                </th>
+                            <th scope="row"><label for="name_K">한글 명</label>
+                            </th>
+                            <td><input type="text" id="name_K" class="w_100 inputNormal"></td>
+                            <th scope="row"><label for="name_E">영문 명</label></th>
+                            <td>
+                            <input type="text" id="name_E" class="w_100 inputNormal"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="sel_02">분류선택</label></th>
+                            <td colspan="3" class="t_center">
+                                <select name="" id="sel_02" class="w_76 fl mr_7">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                                <button type="button" class="btnS blueBack" id="infoSpace">검색</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="big">대분류</label></th>
+                            <td>
+                                <select name="" id="big" class="w_100">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </td>
+                            <th scope="row"><label for="middle">중분류</label></th>
+                            <td>
+                                <select name="" id="middle" class="w_100">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="ex">설명</label></th>
+                            <td colspan="3">
+                            <input type="text" id="ex" class="w_100 inputNormal"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="3" class="blue_02_m">파일형식</th>
+                            <th scope="row"><label for="vector">벡터</label></th>
+                            <td colspan="3">
+                                <select name="" id="vector" class="w_100">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="leicester">래스터</label></th>
+                            <td colspan="3">
+                                <select name="" id="leicester" class="w_100">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="volume">용량(MB)</label></th>                                </th>
+                            <td colspan="3"><input type="text" id="volume" class="w_100 inputNormal"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="2" class="blue_02_m">파일출처<br> 
+                                및 언어
+                                </th>
+                            <th scope="row"><label for="lang">언어</label></th>
+                            <td colspan="3">
+                                <select name="" id="lang" class="w_100">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="url">URL</label></th>
+                            <td colspan="3"><input type="text" id="url" class="w_100 inputNormal"></td>
+                        </tr>
+                            <th scope="row" rowspan="2"  class="blue_02_m">정보생성<br>
+                                및 갱신</th>
+                            <th scope="row"><label for="period">정보갱신주기</label></th>
+                            <td>
+                                <select name="" id="period" class="w_100">
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                    <option value="">선택</option>
+                                </select>
+                            </td>
+                            <th scope="row"><label for="scope">정보갱신범위</label></th>
+                            <td><input type="text" id="scope" class="w_100 inputNormal"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="datetimepicker_mask">최초생성일</label></th>
+                            <td class="monthWrap"><input type="text" class="w_100 input_month" id="datetimepicker_mask"></td>
+                            <th scope="row"><label for="datetimepicker_mask_02">최초갱신일</label></th>
+                            <td class="monthWrap"><input type="text" class="w_100 input_month" id="datetimepicker_mask_02"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="btnBox mbt_30">
+                <button type="button" class="btnS blueBack">버튼</button>
+            </div>
+        </div>
+        <!--//popPd-->
+    </div>
+    <!--//popCont-->
+</div>
+<!--//popup-->
+
+<!--popup02-->
+<div class="layerPopup pop_841" id="sortPop">
+    <!--popHead-->
+    <div class="popHead">
+        <span class="hdTitle">분류체계 검색</span>
+        <button type="button" class="btnClose" id="btnPop_02"><span class="hidden">닫기</span></button>
+    </div>
+    <!--//popHead-->
+    <!--popCont-->
+    <div class="popCont">
+        <!--popPd-->
+        <div class="popPd">
+            <h4 class="titPage">분류 검색</h4>
+            <div class="table row">
+                <table>
+                    <caption>분류 검색</caption>
+                    <colgroup>
+                        <col style="width:25%"/>
+                        <col style="width:auto"/>
+                        <col style="width:15%"/>
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row"><label for="data">데이터 구분</label><span class="redDot"></span></th>
+                        <td>
+                            <select name="" id="data" class="w_100">
+                                <option value="">선택</option>
+                                <option value="">선택</option>
+                                <option value="">선택</option>
+                            </select>
+                        </td>
+                        <td rowspan="3" class="t_center">
+                            <div class="flex col h_100">
+                                <button type="button" class="blue mb_10" style="flex:1;">검색</button>
+                                <button type="button" class="greyB w_136">
+                                    <img src="../../images/ico_first_btn.png" alt="">
+                                    초기화</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="name_K">레이어(테이블) 한글명</label></th>
+                        <td><input type="text" class="w_auto" id="name_K">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="name_E">레이어(테이블) 영문명</label></th>
+                        <td><input type="text" class="w_auto" id="name_E">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tableTit">총 <span>23개</span>의 항목이 검색되었습니다.</div>
+            <!--table-->
+            <div class="table col">
+                <table>
+                    <caption>분류 검색 목록</caption>
+                    <colgroup>
+                        <col style="width:25%"/>
+                        <col style="width:25%"/>
+                        <col style="width:25%"/>
+                        <col style="width:auto"/>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">한글명</th>
+                        <th scope="col">영문명</th>
+                        <th scope="col">대분류</th>
+                        <th scope="col">중분류</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="nameK_sort">토지정보_민원</td>
+                        <td class="nameE_sort">MLDD_OBJECTS_CF</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="nameK_sort">토지특성</td>
+                        <td class="nameE_sort">MLDD_OBJECTS_CF</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="nameK_sort">토지이용계획확인원</td>
+                        <td class="nameE_sort">MLDD_OBJECTS_CF</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td class="nameK_sort">농어촌융자토지이용확인기본</td>
+                        <td class="nameE_sort">MLDD_OBJECTS_CF</td>
+                        <td>국토관리ㆍ지역개발
+                        </td>
+                        <td>부동산</td>
+                    </tr>
+                    <tr>
+                        <td class="nameK_sort">토지이용계획</td>
+                        <td class="nameE_sort">MLDD_OBJECTS_CF</td>
+                        <td>농림ㆍ해양ㆍ수산
+                        </td>
+                        <td>농업ㆍ농촌</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="numBox mt_30">                        
+                <button type="button" class="btnFirst">처음</button>
+                <button type="button" class="btnPrev">이전</button>
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <button type="button" class="btnNext">다음</button>
+                <button type="button" class="btnLast">마지막</button>   
+            </div>
+        </div>
+        <!--//popPd-->
+    </div>
+    <!--//popCont-->
+</div>
+<!--//popup--> 
+<footer>
+    <div class="footer">
+        <h5><img src="../../images/logo_footer.png" alt="국토교통부"></h5>
+        <div class="footerCenter">
+            <!--
+            <div class="lnb">
+                <ul>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">문의하기</a></li>
+                </ul>
+            </div>
+            -->
+            <div class="address">
+                30103 세종특별자치시 도움6로 11 국토교통부<br>                
+                (주간)1599-0001 (야간)044-201-4672 / Fax (주간)044-860-9500 (야간)044-201-5700<br>
+                Copyright (c) Ministry of Land, Infrastructure and Transport. All Rights reserved.
+            </div>
+        </div>
+        <div class="footerSite">
+            <select name="" title="관련싸이트" class="siteCombo" onchange="window.open(value, '_blank');" id="site">
+                <option value="">관련싸이트</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+            </select>
+        </div> 
+    </div>
+</footer>
+<!--달력-->
+<script src="../../js/cmm/jquery.datetimepicker.full.js"></script>
+<script>
+  $('#datetimepicker_mask').datetimepicker({
+  });
+  $('#datetimepicker_mask_02').datetimepicker({
+  });
+</script>
+</body>
+</html>

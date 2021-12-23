@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>기관레이어관리</title>
+    @@include('include/head_map_admin.html')
+</head>
+
+<body>
+    <div id="wrap_admin">
+        @@include('include/header_map_smart.html')
+        <div class="wrapTop">
+            <h2><strong>공공보상정보지원</strong> 시스템 관리</h2>
+            <div class="frMenu">
+                <span class="toNmap">공공보상정보지원</span>
+                <button type="button" class="btnLogout"><i class="ico logout"></i><span>로그아웃</span></button>
+                <button class="noneHeight btnMenu"><img src="../../images/ico_board_menu.png" alt="메뉴열기"></button>
+            </div>
+        </div>
+
+        <div class="fullWid">
+            <div class="w_1200">
+                <ul class="flex ac sb">
+                    <li class="topInner"><a href="#">공지사항 관리</a></li>
+                    <li class="topInner"><a href="#">사용자 관리</a></li>
+                    <li class="topInner">
+                        <a href="#">
+                            기관레이어 관리
+                        </a>
+                    </li>
+                    <li class="topInner"><a href="#">주민정보 관리</a></li>
+                    <li class="topInner"><a href="#">공공보상표준API</a></li>
+                    <li class="topInner ac"><a href="#">권한신청관리</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="w_1200">
+            <div class="searchArea_map">
+                <div class="flex ac center">
+                    <label for="input_02" class="boardLabel h_50 t_center">신청자</label>
+                    <input type="text" class="w_319 mr_40" id="input_02" placeholder="신청자명 또는 아이디를 검색하세요.">
+                    <label class="boardLabel h_50 t_center">승인구분</label>
+                    <div class="radio mr_30">
+                        <input type="radio" name="rad" id="rad01"/>
+                        <label for="rad01">전체</label>
+                    </div>
+                    <div class="radio mr_30">
+                        <input type="radio" name="rad" id="rad02"/>
+                        <label for="rad02">승인</label>
+                    </div>
+                    <div class="radio mr_30">
+                        <input type="radio" name="rad" id="rad03"/>
+                        <label for="rad03">미승인</label>
+                    </div>
+                    <div class="radio mr_20">
+                        <input type="radio" name="rad" id="rad04"/>
+                        <label for="rad05">반려</label>
+                    </div>
+                    <button class="blueBack w_136">조회</button>
+                </div>
+            </div>
+            <div>
+                <div class="allN ml_10 mt_20">전체 <span class="blue">2</span>건</div>
+
+            </div>
+            <div class="tableBox_02">
+                <table class="mb_68">
+                    <caption>권한신청관리</caption>
+                    <colgroup>
+                        <col style="width:100px"/>
+                        <col style="width:280px"/>
+                        <col style="width:170px"/>
+                        <col style="width:180px"/>
+                        <col style="width:180px"/>
+                        <col style="width:180px"/>
+                        <col style="width:auto"/>
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th scope="col">순번</th>
+                        <th scope="col">신청자 아이디</th>
+                        <th scope="col">신청자명</th>
+                        <th scope="col">신청일시</th>
+                        <th scope="col">승인일시</th>
+                        <th scope="col">반려일시</th>
+                        <th scope="col">상태</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7" style="padding:0;">
+                                <table class="innerTb">
+                                    <colgroup>
+                                        <col style="width:100px"/>
+                                        <col style="width:280px"/>
+                                        <col style="width:170px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:auto"/>
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>hong</td>
+                                        <td>홍길동</td>
+                                        <td>2021.02.21</td>
+                                        <td>2021.02.21</td>
+                                        <td>2021.02.21</td>
+                                        <td><button type="button" class="btn blue h34 w70" style="margin:0 auto">승인</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="confirmArea">
+                                                <strong class="bullet">신청사유</strong>
+                                                <div class="desc">
+                                                    <p>공공보상 사용권한을 신청합니다.</p>
+                                                </div>
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn blue w_140"><span>승인</span></button>
+                                                    <button type="button" class="btn grey2 w_140"><span>반려</span></button>
+                                                    <button type="button" class="btn blueLine w_140"><span>승인취소</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" style="padding:0;">
+                                <table class="innerTb">
+                                    <colgroup>
+                                        <col style="width:100px"/>
+                                        <col style="width:280px"/>
+                                        <col style="width:170px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:auto"/>
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>hong</td>
+                                        <td>홍길동</td>
+                                        <td>2021.02.21</td>
+                                        <td>2021.02.21</td>
+                                        <td>2021.02.21</td>
+                                        <td><button type="button" class="btn grey2 h34 w70" style="margin:0 auto">반려</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="confirmArea">
+                                                <strong class="bullet">신청사유</strong>
+                                                <div class="desc">
+                                                    <p>공공보상 사용권한을 신청합니다.</p>
+                                                </div>
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn blue w_140"><span>승인</span></button>
+                                                    <button type="button" class="btn grey2 w_140"><span>반려</span></button>
+                                                    <button type="button" class="btn blueLine w_140"><span>승인취소</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" style="padding:0;">
+                                <table class="innerTb">
+                                    <colgroup>
+                                        <col style="width:100px"/>
+                                        <col style="width:280px"/>
+                                        <col style="width:170px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:180px"/>
+                                        <col style="width:auto"/>
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>hong</td>
+                                        <td>홍길동</td>
+                                        <td>2021.02.21</td>
+                                        <td>2021.02.21</td>
+                                        <td>2021.02.21</td>
+                                        <td><button type="button" class="btn peacockLine h34 w70" style="margin:0 auto">검토중</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="7">
+                                            <div class="confirmArea">
+                                                <strong class="bullet">신청사유</strong>
+                                                <div class="desc">
+                                                    <p>공공보상 사용권한을 신청합니다.</p>
+                                                </div>
+                                                <div class="btnArea">
+                                                    <button type="button" class="btn blue w_140"><span>승인</span></button>
+                                                    <button type="button" class="btn grey2 w_140"><span>반려</span></button>
+                                                    <button type="button" class="btn blueLine w_140"><span>승인취소</span></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="numBox">
+                    <button type="button" class="btnFirst">처음</button>
+                    <button type="button" class="btnPrev">이전</button>
+                    <a href="" class="active">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">5</a>
+                    <a href="">6</a>
+                    <a href="">7</a>
+                    <a href="">8</a>
+                    <a href="">9</a>
+                    <a href="">10</a>
+                    <button type="button" class="btnNext">다음</button>
+                    <button type="button" class="btnLast">마지막</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--popup-->
+    <div class="layerPopup" style="width:486px;left:calc(50% - 243px);top:200px">
+        <!--popHead-->
+        <div class="popHead">
+            <span class="hdTitle">반려사유</span>
+            <button type="button" class="btnClose"><span class="hidden">닫기</span></button>
+        </div>
+        <!--//popHead-->
+        <!--popCont-->
+        <div class="popCont">
+            <!--popPd-->
+            <div class="popPd">
+                <textarea class="cScroll w_100" style="height:160px"></textarea>
+                <div class="t_center">
+                    <button type="button" class="greyBack w_140 mt_30">취소</button>
+                    <button type="button" class="blueBack w_140 mt_30">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('include/footer.html')
+</body>
+
+</html>

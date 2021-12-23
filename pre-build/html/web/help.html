@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body style="padding: 30px; box-sizing: border-box;">
+
+            <h4 class="titPage">조사서 입력항목 도움말</h4>
+            <div class="fr">
+                <a href="" class="btnS blueB pFree wAhto btn_Hover"><img src="../../images/ico_down.png" alt="다음">공간정보목록 조사서 작성 가이드.pdf</a>
+            </div>
+            <div class="tab_area">
+                <ul id="tab">
+                    <li><a title="tab_04">개요</a></li>
+                    <li><a title="tab_05">공간정보</a></li>
+                    <li><a title="tab_06">속성정보</a></li>
+                </ul>
+                <div class="panel" id="tab_04">
+                    <div class="table row">
+                        <table>
+                            <caption>테이블</caption>
+                            <colgroup>
+                                <col style="width: 200px;">
+                                <col style="width: auto;">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row" rowspan="2">작업구분</th>
+                                <td>(참고) 탭을 확인하여 표준명칭을 복사하거나 목록버튼[ ▼ ]을 클릭하여 선택 입력
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>직접입력</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table row mt_30">
+                        <table>
+                            <caption>테이블</caption>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col style="width: 120px;">
+                                <col style="width: 100px;">
+                                <col style="width: 100px;">
+                                <col style="width: 100px;">
+                                <col style="width: auto;">
+                                <col style="width: 100px;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col" colspan="2">조사항목 구분</th>
+                                <th scope="col">입력방법</th>
+                                <th scope="col">참고코드</th>
+                                <th scope="col">입력방법</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" colspan="7">공간정보목록 조사양식 (개요)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <th scope="row">관리부서</th>
+                                    <th scope="row"></th>
+                                    <td>직접입력</td>  
+                                    <td>(참고 1)<br>
+                                        기관코드
+                                        </td>
+                                    <td>
+                                        (참고1) 기관코드에서 관리기관 명칭(A열)을 복사하여 입력 
+                                        <p class="blue">
+                                            ※ 반드시 (참고1)에서 복사하여 사용, 별도 입력하지 말 것 (입력 오류 시 데이터베이스 메팅 오류 발생)<br>  
+                                            ※ 소속기관 정보가 없을 경우 행정표준코드(https://code.mogaha.go.kr/jsp/index.jsp)를 확인 후
+                                        </p>
+                                    </td>  
+                                    <td></td>
+                                </tr>
+                                <tr>    
+                                    <th scope="row">2</th>
+                                    <th scope="row" rowspan="2">공간정보사업</th>
+                                    <th scope="row">사업년도</th>
+                                    <td>직접입력</td>  
+                                    <td>(참고 1)<br>
+                                        기관코드
+                                        </td>
+                                    <td>
+                                        공간정보 사업년도 입력 (예) 2018 
+                                    </td>  
+                                    <td>숫자 4자리로 입력
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <th scope="row">사업명</th>
+                                    <td>직접입력</td>
+                                    <td>(참고 2)<br>
+                                        사업정보
+                                        </td>
+                                    <td>
+                                        공간정보 구축 사업의 명칭<br>
+                                        * (참고2) 사업정보 목록에 해당 사업이 있을 경우 사업명을 복사하 여 입력<br>
+                                        * (참고2)에 사업명이 없는 경우 직접 입력
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="panel" id="tab_05">section 02</div>
+                <div class="panel" id="tab_06">section 03</div>
+            </div>
+        
+</body>
+</html>

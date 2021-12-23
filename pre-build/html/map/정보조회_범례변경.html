@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_r.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+
+        @@include('include/jungbo_layout.html')
+
+        <!--toc-->
+        @@include('include/toc2.html')
+        <!--//toc-->
+
+
+        <!--popup-->
+        <div class="popup modal">
+            <div class="head">
+                <strong class="tit">범례변경</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <!-- inner -->
+                <div class="inner">
+                    <div class="typeSel">
+                        <ul>
+                            <li class="active"><span>지목</span></li>
+                            <li><span>면적</span></li>
+                            <li><span>소유구분</span></li>
+                            <li><span>개별공시지가</span></li>
+                        </ul>
+                        <p class="tip">*선택한 범례에 따라 지도 표출 정보 변경</p>
+                    </div>
+                </div>
+                <!-- //inner -->
+                <!-- btnArea -->
+                <div class="btnArea flex center">
+                    <button type="button" class="btn blue lg">지도에 적용</button>
+                </div>
+                <!-- //btnArea -->
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

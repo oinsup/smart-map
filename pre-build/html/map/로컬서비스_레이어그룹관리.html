@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap" class="local">
+        @@include('include/local_layout.html')
+
+        <!--
+        <div id="dimmed"></div>
+        -->
+
+
+        <!--alert-->
+        <div class="alert" style="left:calc(50% - 243px);width:486px;">
+            <div class="head">
+                <strong class="tit">CONFIRM</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <p class="alertMsg">삭제시 하위 그룹 및 레이어가 같이 삭제됩니다.<br/>
+                    그래도 삭제 하시겠습니까?</p>
+                    <div class="btnArea flex center" style="margin-top:40px;">
+                        <button type="button" class="btn grey2 lg"><span>취소</span></button>
+                        <button type="button" class="btn blue lg"><span>삭제</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//alert-->
+    </div>
+</body>
+</html>

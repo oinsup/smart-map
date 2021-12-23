@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+<div id="skipNavi">
+    <strong>컨텐츠 바로가기</strong>
+    <ul>
+        <li><a href="#content">본문으로 바로가기</a></li>
+        <li><a href="#menu">주메뉴 바로가기</a></li>
+    </ul>
+</div>
+<div class="wrap_100">
+    @@include('include/header.html')
+    <div id="wrapMain">
+        <div class="board_top_02"><h2>마이페이지</h2></div>
+        <div class="location">
+            <div class="loc_inner">
+                <div class="fr">
+                    <span class="locLine"></span>
+                    <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png" alt="home으로 바로가기"></a></div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">회원안내
+                        <img src="../../images/ico_loc_arrow.png" alt="">
+                    </div>
+                    <span class="locLine"></span>
+                    <div class="loc_depth">아이디찾기</div>
+                    <span class="locLine"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w_1200">
+    <div class="content" id="content">
+        <div class="leftMenu">
+            <h3><span class="tri_menu"></span>고객지원</h3>
+            <ul class="depthTwo">
+                <li><a href="">시스템안내<span></span></a></li>
+                <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                <li><a href="">문의사항<span></span></a></li>
+            </ul>
+        </div>
+        <div class="contentInner">
+            <div class="login">
+                <ul class="tabLike">
+                    <li><a href="" class="onLogin">아이디 찾기</a></li>
+                    <li><a href="">비밀번호 찾기</a></li>
+                </ul>
+                <div class="bgSide">
+                    <h3>아이디 찾기</h3>
+                    <div class="whiteBox">
+                        <img src="../../images/ico_find_id_02.png" alt="">
+                        <p>
+                            회원님의 아이디는 <span class="blue">sampleID</span> 입니다.
+                        </p>
+                    </div>
+                    <button type="button" class="roundLink">
+                        로그인페이지로 이동
+                        <img src="../../images/triangle.png" alt="" class="ml_5">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>`
+</div>
+@@include('include/footer.html') 
+</body>
+</html>

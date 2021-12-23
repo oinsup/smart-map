@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_n.html')
+<body>
+    <div id="wrap" class="north">
+        @@include('include/north_layout.html')
+
+        <!--toc-->
+        @@include('include/toc3.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left: 753px; width: 418px; top: 49px;">
+            <div class="head">
+                <strong class="tit">행정구역검색</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList static">
+                            <li class="active">행정구역검색</li>
+                            <li>행정구역 비교검색</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont white active">
+                        <div class="inner">
+                            <section class="popSec">
+                                <strong class="titSec">선택유형</strong>
+                                <div class="inputBox p20">
+                                    <div class="flex sb ac">
+                                        <button type="button" class="btnSquare f1">
+                                            <i class="ico type loca1"></i>
+                                            <span>시/도</span>
+                                        </button>
+                                        <button type="button" class="btnSquare f1">
+                                            <i class="ico type loca2"></i>
+                                            <span>시/군/구</span>
+                                        </button>
+                                        <button type="button" class="btnSquare f1">
+                                            <i class="ico type loca3"></i>
+                                            <span>읍/면/동</span>
+                                        </button>
+                                        <button type="button" class="btnSquare f1">
+                                            <i class="ico type loca4"></i>
+                                            <span>리</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec type02">비교행정구역 1</strong>
+                                <div class="inputBox">
+                                    <div class="labelInput">
+                                        <label>시/도</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>시/군/구</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>읍/면/동</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>리</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec type03">비교행정구역 2</strong>
+                                <div class="inputBox">
+                                    <div class="labelInput">
+                                        <label>시/도</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>시/군/구</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>읍/면/동</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                    <div class="labelInput">
+                                        <label>리</label>
+                                        <select>
+                                            <option value="시도를 선택하세요">시도를 선택하세요</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="btnArea flex center" style="margin-top:20px;">
+                                <button type="button" class="btn blue"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white"></div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+        <!--//popup-->
+        <!--popup-->
+        <div class="popup" style="left: 1253px; width: 476px; top: 49px;">
+            <div class="head">
+                <strong class="tit">행정구역 비교검색</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList static">
+                            <li class="active">지목별</li>
+                            <li>소유구분별</li>
+                            <li>면적별</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont white active">
+                        <div class="inner">
+                            <section class="popSec">
+                                <strong class="titSec">토지현황</strong>
+                                <div class="inputBox">
+                                    <div class="flex sb ac">
+                                        <div class="match">
+                                            <strong class="titSec type02">비교행정구역 1</strong>
+                                            <span class="addrBox">강원도 양구군 수입면 두포리</span>
+                                        </div>
+                                        <div class="match">
+                                            <strong class="titSec type03">비교행정구역 2</strong>
+                                            <span class="addrBox">경기도 개성군 서면 광정리</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--compare-->
+                                <div class="compare">
+                                    <div class="flex ac center">
+                                        <div class="compareObj type02">
+                                            <img src="../../images/map/popup/ico-compare-land-type02.png" alt="필지"/>
+                                            <p><span>0</span>필지</p>
+                                        </div>
+                                        <div class="compareArrow left">
+                                            <span>지번수</span>
+                                        </div>
+                                        <div class="compareObj type03">
+                                            <img src="../../images/map/popup/ico-compare-land-type03.png" alt="필지"/>
+                                            <p><span>499</span>필지</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//compare-->
+                                <!--compare-->
+                                <div class="compare">
+                                    <div class="flex ac center">
+                                        <div class="compareObj type02">
+                                            <img src="../../images/map/popup/ico-compare-space-type02.png" alt="면적"/>
+                                            <p><span>0</span>㎡</p>
+                                        </div>
+                                        <div class="compareArrow right">
+                                            <span>면적</span>
+                                        </div>
+                                        <div class="compareObj type03">
+                                            <img src="../../images/map/popup/ico-compare-space-type03.png" alt="면적"/>
+                                            <p><span>1,208,518.2</span>㎡</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//compare-->
+                                <!--compare-->
+                                <div class="compare">
+                                    <div class="flex ac center">
+                                        <div class="compareObj type02">
+                                            <img src="../../images/map/popup/ico-compare-space-type02.png" alt="면적"/>
+                                            <p><span>0</span>㎡</p>
+                                        </div>
+                                        <div class="compareArrow equal">
+                                            <span>면적</span>
+                                        </div>
+                                        <div class="compareObj type03">
+                                            <img src="../../images/map/popup/ico-compare-space-type03.png" alt="면적"/>
+                                            <p><span>1,208,518.2</span>㎡</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//compare-->
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec">지목별 현황</strong>
+                                <div class="graphArea">
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white"></div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

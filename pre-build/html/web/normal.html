@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+@@include('include/head_r.html')
+
+<body>
+    <div id="skipNavi">
+        <strong>컨텐츠 바로가기</strong>
+        <ul>
+            <li><a href="#content">본문으로 바로가기</a></li>
+            <li><a href="#menu">주메뉴 바로가기</a></li>
+        </ul>
+    </div>
+    <div class="wrap_100">
+        @@include('include/header.html')
+        <div id="wrapMain">
+            <div class="board_top_01">
+                <h2>기본 표준</h2>
+            </div>
+            <div class="location">
+                <div class="loc_inner">
+                    <div class="fr">
+                        <span class="locLine"></span>
+                        <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png"
+                                    alt="home으로 바로가기"></a></div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">고객지원
+                            <img src="../../images/ico_loc_arrow.png" alt="">
+                        </div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">공지사항</div>
+                        <span class="locLine"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <div class="leftMenu">
+                    <h3><span class="tri_menu"></span>고객지원</h3>
+                    <ul class="depthTwo">
+                        <li><a href="">시스템안내<span></span></a></li>
+                        <li class="menuL_on"><a href="">공지사항<span class="span_on"></span></a></li>
+                        <li><a href="">문의사항<span></span></a></li>
+                    </ul>
+                </div>
+                <div class="contentInner">
+                    <div class="searchBox">
+                        <div class="search_left">
+                            <div class="boardRow">
+                                <label for="sel_01" class="boardLabel">검색조건1</label>
+                                <select name="" id="sel_01" class="selBoard w_180 mr_40">
+                                    <option value="">선택</option>
+                                    <option value="">검색조건</option>
+                                    <option value="">검색조건</option>
+                                </select>
+                                <label for="sel_02" class="boardLabel">검색조건2</label>
+                                <select name="" id="sel_02" class="selBoard w_180 mr_40">
+                                    <option value="">선택</option>
+                                    <option value="">검색조건</option>
+                                    <option value="">검색조건</option>
+                                </select>
+                                <label for="sel_03" class="boardLabel">검색조건3</label>
+                                <select name="" id="sel_03" class="selBoard w_180 mr_10">
+                                    <option value="">선택</option>
+                                    <option value="">검색조건</option>
+                                    <option value="">검색조건</option>
+                                </select>
+                            </div>
+                            <div class="boardRow">
+                                <div class="labelLike">등록일</div>
+                                <input type="text" title="등록일 시작" class="input_month w_150" id="datetimepicker_mask">
+                                <span class="month_">-</span>
+                                <input type="text" title="등록일 종료" class="input_month w_150 mr_10" id="datetimepicker_mask_02">
+                                <label for="sel_04" class="boardLabel t_center">검색어</label>
+                                <select name="" id="sel_04" class="selBoard w_130 mr_7">
+                                    <option value="">선택</option>
+                                    <option value="">검색조건</option>
+                                    <option value="">검색조건</option>
+                                </select>
+                                <div class="searchBoardBox">
+                                    <label for="search" class="offscreen">검색어입력</label>
+                                    <input type="text" class="searchBoard_input" id="search">
+                                    <button class="btnSearch">검색버튼</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btnBoard">검색</button>
+                    </div>
+
+                    <div class="tableBox">
+                        <div class="allN">전체 <span class="blue">500</span>건</div>
+                        <table>
+                            <caption>공지사항 목록</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">제목</th>
+                                    <th scope="col">SNS여부</th>
+                                    <th scope="col">등록일자</th>
+                                    <th scope="col">아이콘</th>
+                                    <th scope="col">텍스트버전</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_01">
+                                        <label for="check_01">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td><img src="../../images/ico_pin.png" alt="주요사항"></td>
+                                    <td class="bTitle b_000"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_02" checked>
+                                        <label for="check_02">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>12</td>
+                                    <td class="bTitle">
+                                        <a href="">마이페이지 버그수정</a>
+                                        <img src="../../images/ico_new.png" alt="" class="vText">
+                                    </td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB redB" type="button">red</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_03" checked>
+                                        <label for="check_03">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>11</td>
+                                    <td class="bTitle"><a href="">
+                                            사이트점검</a>
+                                        <img src="../../images/ico_lock.png" alt="" class="vText">
+                                    </td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB blueB" type="button">blue</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_04">
+                                        <label for="check_04">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>10</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB greenB" type="button">green</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_05">
+                                        <label for="check_05">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>9</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB greyB" type="button">grey</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_06">
+                                        <label for="check_06">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>8</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB blackB" type="button">black</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_07">
+                                        <label for="check_07">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>7</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB blueBack" type="button">승인</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_08">
+                                        <label for="check_08">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>6</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB greyBack" type="button">반려</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_09">
+                                        <label for="check_09">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>5</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB greenB" type="button">green</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_10">
+                                        <label for="check_10">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>4</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td class="pos_rel">
+                                        <img src="../../images/ico_board_list.png" alt="" id="listBox">
+                                        <div id="listMD">
+                                            <ul>
+                                                <li>수정</li>
+                                                <li>삭제</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+
+                                    <td><button class="btnB greenB" type="button">green</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="xxx" value="yyy" id="check_11">
+                                        <label for="check_11">
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td>3</td>
+                                    <td class="bTitle"><a href="">사이트점검</a></td>
+                                    <td>발송</td>
+                                    <td>2021.07.23</td>
+                                    <td><span class="tdTrash"></span></td>
+                                    <td><button class="btnB greenB" type="button">green</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btnBox">
+                            <button type="button" class="btnS greyBack">삭제</button>
+                            <button type="submit" class="btnS blueBack">등록</button>
+                            <button type="button" class="btnS blueB">수정</button>
+                        </div>
+                        <div class="numBox">
+                            <button type="button" class="btnFirst">처음</button>
+                            <button type="button" class="btnPrev">이전</button>
+                            <a href="" class="active">1</a>
+                            <a href="">2</a>
+                            <a href="">3</a>
+                            <a href="">4</a>
+                            <a href="">5</a>
+                            <a href="">6</a>
+                            <a href="">7</a>
+                            <a href="">8</a>
+                            <a href="">9</a>
+                            <a href="">10</a>
+                            <button type="button" class="btnNext">다음</button>
+                            <button type="button" class="btnLast">마지막</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    @@include('include/footer.html')
+    <!--달력-->
+    <script src="../../js/cmm/jquery.datetimepicker.full.js"></script>
+    <script>
+        $('#datetimepicker_mask').datetimepicker({
+        });
+        $('#datetimepicker_mask_02').datetimepicker({
+        });
+    </script>
+</body>
+
+</html>

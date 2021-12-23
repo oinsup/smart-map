@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap" class="local">
+
+        @@include('include/local_layout.html')
+
+        <!--
+        <div id="dimmed"></div>
+        -->
+
+
+        <!--popup-->
+        <div class="popup geoCoding">
+            <button type="button" class="btnGeoToggle"><span class="hidden">늘이기/줄이기</span></button>
+            <div class="head">
+                <strong class="tit" style="margin-right:0;">지오코딩레이어</strong>
+                <p class="total">
+                    (총:<span>n</span>건, 매칭:<span>xx</span>건, 비매칭:<span>y</span>건)
+                </p>
+                <select>
+                    <option value="선택" selected>선택</option>
+                </select>
+                <div class="btnGroup">
+                    <button type="button" class="btn skyblue"><span>엑셀 다운로드</span></button>
+                    <button type="button" class="btn navy"><span>취소</span></button>
+                    <button type="button" class="btn peacock"><span>레이어 생성</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <div class="table type02 h45 scroll hover">
+                        <table>
+                            <caption>지오코딩레이어</caption>
+                            <colgroup>
+                                <col style="width:77px"/>
+                                <col style="width:100px"/>
+                                <col style="width:auto"/>
+                                <col style="width:150px"/>
+                                <col style="width:150px"/>
+                                <col style="width:150px"/>
+                                <col style="width:150px"/>
+                                <col style="width:150px"/>
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">순번</th>
+                                <th scope="col">매칭여부</th>
+                                <th scope="col">최신주소</th>
+                                <th scope="col">X</th>
+                                <th scope="col">Y</th>
+                                <th scope="col">col1</th>
+                                <th scope="col">col...</th>
+                                <th scope="col">col n</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Y</td>
+                                <td><p class="ellipsis">경기도 안양시 동안구 비산동 1234</p></td>
+                                <td>128˚ …</td>
+                                <td>34˚ …</td>
+                                <td>…</td>
+                                <td>…</td>
+                                <td>…</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Y</td>
+                                <td><p class="ellipsis">경기도 안양시 동안구 비산동 1234</p></td>
+                                <td>128˚ …</td>
+                                <td>34˚ …</td>
+                                <td>…</td>
+                                <td>…</td>
+                                <td>…</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Y</td>
+                                <td><p class="ellipsis">경기도 안양시 동안구 비산동 1234</p></td>
+                                <td>128˚ …</td>
+                                <td>34˚ …</td>
+                                <td>…</td>
+                                <td>…</td>
+                                <td>…</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Y</td>
+                                <td><p class="ellipsis">경기도 안양시 동안구 비산동 1234</p></td>
+                                <td>128˚ …</td>
+                                <td>34˚ …</td>
+                                <td>…</td>
+                                <td>…</td>
+                                <td>…</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Y</td>
+                                <td><p class="ellipsis">경기도 안양시 동안구 비산동 1234</p></td>
+                                <td>128˚ …</td>
+                                <td>34˚ …</td>
+                                <td>…</td>
+                                <td>…</td>
+                                <td>…</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Y</td>
+                                <td><p class="ellipsis">경기도 안양시 동안구 비산동 1234</p></td>
+                                <td>128˚ …</td>
+                                <td>34˚ …</td>
+                                <td>…</td>
+                                <td>…</td>
+                                <td>…</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

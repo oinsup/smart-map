@@ -1,0 +1,471 @@
+<!--toc-->
+<div id="toc" class="info">
+    <button type="button" class="btnTocToggle"><span class="hidden">TOC열기/닫기</span></button>
+    <span class="toast">TOC 창을 닫으면 분할지도를 보다 넓게 확인할 수 있습니다.</span>
+    <div class="wrap">
+        <div class="left">
+            <!--layerArea-->
+            <div class="layerArea">
+                <!--head-->
+                <div class="head">
+                    <strong class="tit">레이어 목록</strong>
+                    <button type="button" class="btnLayerSearch"><span class="hidden">검색창 열기</span></button>
+                </div>
+                <!--//head-->
+                <!--cont-->
+                <div class="cont">
+                    <div class="contentList cScroll">
+                        <!--item-->
+                        <div class="item active">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle active"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">지도 레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico m"></i>
+                                    <p class="name">지적원도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <div class="placeholder"><span class="hidden">여기로 이동</span></div>
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="placeholder"><span class="hidden">여기로 이동</span></div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico f"></i>
+                                    <p class="name">시도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico t"></i>
+                                    <p class="name">시군구</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">읍면동</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">주제도</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico f"></i>
+                                    <p class="name">지목별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico t"></i>
+                                    <p class="name">소유구분별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">면적별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">접근불능지역</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 19년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 18년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">최신행정경계레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 19년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 18년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">통계주제도</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">소유구분별통계</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn remove"><span class="hidden">삭제</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                    </div>
+                </div>
+                <!--//cont-->
+            </div>
+            <!--//layerArea-->
+        </div>
+        <div class="right">
+            <button type="button" class="btnTocClose"><span class="hidden">닫기</span></button>
+            <!--head-->
+            <div class="head">
+                <strong class="titLayer">U0001822</strong>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont">
+                <!--tabContWrap-->
+                <div class="tabContWrap type01">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList">
+                            <li class="active">정보</li>
+                            <li>범례</li>
+                            <li>필터</li>
+                            <li>설정</li>
+                            <li>분석</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont active cScroll">
+                        <div class="inner">
+                            <section class="tocSec">
+                                <div class="inner">
+                                    <!--table-->
+                                    <div class="table type03">
+                                        <table>
+                                            <caption>정보</caption>
+                                            <colgroup>
+                                                <col style="width:136px;">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">레이어명</th>
+                                                <td class="txt-left"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">별칭</th>
+                                                <td class="txt-left">U0001822</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">레이어설명</th>
+                                                <td class="txt-left pos-r" style="height:120px;">
+                                                    <div class="flex at">
+                                                        <p style="flex:1;">내용</p>
+                                                        <button type="button" class="btnDescEdit"><span class="hidden">수정</span></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">좌표계</th>
+                                                <td class="txt-left"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">소유자</th>
+                                                <td class="txt-left"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">생성일자</th>
+                                                <td class="txt-left"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">데이터수</th>
+                                                <td class="txt-left"></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">수정일</th>
+                                                <td class="txt-left"></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--//table-->
+                                    <div class="btnArea flex center" style="margin-top:20px;">
+                                        <button type="button" class="btn greyblue"><span>속성정보</span></button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="tocSec">
+                                <div class="inner">
+                                    <div class="desc">
+                                        <p>원천데이터 : (연속주제)_기업도시개발/기업도시</p>
+                                        <p>용도지역 코드 : UBF100</p>
+                                    </div>
+                                    <div class="tip topLine">
+                                        <p>현 레이어는 원천 데이터에서 용도지역 코드에 해당하는 정보만을 보여주며 데이터 담기시에는 원천데이터를 제공합니다.</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll"></div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+</div>
+<!--//toc-->

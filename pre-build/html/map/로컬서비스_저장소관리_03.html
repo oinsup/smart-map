@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap" class="local">
+
+        @@include('include/local_layout.html')
+
+        <!--
+        <div id="dimmed"></div>
+        -->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 287px);width:573px;">
+            <div class="head">
+                <strong class="tit">저장소 목록</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont">
+                <div class="inner">
+                    <!--layerSearch-->
+                    <div class="layerSearch">
+                        <div class="lnb">
+                            <div class="list type01">
+                                <strong class="tit">구분</strong>
+                                <dl>
+                                    <dt><div><span>전체</span></div></dt>
+                                    <dd class="dep1">
+                                        <div><i class="ico folder"></i><span>SHP</span><button type="button" class="btnDepAdd"><span>+ 추가</span></button> </div>
+                                        <ul class="dep2">
+                                            <li class="file"><span>nsidBase</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dd class="dep1">
+                                        <div><i class="ico folder"></i><span>PostgreSQL</span></div>
+                                        <ul class="dep2">
+                                            <li class="folder"><span>저장소1</span></li>
+                                        </ul>
+                                    </dd>
+                                    <dd class="dep1">
+                                        <div><i class="ico folder"></i><span>Oracle</span></div>
+                                        <ul class="dep2">
+                                            <li><span>2뎁스 메뉴</span></li>
+                                            <li><span>2뎁스 메뉴</span></li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <div class="popSec">
+                                <!--table-->
+                                <div class="table type05">
+                                    <table>
+                                        <caption>저장소 목록</caption>
+                                        <colgroup>
+                                            <col style="width:112px;"/>
+                                            <col style="width:auto;"/>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">작업공간<span class="redDot"></span></th>
+                                            <td class="txt-left">K-Geo 플랫폼 로컬서비스</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">저장소명<span class="redDot"></span></th>
+                                            <td class="txt-left">nsidBase</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                            </div>
+                            <div class="popSec">
+                                <div class="titArea">
+                                    <strong class="titSec">연결정보</strong>
+                                    <div class="btnArea">
+                                        <button type="button" class="btn baloon h34 peacock"><i class="ico connect lt"></i><span>연결확인</span></button>
+                                    </div>
+                                </div>
+                                <!--table-->
+                                <div class="table type05">
+                                    <table>
+                                        <caption>연결정보</caption>
+                                        <colgroup>
+                                            <col style="width:112px;"/>
+                                            <col style="width:auto;"/>
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row"><label>유형<span class="redDot"></span></label></th>
+                                            <td class="txt-left">PostgresSQL</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label>서버 IP<span class="redDot"></span></label></th>
+                                            <td class="txt-left">
+                                                <input type="text" style="width:100%" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label>서버 Port<span class="redDot"></span></label></th>
+                                            <td class="txt-left">
+                                                <input type="text" style="width:100%" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label>DataBase<span class="redDot"></span></label></th>
+                                            <td class="txt-left">
+                                                <input type="text" style="width:100%" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label>Schema<span class="redDot"></span></label></th>
+                                            <td class="txt-left">
+                                                <input type="text" style="width:100%" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label>DataBase ID<span class="redDot"></span></label></th>
+                                            <td class="txt-left">
+                                                <input type="text" style="width:100%" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label>DataBase PW<span class="redDot"></span></label></th>
+                                            <td class="txt-left">
+                                                <input type="password" style="width:100%"/>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                                <div class="btnArea flex right" style="margin-top:30px;">
+                                    <button type="button" class="btn grey2 lg"><span>삭제</span></button>
+                                    <button type="button" class="btn blue lg"><span>저장</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//layerSearch-->
+                </div>
+            </div>
+        </div>
+        <!--//popup-->
+    </div>
+</body>
+</html>

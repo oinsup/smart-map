@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+<body>
+    <div id="skipNavi">
+        <strong>컨텐츠 바로가기</strong>
+        <ul>
+            <li><a href="#wrapMain">본문으로 바로가기</a></li>
+            <li><a href="#menu">주메뉴 바로가기</a></li>
+        </ul>
+    </div>
+    <div class="wrap_100">
+        @@include('include/header.html')
+        <div id="wrapMain">
+            <div class="board_top_02">
+                <h2>토지 찾기</h2>
+            </div>
+            <div class="location">
+                <div class="loc_inner">
+                    <div class="fr">
+                        <span class="locLine"></span>
+                        <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png"
+                                    alt="home으로 바로가기"></a></div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">토지찾기
+                            <img src="../../images/ico_loc_arrow.png" alt="">
+                        </div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">조상땅 찾기</div>
+                        <span class="locLine"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <!--leftMenu-->
+                <div class="leftMenu">
+                    <h3><span class="tri_menu"></span>토지찾기</h3>
+                    <ul class="depthTwo">
+                        <li><a href="">이용안내<span></span></a></li>
+                        <li><a href="">내 토지 찾기</a></li>
+                        <li class="menuL_on"><a href="">조상땅 찾기<span class="span_on"></span></a></li>
+                        <li><a href="">신청내역<span></span></a></li>
+                    </ul>
+                </div>
+                <!--//leftMenu-->
+                <!--rightCont-->
+                <div class="rightCont">
+                    <h3 class="titPage">조상 땅 찾기</h3>
+                    <h5 class="bulletTxt">신청자 정보</h5>
+                    <div class="table row">
+                        <table>
+                            <caption>조상 땅 찾기</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><label for="input_01">성명</label></th>
+                                    <td>
+                                        <input type="text" id="input_01" class="w_146" readonly="readonly">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">주민등록번호</th>
+                                    <td>
+                                        <label for="num_01" class="offscreen">주민번호 첫자리</label>
+                                        <input type="text" class="w_146" readonly="readonly"id="num_01">
+                                        <span class="dash">-</span>
+                                        <label for="num_02" class="offscreen">주민번호 둘째자리</label>
+                                        <input type="password" class="w_146" readonly="readonly" id="num_02">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h5 class="bulletTxt mt_20">대상자 정보</h5>
+                    <div class="table row">
+                        <table>
+                            <caption>조상 땅 찾기</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col style="width:auto">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th scope="row"><label for="input_02">성명</label></th>
+                                <td>
+                                    <input type="text" id="input_02" class="w_146">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">주민등록번호</th>
+                                <td>
+                                    <label for="num_03" class="offscreen">주민번호 첫자리</label>
+                                    <input type="text" class="w_146" id="num_03">
+                                    <span class="dash">-</span>
+                                    <label for="num_04" class="offscreen">주민번호 둘째자리</label>
+                                    <input type="password" class="w_146" id="num_04">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="ddd">구분</label></th>
+                                <td>
+                                    <select name="" id="ddd" class="w_240">
+                                        <option value="">부</option>
+                                        <option value="">부</option>
+                                        <option value="">부</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fr mt_30">
+                        <button type="button" class="greyBack w_140 mr_5">취소</button>
+                        <button type="button" class="blueBack w_140">신청</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('include/footer.html')    
+</body>
+</html>

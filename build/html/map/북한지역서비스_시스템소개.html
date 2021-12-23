@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cmm/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="../../css/cmm/jquery.datetimepicker.css" type="text/css">
+    <link rel="stylesheet" href="../../css/cmm/ncmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/cmm/rcmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nmap/nmap.css" type="text/css">
+
+    <script src="../../js/cmm/jquery-1.12.4.js"></script>
+    <script src="../../js/cmm/jquery-ui.js"></script>
+    <script src="../../js/cmm/jquery.datetimepicker.full.js"></script>
+    <script src="../../js/map/ui_map.js"></script>
+</head>
+<body>
+    <div id="wrap" class="north">
+        
+<div class="mapArea">
+    <div class="col">
+        <!--지도 api 영역-->
+        <div id="map">
+            <div class="toolbar">
+                <div class="dep1">
+                    <button type="button" class="btn btnMapType"><span class="hidden">지도타입</span></button>
+                    <div class="dep2">
+                        <button type="button" class="btn mapView en"><span>영문지도</span></button>
+                        <button type="button" class="btn mapView baroE"><span>바로e맵</span></button>
+                        <div class="dep3">
+                            <button type="button" class="btn mapView airplane"><span>항공사진</span></button>
+                            <select title="항공사진 년도선택">
+                                <option value="Base" selected="">Base</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn mapView whiteMap"><span>백지도</span></button>
+                        <button type="button" class="btn mapView space"><span>정사영상</span></button>
+                    </div>
+                </div>
+                <div class="btnTool">
+                    <div class="dep1 active">
+                        <button type="button" class="btn btnDivide active"><span>지도분할</span></button>
+                        <div class="dep2">
+                            <button type="button" class="btn divide divide4"><span>4분할</span></button>
+                            <button type="button" class="btn divide divide3"><span>3분할</span></button>
+                            <button type="button" class="btn divide divide2"><span>2분할</span></button>
+                            <button type="button" class="btn divide divide1"><span>전체</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poi" style="left:700px;top:550px;">
+                <strong>관양2동</strong>
+                <p>466,666.4<span>㎡</span></p>
+            </div>
+        </div>
+        <!--//지도 api 영역 -->
+        <!--지도 api 영역-->
+        <div id="map2">
+            <div class="toolbar">
+                <div class="dep1">
+                    <button type="button" class="btn btnMapType"><span class="hidden">지도타입</span></button>
+                    <div class="dep2">
+                        <button type="button" class="btn mapView en"><span>영문지도</span></button>
+                        <button type="button" class="btn mapView baroE"><span>바로e맵</span></button>
+                        <div class="dep3">
+                            <button type="button" class="btn mapView airplane"><span>항공사진</span></button>
+                            <select title="항공사진 년도선택">
+                                <option value="Base" selected="">Base</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn mapView whiteMap"><span>백지도</span></button>
+                        <button type="button" class="btn mapView space"><span>정사영상</span></button>
+                    </div>
+                </div>
+                <div class="btnTool">
+                    <div class="dep1 active">
+                        <button type="button" class="btn btnDivide active"><span>지도분할</span></button>
+                        <div class="dep2">
+                            <button type="button" class="btn divide divide4"><span>4분할</span></button>
+                            <button type="button" class="btn divide divide3"><span>3분할</span></button>
+                            <button type="button" class="btn divide divide2"><span>2분할</span></button>
+                            <button type="button" class="btn divide divide1"><span>전체</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poi" style="left:700px;top:550px;">
+                <strong>관양2동</strong>
+                <p>466,666.4<span>㎡</span></p>
+            </div>
+        </div>
+        <!--//지도 api 영역 -->
+    </div>
+    <div class="col">
+        <!--지도 api 영역-->
+        <div id="map3">
+            <div class="toolbar">
+                <div class="dep1">
+                    <button type="button" class="btn btnMapType"><span class="hidden">지도타입</span></button>
+                    <div class="dep2">
+                        <button type="button" class="btn mapView en"><span>영문지도</span></button>
+                        <button type="button" class="btn mapView baroE"><span>바로e맵</span></button>
+                        <div class="dep3">
+                            <button type="button" class="btn mapView airplane"><span>항공사진</span></button>
+                            <select title="항공사진 년도선택">
+                                <option value="Base" selected="">Base</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn mapView whiteMap"><span>백지도</span></button>
+                        <button type="button" class="btn mapView space"><span>정사영상</span></button>
+                    </div>
+                </div>
+                <div class="btnTool">
+                    <div class="dep1 active">
+                        <button type="button" class="btn btnDivide active"><span>지도분할</span></button>
+                        <div class="dep2">
+                            <button type="button" class="btn divide divide4"><span>4분할</span></button>
+                            <button type="button" class="btn divide divide3"><span>3분할</span></button>
+                            <button type="button" class="btn divide divide2"><span>2분할</span></button>
+                            <button type="button" class="btn divide divide1"><span>전체</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poi" style="left:700px;top:550px;">
+                <strong>관양2동</strong>
+                <p>466,666.4<span>㎡</span></p>
+            </div>
+        </div>
+        <!--//지도 api 영역 -->
+        <!--지도 api 영역-->
+        <div id="map4">
+            <div class="toolbar">
+                <div class="dep1">
+                    <button type="button" class="btn btnMapType"><span class="hidden">지도타입</span></button>
+                    <div class="dep2">
+                        <button type="button" class="btn mapView en"><span>영문지도</span></button>
+                        <button type="button" class="btn mapView baroE"><span>바로e맵</span></button>
+                        <div class="dep3">
+                            <button type="button" class="btn mapView airplane"><span>항공사진</span></button>
+                            <select title="항공사진 년도선택">
+                                <option value="Base" selected="">Base</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn mapView whiteMap"><span>백지도</span></button>
+                        <button type="button" class="btn mapView space"><span>정사영상</span></button>
+                    </div>
+                </div>
+                <div class="btnTool">
+                    <div class="dep1 active">
+                        <button type="button" class="btn btnDivide active"><span>지도분할</span></button>
+                        <div class="dep2">
+                            <button type="button" class="btn divide divide4"><span>4분할</span></button>
+                            <button type="button" class="btn divide divide3"><span>3분할</span></button>
+                            <button type="button" class="btn divide divide2"><span>2분할</span></button>
+                            <button type="button" class="btn divide divide1"><span>전체</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="poi" style="left:700px;top:550px;">
+                <strong>관양2동</strong>
+                <p>466,666.4<span>㎡</span></p>
+            </div>
+        </div>
+        <!--//지도 api 영역 -->
+    </div>
+</div>
+
+
+<!--userArea-->
+<div class="userArea">
+    <div class="userInfo">
+        <p>국토교통부 정책담당관 <span>홍길동</span>님</p>
+        <button type="button" class="btnLogout"><span>로그아웃</span></button>
+    </div>
+    <h1 class="logo">
+        <img src="../../images/north/logo.png" alt="K-geo 플랫폼"/>
+    </h1>
+</div>
+<!--//userArea-->
+<!--alarm-->
+<div class="alarm">
+    <button type="button" class="btnAlarm">
+        <span class="hidden">알림</span>
+        <span class="new type02">22</span>
+        <div class="alarmLoading"></div>
+    </button>
+    <!--alarmPop-->
+    <div class="alarmPop" style="display: block;">
+        <!--head-->
+        <div class="head">
+            <strong class="titPop">알림</strong>
+            <div class="btnGroup">
+                <button type="button" class="btnAlarmReload"><span class="hidden">새로고침</span></button>
+                <button type="button" class="btnAlarmClose"><span class="hidden">닫기</span></button>
+            </div>
+        </div>
+        <!--//head-->
+        <!--cont-->
+        <div class="cont">
+            <div class="cScroll" style="height:400px;">
+                <div class="inner">
+                    <div class="txtBox">
+                        <p>요청순으로 작업중입니다.<br/>현재 작업 앞에 <span class="colorType blue">1</span>건의 작업이 있습니다.</p>
+                    </div>
+                    <div class="alarmList">
+                        <!--dayBox-->
+                        <div class="dayBox">
+                            <div class="date today">
+                                <p>9월 23일</p>
+                            </div>
+                            <!--log-->
+                            <div class="log active">
+                                <div class="tit">
+                                    <div class="inner">
+                                        <strong><i class="ico alarmIco share"></i>공유</strong>
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogDown"><span class="hidden">다운로드</span></button>
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="btnLogMore"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>지오코딩 테스트 버퍼 분석이 완료되었습니다.</p>
+                                </div>
+                            </div>
+                            <!--//log-->
+                            <!--log-->
+                            <div class="log">
+                                <div class="tit">
+                                    <div class="inner">
+                                        <strong><i class="ico alarmIco code"></i>공간분석</strong>
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogDown"><span class="hidden">다운로드</span></button>
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="btnLogMore"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>지오코딩 테스트 버퍼 분석이 완료되었습니다.</p>
+                                </div>
+                            </div>
+                            <!--//log-->
+                            <!--log-->
+                            <div class="log">
+                                <div class="tit">
+                                    <div class="inner">
+                                        <strong><i class="ico alarmIco upload"></i>데이터 업로드</strong>
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogDown"><span class="hidden">다운로드</span></button>
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="btnLogMore"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>지오코딩 테스트 버퍼 분석이 완료되었습니다.</p>
+                                </div>
+                            </div>
+                            <!--//log-->
+                        </div>
+                        <!--//dayBox-->
+                        <!--dayBox-->
+                        <div class="dayBox">
+                            <div class="date today">
+                                <p>9월 22일</p>
+                            </div>
+                            <!--log-->
+                            <div class="log">
+                                <div class="tit">
+                                    <div class="inner">
+                                        <strong><i class="ico alarmIco filter"></i>데이터 추출</strong>
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogDown"><span class="hidden">다운로드</span></button>
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="btnLogMore"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>지오코딩 테스트 버퍼 분석이 완료되었습니다.</p>
+                                </div>
+                            </div>
+                            <!--//log-->
+                            <!--log-->
+                            <div class="log">
+                                <div class="tit">
+                                    <div class="inner">
+                                        <strong><i class="ico alarmIco calc"></i>공간연산</strong>
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogDown"><span class="hidden">다운로드</span></button>
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="btnLogMore"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>지오코딩 테스트 버퍼 분석이 완료되었습니다.</p>
+                                </div>
+                            </div>
+                            <!--//log-->
+                            <!--log-->
+                            <div class="log">
+                                <div class="tit">
+                                    <div class="inner">
+                                        <strong><i class="ico alarmIco layer"></i>레이어 추가/삭제</strong>
+                                        <div class="btnGroup">
+                                            <button type="button" class="btnLogDown"><span class="hidden">다운로드</span></button>
+                                            <button type="button" class="btnLogAdd"><span class="hidden">추가</span></button>
+                                            <button type="button" class="btnLogRemove"><span class="hidden">삭제</span></button>
+                                            <button type="button" class="btnLogMore"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desc">
+                                    <p>지오코딩 테스트 버퍼 분석이 완료되었습니다.</p>
+                                </div>
+                            </div>
+                            <!--//log-->
+                        </div>
+                        <!--//dayBox-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//cont-->
+    </div>
+    <!--alarmPop-->
+</div>
+<!--//alarm-->
+<!--fileUploadProgress-->
+<div class="fileUploadProgress">
+    <div class="inner">
+        <p>파일 업로드중입니다.</p>
+        <div class="progress">
+            <div class="progressBar">
+                <div class="percent" style="width:50%;"></div>
+            </div>
+            <strong>45%</strong>
+        </div>
+    </div>
+</div>
+<!--//fileUploadProgress-->
+<!--utilArea-->
+<div class="utilArea">
+    <ul>
+        <li>
+            <button type="button" class="btn btnMenu07"><span>정보조회</span></button>
+            <!--innerBtn-->
+            <div class="innerBtn">
+                <button type="button" class="info type06"><span>지명검색</span></button>
+                <button type="button" class="info type05"><span>속성검색</span></button>
+                <button type="button" class="info type04"><span>공간검색</span></button>
+                <button type="button" class="info type03"><span>필지정보</span></button>
+                <button type="button" class="info type02"><span>변경이력</span></button>
+                <div class="dep2">
+                    <button type="button" class="info type01"><span>도근점</span></button>
+                    <div class="dep3">
+                        <button type="button" class="info type01"><span>도근점</span></button>
+                        <button type="button" class="info type01"><span>도근점</span></button>
+                        <button type="button" class="info type01"><span>도근점</span></button>
+                    </div>
+                </div>
+            </div>
+            <!--//innerBtn-->
+        </li>
+        <li>
+            <button type="button" class="btn btnMenu08"><span>분석</span></button>
+            <!--innerBtn-->
+            <div class="innerBtn">
+                <button type="button" class="analysis type04"><span>행정구역</span></button>
+                <button type="button" class="analysis type03"><span>행정구역<br/>비교</span></button>
+                <button type="button" class="analysis type02"><span>공간분석</span></button>
+                <button type="button" class="analysis type01"><span>다중<br/>공간분석</span></button>
+            </div>
+            <!--//innerBtn-->
+        </li>
+        <li>
+            <button type="button" class="btn btnMenu14"><span>사용자관리</span></button>
+        </li>
+    </ul>
+</div>
+<!--//utilArea-->
+
+<!--toolbar-->
+<div class="toolbar">
+    <button type="button" class="btn btnCurrent"><span class="hidden">현위치</span></button>
+    <div class="dep1">
+        <button type="button" class="btn btnFavorite"><span class="hidden">즐겨찾기</span></button>
+        <div class="dep2">
+            <button type="button" class="btn favorite submit"><span>등록</span></button>
+            <button type="button" class="btn favorite search"><span>조회</span></button>
+        </div>
+    </div>
+    <div class="dep1">
+        <button type="button" class="btn btnMapType"><span class="hidden">지도타입</span></button>
+        <div class="dep2">
+            <button type="button" class="btn mapView en"><span>영문지도</span></button>
+            <button type="button" class="btn mapView baroE"><span>바로e맵</span></button>
+            <div class="dep3">
+                <button type="button" class="btn mapView airplane"><span>항공사진</span></button>
+                <select title="항공사진 년도선택">
+                    <option value="Base" selected>Base</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                </select>
+            </div>
+            <button type="button" class="btn mapView whiteMap"><span>백지도</span></button>
+            <button type="button" class="btn mapView space"><span>정사영상</span></button>
+        </div>
+    </div>
+    <!--scale-->
+    <div class="scale">
+        <button type="button" class="btnScaleUp"><span class="hidden">확대</span></button>
+        <button type="button" class="btnScaleDown"><span class="hidden">축소</span></button>
+    </div>
+    <!--//scale-->
+    <!--btnTool-->
+    <div class="btnTool">
+        <button type="button" class="btn btnReset"><span>초기화</span></button>
+        <div class="dep1">
+            <button type="button" class="btn btnDivide"><span>지도분할</span></button>
+            <div class="dep2">
+                <button type="button" class="btn divide divide4"><span>4분할</span></button>
+                <button type="button" class="btn divide divide3"><span>3분할</span></button>
+                <button type="button" class="btn divide divide2"><span>2분할</span></button>
+                <button type="button" class="btn divide divide1"><span>전체</span></button>
+            </div>
+        </div>
+        <div class="dep1">
+            <button type="button" class="btn btnDraw"><span>그리기</span></button>
+            <div class="dep2">
+                <button type="button" class="btn draw text"><span>텍스트</span></button>
+                <button type="button" class="btn draw polygon"><span>다각형</span></button>
+                <button type="button" class="btn draw line"><span>라인</span></button>
+                <button type="button" class="btn draw point"><span>포인트</span></button>
+                <button type="button" class="btn draw circle"><span>원</span></button>
+                <button type="button" class="btn draw rectangle"><span>사각형</span></button>
+                <button type="button" class="btn draw curve"><span>곡선</span></button>
+                <button type="button" class="btn draw buffer"><span>버퍼</span></button>
+
+            </div>
+        </div>
+        <div class="dep1">
+            <button type="button" class="btn btnRuler"><span>측정</span></button>
+            <div class="dep2">
+                <button type="button" class="btn ruler area"><span>면적</span></button>
+                <button type="button" class="btn ruler distance"><span>거리</span></button>
+            </div>
+        </div>
+        <div class="dep1">
+            <button type="button" class="btn btnPrint"><span>출력</span></button>
+            <div class="dep2">
+                <button type="button" class="btn print capture"><span>화면저장</span></button>
+                <button type="button" class="btn print printing"><span>출력</span></button>
+            </div>
+        </div>
+    </div>
+    <!--//btnTool-->
+    <!--btnTool-->
+    <div class="btnTool mt10">
+        <div class="dep1">
+            <button type="button" class="btn btnDraw"><span>커뮤니티</span></button>
+            <div class="dep2">
+                <button type="button" class="btn community notice"><span>공지사항</span></button>
+                <button type="button" class="btn community qna"><span>Q&A</span></button>
+                <button type="button" class="btn community faq"><span>FAQ</span></button>
+                <button type="button" class="btn community pds"><span>자료실</span></button>
+
+            </div>
+        </div>
+        <button type="button" class="btn btnHelp"><span>도움말</span></button>
+    </div>
+    <!--//btnTool-->
+</div>
+<!--//toolbar-->
+
+        <!--toc-->
+        <!--toc-->
+<div id="toc" class="info">
+    <button type="button" class="btnTocToggle"><span class="hidden">TOC열기/닫기</span></button>
+    <div class="wrap">
+        <div class="left">
+            <div class="tocTabList">
+                <ul>
+                    <li class="active">북한지적원도</li>
+                    <li>접근불능지역</li>
+                </ul>
+            </div>
+            <!--layerArea-->
+            <div class="layerArea">
+                <!--head-->
+                <div class="head">
+                    <strong class="tit">컨텐츠목록</strong>
+                    <div class="btnGroup">
+                        <button type="button" class="btnLayerChart"><span class="hidden">차트 열기</span></button>
+                        <button type="button" class="btnLayerHelp"><span class="hidden">도움말 열기</span></button>
+                        <button type="button" class="btnLayerSetting"><span class="hidden">설정창 열기</span></button>
+                        <button type="button" class="btnLayerSearch"><span class="hidden">검색창 열기</span></button>
+                    </div>
+                </div>
+                <!--//head-->
+                <!--cont-->
+                <div class="cont">
+                    <div class="contentList cScroll">
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">지도 레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico m"></i>
+                                    <p class="name">지적원도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico f"></i>
+                                    <p class="name">시도</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="flex ac">
+                                    <i class="ico t"></i>
+                                    <p class="name">시군구</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">읍면동</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">주제도</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico f"></i>
+                                    <p class="name">지목별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="flex ac">
+                                    <i class="ico t"></i>
+                                    <p class="name">소유구분별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">면적별</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">접근불능지역</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 19년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 18년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">최신행정경계레이어</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 19년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                    <p class="name">국토실태DB 18년</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="flex ac">
+                                        <i class="ico t"></i>
+                                        <p class="name">산업/경제</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">도로</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="flex ac">
+                                        <i class="ico s"></i>
+                                        <p class="name">항만</p>
+                                        <div class="btnGroup">
+                                            <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                            <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                        <!--item-->
+                        <div class="item">
+                            <div class="flex ac">
+                                <button type="button" class="btnContentToggle"><span class="hidden">보이기/숨기기</span></button>
+                                <p class="name">통계주제도</p>
+                                <div class="btnGroup">
+                                    <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="flex ac">
+                                    <i class="ico s"></i>
+                                    <p class="name">소유구분별통계</p>
+                                    <div class="btnGroup">
+                                        <button type="button" class="icoBtn view"><span class="hidden">보이기/숨기기</span></button>
+                                        <button type="button" class="icoBtn more"><span class="hidden">더보기</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//item-->
+                    </div>
+                </div>
+                <!--//cont-->
+            </div>
+            <!--//layerArea-->
+        </div>
+        <div class="right">
+            <button type="button" class="btnTocClose"><span class="hidden">닫기</span></button>
+
+
+
+            <!--head-->
+            <div class="head">
+                <strong class="titLayer">지목별 규모현황</strong>
+            </div>
+            <!--//head-->
+            <!--cont-->
+            <div class="cont grey">
+                <div class="inner p20">
+                    <section class="tocSec">
+                        <div class="inner">
+                            <!--table-->
+                            <div class="table type05">
+                                <table>
+                                    <caption>정보</caption>
+                                    <colgroup>
+                                        <col style="width:74px;">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">통계명</th>
+                                        <td class="txt-left">규모별 기본현황(총괄)</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">법정동명</th>
+                                        <td class="txt-left">전국</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">통계설명</th>
+                                        <td class="txt-left">전국의 토지에 대하여 지번수, 면적, 필지당평균면적</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">통계용도</th>
+                                        <td class="txt-left">전국기준 지역에 해당하는 필지, 면적의 규모현황 파악</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">자료준기</th>
+                                        <td class="txt-left">토지(임야)대장</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">작성기준</th>
+                                        <td class="txt-left">지번수: 토지 지번수의 합, 면적 : 토지</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">생성주기</th>
+                                        <td class="txt-left">매년 12월</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">생성년도</th>
+                                        <td class="txt-left">2011년</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--//table-->
+                            <div class="btnArea flex center" style="margin-top:20px;">
+                                <button type="button" class="btn greyblue w100"><span>속성정보</span></button>
+                                <button type="button" class="btn blue w100"><span>데이터 신청</span></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!--//cont-->
+        </div>
+    </div>
+</div>
+<!--//toc-->
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left: calc(50% - 512px); width: 1024px; top: 49px;">
+            <div class="head">
+                <strong class="tit">시스템소개</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList static">
+                            <li class="active">북한지역 서비스 소개</li>
+                            <li>소유구분별</li>
+                            <li>DB 구축현황 및 계획</li>
+                            <li>활용분야</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont white cScroll active" style="max-height:700px;">
+                        <div class="inner">
+                            <section class="popSec">
+                                <strong class="titSec">지적원도</strong>
+                                <div class="descBox">
+                                    <p>지적원도는 토지조사사업(1910~1918) 당시 조사부와 함께 제작된 도면이다. 일제에 의해 토지조사사업 시기 전국 토지를 대상으로 측량한 세부측량원도이다. 국가기록원에는 남북한 전 지역분 약 78만여 매가 소장되어 있다. 흔히 보는 지도인 지형도와는 달리, 각 토지의 위치 및 경계를 기록한 도면이다. 지적원도를 보는 이유는 기본적으로 토지의 경계 구분과 땅의 위치를 알기 위함이다. 일부이지만 지적원도에는 소유권자의 이름이 명시되어 있기도 하다.</p>
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../../images/north/img-intro-01.png" alt="지적원도"/>
+                                </div>
+                            </section>
+                            <section class="popSec">
+                                <div class="titArea">
+                                    <strong class="titSec">분단당시 북한지역 지적원도 현황</strong>
+                                    <span class="source">※ 자료:조선통계연감</span>
+                                </div>
+                                <!--table-->
+                                <div class="table type02">
+                                    <table>
+                                        <caption>분단당시 북한지역 지적원도 현황</caption>
+                                        <colgroup>
+                                            <col style="width:124px;"/>
+                                            <col style="width:auto;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">계</th>
+                                            <th scope="col">황해도</th>
+                                            <th scope="col">평안북도</th>
+                                            <th scope="col">평안남도</th>
+                                            <th scope="col">함경북도</th>
+                                            <th scope="col">함경남도</th>
+                                            <th scope="col">강원도</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>지적원도(매수)</td>
+                                            <td><span class="colorType red">279,609</span></td>
+                                            <td>78,978</td>
+                                            <td>53,297</td>
+                                            <td>59,544</td>
+                                            <td>23,787</td>
+                                            <td>56,015</td>
+                                            <td>7,988</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                                <ul class="subList">
+                                    <li><p>북한지역은 한반도 전체면적의 약 55%인 12만 ㎢로 남한면적의 1.2배에 해당</p></li>
+                                    <li><p>분단당시 북한지역의 지적도는 약 27만장이며, 지목별 면적은 약 11만 ㎢</p></li>
+                                    <li>
+                                        <p>
+                                            토지조사사업당시 작성한 <span class="colorType blue"> 북한지역의 지적도</span>는 남한과 동일하게
+                                            <span class="colorType blue"> 1/1,200제작</span> 단, <span class="colorType blue"> 시가지는 1/600 제작</span>
+                                        </p>
+                                    </li>
+                                    <li><p>북한의 1/600의 시가지 지역은 평안남도 평양일부, 평양북도 신의주, 함경남도 원산 함경북도 청진</p></li>
+                                </ul>
+                            </section>
+                            <section class="popSec">
+                                <div class="titArea">
+                                    <strong class="titSec">북한지역 지적원도 관리현황</strong>
+                                    <span class="source">※ 자료:국가기록원</span>
+                                </div>
+                                <!--table-->
+                                <div class="table type02">
+                                    <table>
+                                        <caption>북한지역 지적원도 관리현황</caption>
+                                        <colgroup>
+                                            <col style="width:108px;"/>
+                                            <col style="width:auto;"/>
+                                            <col style="width:107px;"/>
+                                            <col style="width:107px;"/>
+                                            <col style="width:107px;"/>
+                                            <col style="width:107px;"/>
+                                            <col style="width:107px;"/>
+                                            <col style="width:107px;"/>
+                                            <col style="width:107px;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">계</th>
+                                            <th scope="col">황해도</th>
+                                            <th scope="col">평안북도</th>
+                                            <th scope="col">평안남도</th>
+                                            <th scope="col">함경북도</th>
+                                            <th scope="col">함경남도</th>
+                                            <th scope="col">강원도</th>
+                                            <th scope="col">경가도</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>지적원도(매수)</td>
+                                            <td><span class="colorType red">299,507</span></td>
+                                            <td>78,997</td>
+                                            <td>59,263</td>
+                                            <td>59,545</td>
+                                            <td>23,773</td>
+                                            <td>56,021</td>
+                                            <td>14,473</td>
+                                            <td>7,171</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                                <ul class="subList">
+                                    <li><p><span class="colorType blue">최초 북한지역 지적원도는 조선총독부 정부 중앙청사에서 보관</span> 이후 부산의 국가기록원 역사기록관에 보관</p></li>
+                                    <li><p>지적원도의 경우 북한뿐만 아니라 일부 지자체가 보유하고 있는 지적원도를 제외하고 남한지역의 일부 지적원도 또한 국가 기록원에서 관리</p></li>
+                                    <li>
+                                        <p>
+                                            <span class="colorType blue">현행 북한지역의 지적관련 도면</span>은 부산소재 <span class="colorType blue"> 국가기록원 역사기록관에 보관</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white cScroll" style="max-height:700px;">
+                        <div class="inner">
+                            <section class="popSec">
+                                <strong class="titSec">지적원도 정보화 표준공정 정립</strong>
+
+                                <div class="imgBox">
+                                    <img src="../../images/north/img-intro-02.png" alt="사전조사(현황조사 > 구축대상지 선정 > 일정계획 수립) > 이미지 파일 작성(지적원도 스캔 > 스캔 이미지 검수 > 데이터 저장) > 수치파일 작성(좌표 독취 > 속성입력 > 수치 및 보정파일) > 연속 지적원도(도면접합 > 연속 지적원도 작성 > 좌표변환) > 구조화 및 시스템 탑재(구조화 편집 > 시스템 탑재 > 최종 성과물)"/>
+                                </div>
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec">작업공정별 주요 이슈 및 오류사항 사전체크</strong>
+                                <div class="flex sb">
+                                    <div>
+                                        <div class="imgBox">
+                                            <img src="../../images/north/img-intro-03-01.png" alt="지적원도 스캐닝"/>
+                                        </div>
+                                        <ul class="subList">
+                                            <li><p>지적원도 <span class="colorType blue">기울기 왜곡</span></p></li>
+                                            <li><p>지적원도 <span class="colorType blue">이물질 제거</span></p></li>
+                                            <li><p>스케일 왜곡 및 <span class="colorType blue">이미지 음영</span>여부</p></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="imgBox">
+                                            <img src="../../images/north/img-intro-03-02.png" alt="지적원도 수치화"/>
+                                        </div>
+                                        <ul class="subList">
+                                            <li><p>선형 <span class="colorType blue">불일치 및 누락</span>여부</p></li>
+                                            <li><p>불필요 선형입력 여부</p></li>
+                                            <li><p>속성정보 <span class="colorType blue">오기 및 도곽누락</span>여부</p></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="imgBox">
+                                            <img src="../../images/north/img-intro-03-03.png" alt="연속지적원도"/>
+                                        </div>
+                                        <ul class="subList">
+                                            <li><p><span class="colorType blue">인접도곽 일치</span>여부</p></li>
+                                            <li><p>선형중복 및 <span class="colorType blue">필지폐합 오류</span></p></li>
+                                            <li><p>좌표계 및 도호<span class="colorType blue">정보 누락</span>여부</p></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="imgBox">
+                                            <img src="../../images/north/img-intro-03-04.png" alt="시스템 탑재"/>
+                                        </div>
+                                        <ul class="subList">
+                                            <li><p>도형간의 위상오류 및 완결성 여부</p></li>
+                                            <li><p><span class="colorType blue">테이블 명세서 준수</span> 및 필드타입 확인</p></li>
+                                            <li><p>국토정보 <span class="colorType blue">시스템</span> 기반의 <span class="colorType blue">호환성</span> 유지</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white cScroll" style="max-height:700px;">
+                        <div class="inner">
+                            <div class="inputBox">
+                                <div class="flex sb ac">
+                                    <div class="labelInput">
+                                        <label style="min-width:auto;">구축연도</label>
+                                        <select id="sysIntro" style="width:165px;">
+                                            <option value="2015~2016">2015~2016</option>
+                                            <option value="2017">2017</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner">
+                            <strong class="subTitle">2017년 북한 지적원도 정보화 사업 대상지 및 물량</strong>
+                            <section class="popSec">
+                                <strong class="titSec">사업대상자</strong>
+                                <div class="txtArea">
+                                    <p>
+                                        <strong class="tit">선정방법</strong>
+                                        - 2017년 국토지리정보원에서 1/5,000 수치지형도 제작이 수행되는 동일 지역을 대상지로 선정<br/>
+                                        (회령, 정주, 안주, 고성 / 총면적 : 3,318㎢)
+                                    </p>
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../../images/north/img-intro-04.png" alt="[ 2017년 북한 지적원도 정보화 대상지 ]"/>
+                                </div>
+                                <p class="imgDesc">[ 2017년 북한 지적원도 정보화 대상지 ]</p>
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec">사업물량</strong>
+                                <div class="txtArea">
+                                    <p>
+                                        <strong class="tit">2017년 북한 지적원도 정보화 사업 물량</strong>
+                                        안주시는 과거 안주군, 영변군, 박천군의 일부가 포함되어 면단위로 물량을 산출함
+                                    </p>
+                                </div>
+
+                                <!--table-->
+                                <div class="table type04">
+                                    <table>
+                                        <caption>사업 물량</caption>
+                                        <colgroup>
+                                            <col style="width:184px;"/>
+                                            <col style="width:180px;"/>
+                                            <col style="width:180px;"/>
+                                            <col style="width:180px;"/>
+                                            <col style="width:auto;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">행정구역</th>
+                                            <th scope="col">지적원도 지명</th>
+                                            <th scope="col">면적(㎢)</th>
+                                            <th scope="col">도엽수</th>
+                                            <th scope="col">비고</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>함경북도 화령시</td>
+                                            <td>화령군 일원</td>
+                                            <td>1,258</td>
+                                            <td>1,008</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>평안북도 정주시</td>
+                                            <td>정주군 일원</td>
+                                            <td>946</td>
+                                            <td>4,996</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>평안남도 안주시</td>
+                                            <td>안주군 일원</td>
+                                            <td>462</td>
+                                            <td>4,186</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>강원도 고성군</td>
+                                            <td>고성군 일원</td>
+                                            <td>652</td>
+                                            <td>1,559</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr class="result">
+                                            <td colspan="2">합계</td>
+                                            <td>3,318</td>
+                                            <td>11,749</td>
+                                            <td>-</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->`
+                                <!--table-->
+                                <div class="table type04 mt20">
+                                    <table>
+                                        <caption>2017년 북한 지적원도 정보화 사업 물량</caption>
+                                        <colgroup>
+                                            <col style="width:80px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:auto;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">대상연도</th>
+                                            <th scope="col" rowspan="2">선정사유</th>
+                                            <th scope="col" colspan="2">대상자</th>
+                                            <th scope="col" colspan="2">1/5,000 수치지형도</th>
+                                            <th scope="col" colspan="2">지적원도</th>
+                                            <th scope="col" rowspan="2">비고</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">현재지명</th>
+                                            <th scope="col">과거지명</th>
+                                            <th scope="col">면적(㎢)</th>
+                                            <th scope="col">도엽수</th>
+                                            <th scope="col">면적(㎢)</th>
+                                            <th scope="col">도엽수</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td rowspan="4" style="border-right:1px solid #ddd;">2017</td>
+                                            <td>기관요청</td>
+                                            <td>함경북도 화령시</td>
+                                            <td>화령군 일원</td>
+                                            <td>100</td>
+                                            <td>18</td>
+                                            <td>1,258</td>
+                                            <td>1,008</td>
+                                            <td rowspan="4" style="border-left:1px solid #ddd;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>기관요청</td>
+                                            <td>평안북도 정주시</td>
+                                            <td>정주군 일원</td>
+                                            <td>100</td>
+                                            <td>20</td>
+                                            <td>946</td>
+                                            <td>4,996</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기관요청</td>
+                                            <td>평안남도 안주시</td>
+                                            <td>안주군 일원</td>
+                                            <td>100</td>
+                                            <td>18</td>
+                                            <td>462</td>
+                                            <td>4,186</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기관요청</td>
+                                            <td>강원도 고성군</td>
+                                            <td>고성군 일원</td>
+                                            <td>100</td>
+                                            <td>25</td>
+                                            <td>652</td>
+                                            <td>1,559</td>
+                                        </tr>
+                                        <tr class="result">
+                                            <td colspan="4">합계</td>
+                                            <td>400</td>
+                                            <td>81</td>
+                                            <td>3,318</td>
+                                            <td>11,749</td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->`
+                            </section>
+                        </div>
+                        <div class="inner">
+                            <strong class="subTitle">2015,2016년 북한 지적원도 정보화 사업 대상지 및 물량</strong>
+                            <section class="popSec">
+                                <strong class="titSec">사업대상자</strong>
+                                <div class="txtArea">
+                                    <p>
+                                        <strong class="tit">선정방법</strong>
+                                        - 2016년 국토지리정보원에서 1/5,000 수치지형도 제작이 수행되는 동일 지역을 대상지로 선정<br/>
+                                        (함흥, 남포, 해주, 사리원, 혜산, 성진, 만포 / 총면적 : 620㎢)<br/>
+                                        - 2015년 1/5000 수치지형도 제작 대상지 중 일부 누락된 지역을 대상지로 추가 선정
+                                    </p>
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../../images/north/img-intro-04-02.png" alt="[ 2016년 북한 지적원도 정보화 대상지 ]"/>
+                                </div>
+                                <p class="imgDesc">[ 2016년 북한 지적원도 정보화 대상지 ]</p>
+                                <ul class="subList">
+                                    <li><p>2016년 지적원도 대상지 선정기준 : 16년 국토지리정보원에서 구축예정인 1/5,000 <span class="colorType blue">수치지형도에서 대상면적 크기별로 지적원도 물량 산출</span>
+                                    <li>
+                                        <p>16년 국토지리정보원 1/5,000 수치지형도 대상지역 면적순 : 함흥(160㎢), 남포(150㎢), 해주(110㎢), 사리원(60㎢), 혜산(60㎢), 성진(50㎢), 만포(30㎢)</p>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec">사업물량</strong>
+                                <div class="txtArea">
+                                    <p>
+                                        <strong class="tit">2015년, 2016년 북한 지적원도 정보화 사업 물량</strong>
+                                    </p>
+                                </div>
+                                <!--table-->
+                                <div class="table type04">
+                                    <table>
+                                        <caption>2015년,2016년 북한 지적원도 정보화 사업 물량</caption>
+                                        <colgroup>
+                                            <col style="width:80px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:103px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:120px;"/>
+                                            <col style="width:auto;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">대상연도</th>
+                                            <th scope="col" rowspan="2">선정사유</th>
+                                            <th scope="col" colspan="2">대상자</th>
+                                            <th scope="col" colspan="2">1/5,000 수치지형도</th>
+                                            <th scope="col" colspan="2">지적원도</th>
+                                            <th scope="col" rowspan="2">비고</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">현재지명</th>
+                                            <th scope="col">과거지명</th>
+                                            <th scope="col">면적(㎢)</th>
+                                            <th scope="col">도엽수</th>
+                                            <th scope="col">면적(㎢)</th>
+                                            <th scope="col">도엽수</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td rowspan="9" style="border-right:1px solid #ddd;">2015<br/>2016</td>
+                                            <td>남북 경협</td>
+                                            <td>선봉시</td>
+                                            <td>함경북도 경성군 일원</td>
+                                            <td>100</td>
+                                            <td>16</td>
+                                            <td>(489)</td>
+                                            <td>(2,790)</td>
+                                            <td rowspan="8" style="border-left:1px solid #ddd;">괄호는 2015년 시범사업 구축물량</td>
+                                        </tr>
+                                        <tr>
+                                            <td>남북 경협</td>
+                                            <td>나선시</td>
+                                            <td>함경북도 경흥군 일원</td>
+                                            <td>30</td>
+                                            <td>5</td>
+                                            <td>(137)</td>
+                                            <td>(857)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>한반도 철도</td>
+                                            <td>신의주시</td>
+                                            <td>평안북도 의주군 일원</td>
+                                            <td>110</td>
+                                            <td>19</td>
+                                            <td>276(2)</td>
+                                            <td>1,834(91)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>남북 경협</td>
+                                            <td>청진군</td>
+                                            <td>함경북도 부령군 일원</td>
+                                            <td>100</td>
+                                            <td>26</td>
+                                            <td>276(5)</td>
+                                            <td>244(101)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>남북 경협</td>
+                                            <td>원산시</td>
+                                            <td>함경북도 덕원군 일원</td>
+                                            <td>120</td>
+                                            <td>21</td>
+                                            <td>310</td>
+                                            <td>1,792</td>
+                                        </tr>
+                                        <tr>
+                                            <td>남북 경협</td>
+                                            <td>평양시</td>
+                                            <td>평안남도 대동군 일원</td>
+                                            <td>320</td>
+                                            <td>64</td>
+                                            <td>(960)</td>
+                                            <td>(11,512)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>경원선 복구</td>
+                                            <td>경원선</td>
+                                            <td>강원도 강화군 일원</td>
+                                            <td>100</td>
+                                            <td>17</td>
+                                            <td>1,394(113)</td>
+                                            <td>3,904(2,990)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>남북 경협</td>
+                                            <td>개성시</td>
+                                            <td>경기도 개성군 일원</td>
+                                            <td>100</td>
+                                            <td>17</td>
+                                            <td>(303)</td>
+                                            <td>(4,124)</td>
+                                        </tr>
+                                        <tr class="result">
+                                            <td colspan="3">소계</td>
+                                            <td>980</td>
+                                            <td>185</td>
+                                            <td>2,256(2,009)</td>
+                                            <td>7,774(22,465)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="9" style="border-right:1px solid #ddd;">2016</td>
+                                            <td>기관 요청</td>
+                                            <td>만포시</td>
+                                            <td>평안북도 강계군 일원</td>
+                                            <td>5</td>
+                                            <td>30</td>
+                                            <td>756</td>
+                                            <td>589</td>
+                                            <td rowspan="8" style="border-left:1px solid #ddd;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>기관 요청</td>
+                                            <td>성진시(김책)</td>
+                                            <td>함경북도 성진군 일원</td>
+                                            <td>8</td>
+                                            <td>50</td>
+                                            <td>534</td>
+                                            <td>2,298</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기관 요청</td>
+                                            <td>해산시</td>
+                                            <td>함경남도 갑산군 일원</td>
+                                            <td>10</td>
+                                            <td>60</td>
+                                            <td>2,668</td>
+                                            <td>1,364</td>
+                                        </tr>
+                                        <tr>
+                                            <td>기관 요청</td>
+                                            <td>함흥시</td>
+                                            <td>함경남도 함흥군 일원</td>
+                                            <td>26</td>
+                                            <td>160</td>
+                                            <td>352</td>
+                                            <td>3,041</td>
+                                        </tr>
+                                        <tr>
+                                            <td>최대 공업지</td>
+                                            <td>남포특별시</td>
+                                            <td>평안남도 용강군 일원</td>
+                                            <td>24</td>
+                                            <td>150</td>
+                                            <td>804</td>
+                                            <td>4,664</td>
+                                        </tr>
+                                        <tr>
+                                            <td>농업도시</td>
+                                            <td>사리원시</td>
+                                            <td>황해도 봉산군 일원</td>
+                                            <td>10</td>
+                                            <td>60</td>
+                                            <td>239</td>
+                                            <td>1,610</td>
+                                        </tr>
+                                        <tr>
+                                            <td>시멘트 생산기지</td>
+                                            <td>해주시</td>
+                                            <td>황해도 해주군 일원</td>
+                                            <td>18</td>
+                                            <td>110</td>
+                                            <td>441</td>
+                                            <td>1,780</td>
+                                        </tr>
+                                        <tr>
+                                            <td>추후 예상지</td>
+                                            <td>송림시</td>
+                                            <td>평안남도 황주군 일원</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>221</td>
+                                            <td>1,404</td>
+                                        </tr>
+                                        <tr class="result">
+                                            <td colspan="3">소계</td>
+                                            <td>101</td>
+                                            <td>620</td>
+                                            <td>6,021</td>
+                                            <td>16,750</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="result">
+                                            <td colspan="4">합계</td>
+                                            <td>1,081</td>
+                                            <td>805</td>
+                                            <td>8,277</td>
+                                            <td>24,524</td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->`
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont white cScroll" style="max-height:700px;">
+                        <div class="inner">
+                            <strong class="subTitle">북한 지적원도 정보화를 통한 기대효과 및 활용분야</strong>
+                        </div>
+                        <div class="inner">
+                            <section class="popSec">
+                                <strong class="titSec">기대효과</strong>
+                                <div class="txtArea">
+                                    <p>
+                                        <strong class="tit">북한 정보의 효율적 활용</strong>
+                                        - 디지털화된 지적원도를 기본으로 북한 관련 공간정보의 연계 활용
+                                    </p>
+                                    <p>
+                                        <strong class="tit">통일정책 지원</strong>
+                                        - 소유권 기초자료로 활용 가능하여 분쟁 최소화 및 통일 안정화 기대
+                                    </p>
+                                </div>
+                            </section>
+                            <section class="popSec">
+                                <strong class="titSec">활용분야</strong>
+                                <div class="txtArea">
+                                    <p>
+                                        <strong class="tit">사적자료 보존가치</strong>
+                                        - 북한지역 토지이용의 실제 모습을 현재까지 남아있는 유일한 실측자료<br/>
+                                        - 정보화를 통한 영구보전<br/>
+                                        <span class="colorType blue"> - 국가기록원 CAMS를 통한 구축자료 대국민 서비스</span>
+                                    </p>
+                                    <p>
+                                        <strong class="tit">남북한 통합행정 기초자료</strong>
+                                        - 북한지역 공간정보 운영 및 위치기반 활용 조성
+                                        - Primary Key인 주소 및 행정코드 부여
+                                        <span class="colorType blue">- 대북정책 결정을 위한 관계기관 의사소통 가능</span>
+                                        <span class="colorType blue">- 북한 토지정보 활용을 위한 위치기반 조성</span>
+                                    </p>
+                                    <p>
+                                        <strong class="tit">신·구 행정구역 연계</strong>
+                                        - 토지조사 당시 행정구역과 최근 북한 행정구역간의 상호관계 설정
+                                        - 남북경협 기초자료 제공
+                                        <span class="colorType blue">- 북한지역 토지소유권 확립 기반 조성</span>
+                                        <span class="colorType blue">- 각종 계획수립에 대한 지원 가능</span>
+                                    </p>
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../../images/north/img-intro-05.png" alt="북한 철도,종단철도,고속도로 표시 지도"/>
+                                </div>
+                                <div class="txtArea mt40">
+                                    <p>
+                                        <strong class="tit">북한지역 국토변화 분석</strong>
+                                        - 북한지적원도, 위성영상, 수치지형도등의 지적 정보를 이용한 북한지역의 변화 분석 및 예측 활용
+                                    </p>
+                                </div>
+                                <div class="imgBox">
+                                    <img src="../../images/north/img-intro-06.png" style="width:auto;" alt="북한지역 국토변화 분석"/>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>사용자관리</title>
+    @@include('include/head_map_admin.html')
+
+</head>   
+
+<body>
+    <div id="wrap_admin">
+        @@include('include/header_map_smart.html')
+        <div class="wrapTop">
+            <h2><strong>공공보상정보지원</strong> 시스템 관리</h2>
+            <div class="frMenu">
+                <span class="toNmap">공공보상정보지원</span>
+                <button type="button" class="btnLogout"><i class="ico logout"></i><span>로그아웃</span></button>
+                <button class="noneHeight btnMenu"><img src="../../images/ico_board_menu.png" alt="메뉴열기"></button>
+            </div>
+        </div>
+
+        <div class="fullWid">
+            <div class="w_1200">
+                <ul class="flex ac sb">
+                    <li class="topInner"><a href="#">공지사항 관리</a></li>
+                    <li class="topInner  ac">
+                        <a href="#">
+                            사용자 관리
+                        </a>
+                    </li>
+                    <li class="topInner"><a href="#">기관레이어 관리</a></li>
+                    <li class="topInner"><a href="#">주민정보 관리</a></li>
+                    <li class="topInner"><a href="#">공공보상표준API</a></li>
+                    <li class="topInner"><a href="#">권한신청관리</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w_1200">
+            <h4 class="titPage">사용자관리 상세</h4>
+            <div class="tableRow_Admin">
+                <table>
+                    <caption>사용자관리 상세 수정</caption>
+                    <colgroup>
+                        <col style="width:200px">
+                        <col style="width:auto">
+                        <col style="width:200px">
+                        <col style="width:auto">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td>
+                            test
+                        </td>
+                        <th scope="row">이름</th>
+                        <td>
+                            홍길동
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">휴대전화</th>
+                        <td>
+                            010-****-****
+                        </td>
+                        <th scope="row">전화번호</th>
+                        <td>
+                            031-****-****
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사용목적</th>
+                        <td>
+                            공공보상사용
+                        </td>
+                        <th scope="row">비밀번호 초기화</th>
+                        <td>
+                            <button type="button" class="greyB w_136">
+                                <img src="../../images/ico_first_btn.png" alt="">
+                                초기화
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="sel01">승인상태</label></th>
+                        <td>
+                            <select id="sel01" class="w_100">
+                                <option value="승인">승인</option>
+                            </select>
+                        </td>
+                        <th scope="row">승인일시</th>
+                        <td>
+                            2021-06-07
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">신청일시</th>
+                        <td>
+
+                        </td>
+                        <th scope="row">취소일시</th>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기관명</th>
+                        <td colspan="3">공공보상 시도 시군구 기관</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fr mb_68">
+                <button class="blueBack w_140 mr_5">목록</button>
+                <button class="blueB w_140">저장</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    @@include('include/footer.html') 
+</body>
+</html>

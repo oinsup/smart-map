@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map_r.html')
+<link href="../../css/cmm/jquery.bxslider.css" rel="stylesheet" />
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+
+        @@include('include/jungbo_layout.html')
+
+        <!--toc-->
+        @@include('include/toc2.html')
+        <!--//toc-->
+        <div id="helpArea">
+            <div class="web">
+                <button type="button" class="btnHelpClose"><span class="hidden">닫기</span></button>
+                <h1>스마트 국토정보<span>도움말 서비스</span></h1>
+                <img src="../../images/map/layout/img-help-01.png" style="left:16px;top:18px;" alt="장소검색 - 장소,주소,건물명을 검색합니다" />
+                <img src="../../images/map/layout/img-help-02.png" style="left:449px;top:18px;" alt="레이어 추가 - 국토교통부에서 제공하는 레이어를 검색하여 지도위에 추가합니다."/>
+                <img src="../../images/map/layout/img-help-03.png" style="right:166px;top:15px;" alt="지역선택 - 시도,시군구,읍면동을 검색합니다."/>
+                <img src="../../images/map/layout/img-help-04.png" style="right:50px;top:15px;" alt="고객지원 - 공지사항과 문의사항 게시판입니다."/>
+                <img src="../../images/map/layout/img-help-05.png" style="right:15px;top:249px;" alt="내 위치 - 현재 위치를 표시합니다"/>
+                <img src="../../images/map/layout/img-help-06.png" style="right:15px;top:306px;" alt ="즐겨찾기 - 저장된 즐겨찾기를 확인할 수 있습니다."/>
+                <img src="../../images/map/layout/img-help-07.png" style="right:15px;top:356px;" alt="배경지도 - 바로e맵,항공사진,백지도 등의 배경지도로 변경 할 수 있습니다."/>
+                <img src="../../images/map/layout/img-help-08.png" style="right:15px;top:406px;" alt="확대/축소 - 지도를 확대,축소 할 수 있습니다" />
+                <div style="right:20px;top:410px;width:40px;height:80px;"></div>
+                <div style="right:20px;top:360px;width:40px;height:40px;"></div>
+                <div style="right:20px;top:310px;width:40px;height:40px;"></div>
+                <div style="right:20px;top:260px;width:40px;height:40px;"></div>
+                <div style="right:73px;top:17px;width:86px;height:40px;"></div>
+                <div style="right:170px;top:17px;width:267px;height:40px;"></div>
+                <div style="left:451px;top:20px;width:40px;height:40px;"></div>
+                <div style="left:18px;top:20px;width:420px;height:40px;"></div>
+            </div>
+            <div class="mobile">
+                <button type="button" class="btnHelpClose"><span class="hidden">도움말 닫기</span></button>
+                <h1>스마트 국토정보<span>도움말 서비스</span></h1>
+                <div class="current">
+                    <p>SWIPE</p>
+                    <ul>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="mobileSlide">
+                    <div>
+                        <img src="../../images/map/layout/img-help-01-m.png" style="width:295.5px;right:-5px;top:8px;"/>
+                        <img src="../../images/map/layout/img-help-02-m.png" style="width:226.5px;right:40px;top:8px;"/>
+                        <img src="../../images/map/layout/img-help-03-m.png" style="width:241.5px;right:70px;top:7px;"/>
+                        <div style="position: absolute;right:32px;top:12px;"><img src="../../images/map/layout/ico-help-01-m.png" style="width:21.5px;"/></div>
+                        <div style="position: absolute;right:62px;top:12px;"><img src="../../images/map/layout/ico-help-02-m.png" style="width:20px;"/></div>
+                        <div style="position: absolute;right:92px;top:11px;"><img src="../../images/map/layout/ico-help-03-m.png" style="width:21px;"/></div>
+                    </div>
+                    <div>
+                        <img src="../../images/map/layout/img-help-04-m.png" style="width:221px;right:18px;top:69px;"/>
+                        <img src="../../images/map/layout/img-help-05-m.png" style="width:198.5px;right:18px;top:103px;"/>
+                        <img src="../../images/map/layout/img-help-06-m.png" style="width:274.5px;right:18px;top:203px;"/>
+                        <img src="../../images/map/layout/img-help-07-m.png" style="width:241.5px;right:13px;top:250px;"/>
+                        <div style="right:20px;top:106px;width:40px;height:40px;border-radius:50%;"></div>
+                        <div style="right:20px;top:156px;width:40px;height:40px;border-radius:50%;"></div>
+                        <div style="right:20px;top:205px;width:40px;height:40px;border-radius:50%;"></div>
+                        <div style="right:21.5px;top:255px;width:37px;height:74px;"></div>
+                    </div>
+                    <div>
+                        <div class="flex" style="left:0;bottom:0;width:100%;">
+                            <div style="width:25%;position: relative">
+                                <img src="../../images/map/layout/img-help-08-m.png" style="width:130px;left:calc(50% - 38px);bottom:2px;"/>
+                            </div>
+                            <div style="width:25%;position: relative">
+                                <img src="../../images/map/layout/img-help-09-m.png" style="width:95.5px;left:calc(50% - 57px);bottom:2px;"/>
+                            </div>
+                            <div style="width:25%;position: relative">
+                                <img src="../../images/map/layout/img-help-10-m.png" style="width:151px;left:calc(50% - 45px);bottom:2px;"/>
+                            </div>
+                            <div style="width:25%;position: relative">
+                                <img src="../../images/map/layout/img-help-11-m.png" style="width:161px;left:calc(50% - 123px);bottom:2px;"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../../js/web/slider/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function (){
+
+            var slider = $('#helpArea .mobile .mobileSlide').bxSlider({
+                auto:false,
+                infiniteLoop:false,
+                controls:false,
+                onSlideAfter:function(){
+                    console.log(slider.getCurrentSlide())
+                    $('.mobile .current li').eq(slider.getCurrentSlide()).addClass('active').siblings('li').removeClass('active')
+                }
+            })
+        })
+    </script>
+</body>
+</html>

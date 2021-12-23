@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>사용자관리</title>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/cmm/jquery-ui.css" type="text/css">
+    <link rel="stylesheet" href="../../css/cmm/ncmm.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb_header.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nweb/nweb.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nmap/nmap.css" type="text/css">
+    <link rel="stylesheet" href="../../css/nmap/nmap_admin.css" type="text/css">
+
+    <script src="../../js/cmm/jquery-1.12.4.js"></script>
+    <script src="../../js/cmm/jquery-ui.js"></script>
+    <script src="../../js/map/ui_map.js"></script>
+</head>
+
+</head>   
+
+<body>
+    <div id="wrap_admin">
+        <header id="menu">
+    <h1><a href="../../index.html"><img src="../../images/logo.png" alt="국토교통부"></a></h1>
+    <nav id="gnb" class="mmHide">
+        <ul>
+            <li><a href="#">정보조회</a></li>
+            <li><a href="#">토지찾기</a>
+                <ul class="sub">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li><a href="#">공간정보목록</a>
+                <ul class="sub">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li><a href="#">고객지원</a>
+                <ul class="sub">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+
+            <!-- 로그인시
+            <li class="orgMenu" style="margin-left:auto">
+                <a href="#">공공보상정보지원</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">공간정보목록조사</a>
+            </li>
+            <li class="orgMenu">
+                <a href="#">정책정보제공</a>
+            </li>-->
+        </ul>
+    </nav>
+    <!-- 로그인시
+    <div class="userBtn">
+        <button type="button" class="btnLogout"><span>로그아웃</span></button>
+        <button type="button" class="btnMypage"><span>마이페이지</span></button>
+    </div>-->
+    <div class="org" id="loginWrap">기관업무</div>
+    <button type="button" class="btnMenuClose"><span class="hidden">닫기</span></button>
+    <div class="loginBox" id="loginBox">
+        <div class="ab_c"></div>
+        <p class="ex_01">기관업무자만 접근이 가능한 메뉴입니다</p>
+        <p class="ex_02">로그인후 이용하시길 바랍니다</p>
+        <div class="loginInput_Box">
+            <label for="id" class="offscreen">아이디</label>
+            <input type="text" class="inputNormal w_100 mb_10" id="id" placeholder="아이디입력">
+            <label for="pw" class="offscreen">비밀번호</label>
+            <input type="text" class="inputNormal w_100" id="pw" placeholder="비밀번호 입력">
+
+            <button class="blueBack w_140 mr_10 fl mt_24">로그인</button>
+            <button class="greenBack w_140 fl mt_24">
+                <img src="../../images/ico_gpki.png" alt="">
+                GPKI인증</button>
+            <div class="findBox fl">
+                <img src="../../images/ico_find_id.png" alt="">
+                <span class="find"><a href="">아이디찾기</a></span>
+                <span class="find ml_5 mr_5"> | </span>
+                <span  class="find"><a href="">비밀번호 찾기</a></span>
+            </div>
+            <div class="findBox fr">
+                <img src="../../images/ico_re.png" alt="">
+                <span class="find"><a href="">회원가입</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="mMenuBtn">
+        <img src="../../images/btn_m_menu.png" alt="메뉴버튼">
+    </div>
+    <!-- <div class="login_m">
+        <a href="login.html"><img src="../images/ico_login_b.png" alt="기관업무" width="21"></a>
+    </div> -->
+
+    <div id="mMenuBox" class="m_menu_box mmShow">
+        <ul>
+            <li class="set">
+                <a href="#"><span>정보조회</span></a>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>토지찾기</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">내토지찾기</a></li>
+                    <li><a href="#">조상땅찾기</a></li>
+                    <li><a href="#">신청내역</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>공간정보목록</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">공간정보목록조회</a></li>
+                    <li><a href="#">공간정보목록조사</a></li>
+                    <li><a href="#">공간정보목록통계</a></li>
+                </ul>
+            </li>
+            <li class="set">
+                <a href="#">
+                    <span>고객지원</span>
+                    <img src="../../images/ico_plus.png" class="fa-plus" alt="메뉴버튼">
+                </a>
+                <ul class="contentM">
+                    <li><a href="#">시스템안내</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="setUp mmShow">설정</div>
+    </div>
+</header>
+        <div class="wrapTop">
+            <h2><strong>공공보상정보지원</strong> 시스템 관리</h2>
+            <div class="frMenu">
+                <span class="toNmap">공공보상정보지원</span>
+                <button type="button" class="btnLogout"><i class="ico logout"></i><span>로그아웃</span></button>
+                <button class="noneHeight btnMenu"><img src="../../images/ico_board_menu.png" alt="메뉴열기"></button>
+            </div>
+        </div>
+
+        <div class="fullWid">
+            <div class="w_1200">
+                <ul class="flex ac sb">
+                    <li class="topInner"><a href="#">공지사항 관리</a></li>
+                    <li class="topInner  ac">
+                        <a href="#">
+                            사용자 관리
+                        </a>
+                    </li>
+                    <li class="topInner"><a href="#">기관레이어 관리</a></li>
+                    <li class="topInner"><a href="#">주민정보 관리</a></li>
+                    <li class="topInner"><a href="#">공공보상표준API</a></li>
+                    <li class="topInner"><a href="#">권한신청관리</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="w_1200">
+            <h4 class="titPage">사용자관리 상세</h4>
+            <div class="tableRow_Admin">
+                <table>
+                    <caption>사용자관리 상세 수정</caption>
+                    <colgroup>
+                        <col style="width:200px">
+                        <col style="width:auto">
+                        <col style="width:200px">
+                        <col style="width:auto">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">아이디</th>
+                        <td>
+                            test
+                        </td>
+                        <th scope="row">이름</th>
+                        <td>
+                            홍길동
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">휴대전화</th>
+                        <td>
+                            010-****-****
+                        </td>
+                        <th scope="row">전화번호</th>
+                        <td>
+                            031-****-****
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사용목적</th>
+                        <td>
+                            공공보상사용
+                        </td>
+                        <th scope="row">비밀번호 초기화</th>
+                        <td>
+                            <button type="button" class="greyB w_136">
+                                <img src="../../images/ico_first_btn.png" alt="">
+                                초기화
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="sel01">승인상태</label></th>
+                        <td>
+                            <select id="sel01" class="w_100">
+                                <option value="승인">승인</option>
+                            </select>
+                        </td>
+                        <th scope="row">승인일시</th>
+                        <td>
+                            2021-06-07
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">신청일시</th>
+                        <td>
+
+                        </td>
+                        <th scope="row">취소일시</th>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기관명</th>
+                        <td colspan="3">공공보상 시도 시군구 기관</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fr mb_68">
+                <button class="blueBack w_140 mr_5">목록</button>
+                <button class="blueB w_140">저장</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer>
+    <div class="footer">
+        <h5><img src="../../images/logo_footer.png" alt="국토교통부"></h5>
+        <div class="footerCenter">
+            <div class="lnb">
+                <ul>
+                    <li><a href="">개인정보처리방침</a></li>
+                    <li><a href="">이용안내</a></li>
+                    <li><a href="">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="address">
+                30103 세종특별자치시 도움6로 11 국토교통부<br>                
+                (주간)1599-0001 (야간)044-201-4672 / Fax (주간)044-860-9500 (야간)044-201-5700<br>
+                Copyright (c) Ministry of Land, Infrastructure and Transport. All Rights reserved.
+            </div>
+        </div>
+        <div class="footerSite">
+            <select  title="관련사이트" name="" class="siteCombo" onchange="window.open(value, '_blank');" id="site">
+                <option value="">관련싸이트</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+                <option value="https://www.naver.com/">네이버</option>
+                <option value="https://www.daum.net/">다음</option>
+                <option value="https://www.google.com/">구글</option>
+            </select>
+        </div> 
+    </div>
+</footer> 
+</body>
+</html>

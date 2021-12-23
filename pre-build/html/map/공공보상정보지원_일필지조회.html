@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_map.html')
+<body>
+    <div id="wrap">
+        @@include('include/header_map_smart.html')
+        @@include('include/gonggong_layout.html')
+
+        <!--toc-->
+        @@include('include/toc.html')
+        <!--//toc-->
+
+        <!--popup-->
+        <div class="popup" style="left:calc(50% - 484px);width:624px;">
+            <div class="head">
+                <strong class="tit">일필지 조회</strong>
+                <div class="btnGroup">
+                    <button type="button" class="btnPopClose"><span class="hidden">팝업 닫기</span></button>
+                </div>
+            </div>
+            <div class="cont grey">
+                <!--tabContWrap-->
+                <div class="tabContWrap type02">
+                    <!--tabNav-->
+                    <div class="tabNav">
+                        <ul class="tabList">
+                            <li class="active">일필지정보</li>
+                            <li>건축물정보</li>
+                            <li>가격정보</li>
+                            <li>토지이용계획</li>
+                        </ul>
+                    </div>
+                    <!--//tabNav-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll active" style="max-height:700px;overflow-y:auto;">
+                        <!--popSec-->
+                        <section class="popSec">
+                            <div class="inner white">
+                                <p class="flex ac">
+                                    <span class="tag blue">도로명</span>
+                                    <strong class="doro">세종특별자치시 절재로 154 (어진동,청림빌)</strong>
+                                </p>
+                                <p class="flex ac" style="margin-top:7px;">
+                                    <span class="tag grey">지번</span>
+                                    <strong class="jibun">세종특별자치시 도담동 858-0 보듬2로 42-0 (PNU: 3611011000105030000)</strong>
+                                </p>
+                                <div class="popSearch type02">
+                                    <div class="inner">
+                                        <div class="flex ac">
+                                            <select title="동 선택">
+                                                <option value="동선택">동선택</option>
+                                            </select>
+                                            <select title="층선택">
+                                                <option value="층선택">층선택</option>
+                                            </select>
+                                            <select title="호선택">
+                                                <option value="호선택">호선택</option>
+                                            </select>
+                                            <button type="button" class="btn grey3"><span>검색</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--//popSec-->
+                        <!--popSec-->
+                        <section class="popSec">
+                            <div class="inner white">
+                                <strong class="titSec">건축물목록</strong>
+                                <!--table-->
+                                <div class="table type02">
+                                    <table>
+                                        <caption>건축물목록</caption>
+                                        <colgroup>
+                                            <col style="width:140px;"/>
+                                            <col style="width:140px;"/>
+                                            <col style="width:140px;"/>
+                                            <col style="width:auto;"/>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">대장종류</th>
+                                            <th scope="col">건축물명칭</th>
+                                            <th scope="col">동명칭/번호</th>
+                                            <th scope="col">상세보기</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>일반(주건축물)</td>
+                                            <td>홈플러스 세종점</td>
+                                            <td>홈플러스 세종점</td>
+                                            <td>
+                                                <div class="flex center">
+                                                    <button type="button" class="btnTable detail"><span class="hidden">상세보기</span></button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                            </div>
+                        </section>
+                        <!--//popSec-->
+                        <!--popSec-->
+                        <section class="popSec">
+                            <div class="inner white">
+                                <strong class="titSec">건축물정보</strong>
+                                <!--tabContWrap-->
+                                <div class="tabContWrap type03">
+                                    <!--tabNav-->
+                                    <div class="tabNav">
+                                        <ul class="tabList">
+                                            <li class="active">기본정보</li>
+                                            <li>층별현황</li>
+                                            <li>호별현황</li>
+                                        </ul>
+                                    </div>
+                                    <!--//tabNav-->
+                                    <!--tabCont-->
+                                    <div class="tabCont active">
+                                        <!--table-->
+                                        <div class="table type03 scroll cScroll" style="max-height:261px;">
+                                            <table>
+                                                <caption>기본정보</caption>
+                                                <colgroup>
+                                                    <col style="width:115px;" />
+                                                    <col style="width:auto"/>
+                                                    <col style="width:115px;" />
+                                                    <col style="width:auto"/>
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row">대지면적</th>
+                                                    <td class="txt-left">13,457.4㎡</td>
+                                                    <th scope="row">건축면적</th>
+                                                    <td class="txt-left">8,459.95㎡</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">연면적</th>
+                                                    <td class="txt-left">45,615.69㎡</td>
+                                                    <th scope="row">용적율산정면적</th>
+                                                    <td class="txt-left">17,029.93㎡</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">건폐율</th>
+                                                    <td class="txt-left">62.86%</td>
+                                                    <th scope="row">용적율</th>
+                                                    <td class="txt-left">126.55%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">총호수</th>
+                                                    <td class="txt-left">0 세대 / 0 호 / 0 가구</td>
+                                                    <th scope="row">주차수</th>
+                                                    <td class="txt-left">730대</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">주용도</th>
+                                                    <td class="txt-left">판매시설</td>
+                                                    <th scope="row">기타용도</th>
+                                                    <td class="txt-left">판매시설, 교육연구시설</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">건물구조</th>
+                                                    <td class="txt-left">철근콘크리트구조</td>
+                                                    <th scope="row">기타구조</th>
+                                                    <td class="txt-left">철근콘크리트구조</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">건물지붕</th>
+                                                    <td class="txt-left">(철근)콘크리트</td>
+                                                    <th scope="row">기타지붕</th>
+                                                    <td class="txt-left">(철근)콘크리트</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">높이</th>
+                                                    <td class="txt-left">27.29m</td>
+                                                    <th scope="row">층수</th>
+                                                    <td class="txt-left">지상: 4층, 지하: 2층</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">부속건물수</th>
+                                                    <td class="txt-left">0동</td>
+                                                    <th scope="row">부속건물면적</th>
+                                                    <td class="txt-left">0.0㎡</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">허가일자</th>
+                                                    <td class="txt-left">2013-07-31</td>
+                                                    <th scope="row">착공일자</th>
+                                                    <td class="txt-left">2013-11-20</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">사용승인일자</th>
+                                                    <td class="txt-left">2014-10-17</td>
+                                                    <th scope="row">특이사항</th>
+                                                    <td class="txt-left"></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">관련(대표)지번</th>
+                                                    <td colspan="3" class="txt-left">503(대표)</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <!--//table-->
+                                    </div>
+                                    <!--//tabCont-->
+                                    <!--tabCont-->
+                                    <div class="tabCont"></div>
+                                    <!--//tabCont-->
+                                    <!--tabCont-->
+                                    <div class="tabCont"></div>
+                                    <!--//tabCont-->
+                                </div>
+                                <!--//tabContWrap-->
+                            </div>
+                        </section>
+                        <!--//popSec-->
+                    </div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll"></div>
+                    <!--//tabCont-->
+                    <!--tabCont-->
+                    <div class="tabCont cScroll" style="max-height:700px;overflow-y:auto;">
+                        <!--popSec-->
+                        <section class="popSec">
+                            <div class="inner white">
+                                <p class="flex ac">
+                                    <span class="tag blue">도로명</span>
+                                    <strong class="doro">세종특별자치시 절재로 154 (어진동,청림빌)</strong>
+                                </p>
+                                <p class="flex ac" style="margin-top:7px;">
+                                    <span class="tag grey">지번</span>
+                                    <strong class="jibun">세종특별자치시 도담동 858-0 보듬2로 42-0 (PNU: 3611011000105030000)</strong>
+                                </p>
+                            </div>
+                        </section>
+                        <!--//popSec-->
+                        <!--popSec-->
+                        <section class="popSec">
+                            <div class="inner white">
+                                <strong class="titSec">토지이용계획</strong>
+                                <!--table-->
+                                <div class="table type03">
+                                    <table>
+                                        <caption>토지이용계획</caption>
+                                        <colgroup>
+                                            <col style="width:100px;">
+                                            <col style="width:140px;">
+                                            <col style="width:auto;">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row" rowspan="2">지역·지구 등<br/>지정여부</th>
+                                            <th scope="row">『국토의 계획 및 이용에 관한 법률』에 따른 지역·지구 등</th>
+                                            <td>농림지역</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">다른 법령 등에 따른 지역·지구 등</th>
+                                            <td>가축사육제한구역(전축종제한구역)&lt;가죽분뇨의 관리 및 이용에 관한 법률&gt;,농업진흥구역&lt;농지법&gt;, 공장설립제한지역(2020-06-01)&lt;수도법&gt;</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">추가기재사항</th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" colspan="2">추가기재사항</th>
+                                            <td>『토지이용규제 기본법 시행령』 제9조 제4항 각 호에 해당되는 사항</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//table-->
+                                <div class="landLegendBox">
+                                    <div class="landMapBox" style="flex:1;height:300px;">
+                                        <img src="../../images/map/layout/bg-calculate-01.png" alt="샘플이미지"/>
+                                        <p class="scaleArea"><span>축척 : 1/1000</span></p>
+                                    </div>
+                                    <div class="legendArea type02 cScroll" style="max-height:300px;">
+                                        <div class="legend">
+                                                <span class="box default">
+                                                    <img src="../../images/map/layout/bg-calculate-01.png" alt="샘플이미지"/>
+                                                </span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                        <div class="legend">
+                                            <span class="box default"></span>
+                                            <span class="txt">도시지역</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!--//popSec-->
+
+                    </div>
+                    <!--//tabCont-->
+                </div>
+                <!--//tabContWrap-->
+            </div>
+        </div>
+        <!--//popup-->
+
+    </div>
+</body>
+</html>

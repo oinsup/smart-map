@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('include/head_n.html')
+</head>
+
+<body>
+    <div id="skipNavi">
+        <strong>컨텐츠 바로가기</strong>
+        <ul>
+            <li><a href="#wrapMain">본문으로 바로가기</a></li>
+            <li><a href="#menu">주메뉴 바로가기</a></li>
+        </ul>
+    </div>
+    <div class="wrap_100">
+        @@include('include/header.html')
+        <div id="wrapMain">
+            <div class="board_top_02">
+                <h2>정보이용신청</h2>
+            </div>
+            <div class="location">
+                <div class="loc_inner">
+                    <div class="fr">
+                        <span class="locLine"></span>
+                        <div class="home"><a href="../index.html"><img src="../../images/ico_loc_home.png"
+                                    alt="home으로 바로가기"></a></div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">정보이용신청
+                            <img src="../../images/ico_loc_arrow.png" alt="">
+                        </div>
+                        <span class="locLine"></span>
+                        <div class="loc_depth">온라인 정책정보</div>
+                        <span class="locLine"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <!--leftMenu-->
+                <div class="leftMenu">
+                    <h3><span class="tri_menu"></span>정보이용신청</h3>
+                    <ul class="depthTwo">
+                        <li class="menuL_on"><a href="">온라인 정책정보<span class="span_on"></span></a></li>
+                    </ul>
+                </div>
+                <!--//leftMenu-->
+                <!--rightCont-->
+                <div class="rightCont">
+                    <h3 class="titPage">온라인 정책정보</h3>
+                    <h4 class="bulletTxt">신청자 정보</h4>
+                    <div class="table row">
+                        <table>
+                            <caption>신청자 정보</caption>
+                            <colgroup>
+                                <col style="width:180px">
+                                <col style="width:320px">
+                                <col style="width:180px">
+                                <col style="width:320px">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">신청자</th>
+                                    <td>홍길동</td>
+                                    <th scope="row">휴대폰번호<span class="redDot"></span></th>
+                                    <td>
+                                        <label for="mobile_01" class="offscreen">핸드폰 첫자리</label>
+                                        <select name="" id="mobile_01" class="w_30 fl">
+                                            <option value="">010</option>
+                                            <option value="">010</option>
+                                            <option value="">010</option>
+                                        </select>
+                                        <span class="span_">-</span>
+                                        <label for="mobile_02" class="offscreen">핸드폰 둘째자리</label>
+                                        <input type="text" class="w_30 fl" id="mobile_02">
+                                        <span class="span_">-</span>
+                                        <label for="mobile_03" class="offscreen">핸드폰 셋째자리</label>
+                                        <input type="text" class="w_30 fl" id="mobile_03">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">전화번호<span class="redDot"></span></th>
+                                    <td>
+                                        <label for="phone_01" class="offscreen">전화번호 첫자리</label>
+                                        <select name="" id="phone_01" class="w_30 fl">
+                                            <option value="">02</option>
+                                            <option value="">02</option>
+                                            <option value="">02</option>
+                                        </select>
+                                        <span class="span_">-</span>
+                                        <label for="phone_02" class="offscreen">전화번호 둘째자리</label>
+                                        <input type="text" class="w_30 fl" id="phone_02">
+                                        <span class="span_">-</span>
+                                        <label for="phone_03" class="offscreen">전화번호 셋째자리</label>
+                                        <input type="text" class="w_30 fl" id="phone_03">
+                                    </td>
+                                    <th scope="row">E-mail</th>
+                                    <td>hgd@korea.kr</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">기관구분</th>
+                                    <td>공공기관</td>
+                                    <th scope="row">신청일자</th>
+                                    <td>2021-06-07</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="org">기관명칭</label><span class="redDot"></span></th>
+                                    <td colspan="3">
+                                        <input type="text" class="w_68" id="org">
+                                        <button type="button" class="greyBack_04 w_240">검색</button>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4 class="bulletTxt mt_50">요청 내용</h4>
+                    <div class="table row">
+                        <table>
+                            <caption>요청 내용</caption>
+                            <colgroup>
+                                <col style="width:180px">
+                                <col style="width:320px">
+                                <col style="width:180px">
+                                <col style="width:320px">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" style="width:180px;">
+                                        <label for="num_01">시행번호</label>
+                                        <span class="redDot"></span>
+                                    </th>
+                                    <td style="width:320px;">
+                                        <input type="text" class="" id="num_01">
+                                    </td>
+                                    <th scope="row" style="width:180px;">
+                                        <label for="datetimepicker_mask">시행일자</label>
+                                        <span class="redDot"></span>
+                                    </th>
+                                    <td style="width:320px;">
+                                        <input type="text" title="시행일자" class=" input_month" id="datetimepicker_mask">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="num_02">심사시행번호</label>
+                                        <span class="redDot"></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" class="w_299" id="num_02">
+                                        <span class="f_14 h_40 ml_10">
+                                            ※ 공공(유관)기 항목은 상위기관의 <span class="blue">심사시행번호</span>는 필수입니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="datetimepicker_mask_02">심사시행일자</label>
+                                        <span class="redDot"></span>
+                                    </th>
+                                    <td colspan="3">
+                                        <input type="text" title="심사시행일자" class="w_299 input_month" id="datetimepicker_mask_02">
+                                        <span class="f_14 h_40 ml_10">※ 공공(유관)기 항목은 상위기관의 <span
+                                                class="blue">심사시행일자</span>는 필수입니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="org_c">심사시행기관</label></th>
+                                    <td colspan="3">
+                                        <input type="text" class="w_68" id="org_c">
+                                        <button type="button" class="greyBack_04 w_240">검색</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="target">신청목적</label>
+                                        <span class="redDot"></span>
+                                    </th>
+                                    <td colspan="3"><input type="text" class="" id="target"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="row">근거법령(0법 제 0조)</label>
+                                        <span class="redDot"></span>
+                                    </th>
+                                    <td colspan="3"><input type="text" class="" id="row"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">조회범위<span class="redDot"></span></th>
+                                    <td colspan="3">
+                                        <label for="sel_01"></label>
+                                        <select name="" id="sel_01" class="w_140 mr_5">
+                                            <option value="">경기도</option>
+                                            <option value="">경기도</option>
+                                            <option value="">경기도</option>
+                                        </select>
+                                        <label for="sel_02"></label>
+                                        <select name="" id="sel_02" class="w_180 mr_5">
+                                            <option value="">안양시 동안구</option>
+                                            <option value="">안양시 동안구</option>
+                                            <option value="">안양시 동안구</option>
+                                        </select>
+                                        <label for="sel_03"></label>
+                                        <select name="" id="sel_01" class="w_140 mr_5">
+                                            <option value="">관양동</option>
+                                            <option value="">관양동</option>
+                                            <option value="">관양동</option>
+                                        </select>
+                                        <label for="sel_04"></label>
+                                        <select name="" id="sel_04" class="w_140">
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                            <option value="">전체</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="note">비고</label></th>
+                                    <td colspan="3"><input type="text" class="" id="note"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="file_01">요청파일</label><span class="redDot"></span></th>
+                                    <td colspan="3" class="box_upload">
+                                        <label for="fileUp" class="offscreen">파일찾기 결과</label>
+                                        <input type="text" readonly="readonly" class="inputNormal w_653 fl" id="fileUp">
+                                        <input type="file" id="file"
+                                            onchange="javascript:document.getElementById('fileUp').value=this.value">
+                                        <label for="file" class="blueBack w_136 btnLike">파일첨부</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">붙임파일<span class="redDot"></span></th>
+                                    <td colspan="3">
+                                        <div class="w_100">
+                                            <div class="scroll_td cScroll">
+                                                [붙임1] 국가공간정보 이용신청서.pdf<br>
+                                                [붙임2] 국가공간정보 이용·활용 계획서.pdf<br>
+                                                [붙임3] 보안각서.pdf
+                                                [붙임2] 국가공간정보 이용·활용 계획서.pdf<br>
+                                                [붙임3] 보안각서.pd
+                                            </div>
+                                            <button type="button" class="blueBack w_136 fl ">파일첨부</button>
+                                        </div>
+                                        <div class="f_14 fl mt_2">※ 첨부파일은 <span class="blue">10개</span>까지 가능합니다. (파일당 최대
+                                            용량은
+                                            10Mb를 초과할 수 없습니다.)</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">파일형식<span class="redDot"></span></th>
+                                    <td colspan="3">
+                                        <input type="radio" name="file" id="radio_01" checked>
+                                        <label for="radio_01" class="mr_5"><span></span>EXCEL(10,000건 이하만 제공가능)</label>
+
+                                        <input type="radio" name="file" id="radio_02">
+                                        <label for="radio_02" class="mr_5"><span></span>TXT(TAB)</label>
+
+                                        <input type="radio" name="file" id="radio_03">
+                                        <label for="radio_03" class="mr_5"><span></span>TXT(,)</label>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="fl mt_30 mb_50">
+                        <button type="button" class="blueB w_140 mr_5">목록</button>
+                    </div>
+                    <div class="fr mt_30 mb_50">
+                        <button type="button" class="blueBack w_140">신청</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('include/footer.html')
+    <!--달력-->
+    <script src="../../js/cmm/jquery.datetimepicker.full.js"></script>
+    <script>
+        $('#datetimepicker_mask').datetimepicker({
+        });
+        $('#datetimepicker_mask_02').datetimepicker({
+        });
+    </script>
+</body>
+
+</html>
